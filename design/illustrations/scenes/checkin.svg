@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300">
+  <!-- Slide 2: Dadi taps how she feels on a big, friendly phone screen. -->
+  <path class="blob" id="blob" d="M52,108 C60,52 118,24 178,26 C240,28 302,46 318,104 C334,160 328,226 276,254 C226,280 136,284 88,258 C40,232 44,160 52,108Z" fill="#E3F3EE"/>
+  <g clip="blob"><rect x="0" y="226" width="360" height="80" fill="#9AD8C9"/></g>
+  <rect x="198" y="48" width="108" height="194" rx="18" fill="#2F3A45"/>
+  <rect x="205" y="60" width="94" height="170" rx="11" fill="#FFFFFF"/>
+    <rect x="210" y="78" width="82" height="40" rx="10" fill="#E3F4E9"/>
+    <circle cx="231" cy="98" r="12" fill="#2D8A4E"/><circle cx="226.8" cy="95.6" r="1.4" fill="#FFFFFF"/><circle cx="235.2" cy="95.6" r="1.4" fill="#FFFFFF"/>
+    <path d="M225.96,100.4 q5.04,4.800000000000001 10.08,0" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/>
+    <rect x="250" y="91" width="32" height="5" rx="2.5" fill="#FFFFFF"/><rect x="250" y="101" width="22" height="5" rx="2.5" fill="#FFFFFF"/>
+    <rect x="210" y="128" width="82" height="40" rx="10" fill="#FBF0D9"/>
+    <circle cx="231" cy="148" r="12" fill="#D4A915"/><circle cx="226.8" cy="145.6" r="1.4" fill="#FFFFFF"/><circle cx="235.2" cy="145.6" r="1.4" fill="#FFFFFF"/>
+    <path d="M226.44,151.84 l9.120000000000001,0" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/>
+    <rect x="250" y="141" width="32" height="5" rx="2.5" fill="#FFFFFF"/><rect x="250" y="151" width="22" height="5" rx="2.5" fill="#FFFFFF"/>
+    <rect x="210" y="178" width="82" height="40" rx="10" fill="#FBE4E1"/>
+    <circle cx="231" cy="198" r="12" fill="#C2392F"/><circle cx="226.8" cy="195.6" r="1.4" fill="#FFFFFF"/><circle cx="235.2" cy="195.6" r="1.4" fill="#FFFFFF"/>
+    <path d="M226.2,203.4 q4.800000000000001,-4.5600000000000005 9.600000000000001,0" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round"/>
+    <rect x="250" y="191" width="32" height="5" rx="2.5" fill="#FFFFFF"/><rect x="250" y="201" width="22" height="5" rx="2.5" fill="#FFFFFF"/>
+  <circle cx="231" cy="98" r="19" fill="none" stroke="#2D8A4E" stroke-width="2.4" opacity="0.45"/>
+  <circle cx="231" cy="98" r="25" fill="none" stroke="#2D8A4E" stroke-width="2" opacity="0.2"/>
+  <path transform="translate(176 52) scale(0.8)" d="M0,-11 l3,8 l8,3 l-8,3 l-3,8 l-3,-8 l-8,-3 l8,-3z" fill="#F29B4B"/>
+  <use-part name="dadi_point" transform="translate(62 22)"/>
+</svg>

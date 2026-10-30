@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300">
+  <!-- Slide 3: Dadaji on a call; a speech bubble with sound waves - Saathi talks and listens. -->
+  <path class="blob" id="blob" d="M60,96 C76,44 136,22 196,28 C258,34 312,64 316,124 C320,184 304,236 256,256 C204,278 126,280 86,252 C46,224 46,150 60,96Z" fill="#E3F3EE"/>
+  <g clip="blob"><rect x="0" y="226" width="360" height="80" fill="#9AD8C9"/></g>
+  <!-- speech bubble with waves -->
+  <path d="M206,52 L292,52 C301,52 306,57 306,66 L306,104 C306,113 301,118 292,118 L232,118 L216,134 L218,118 L206,118 C197,118 192,113 192,104 L192,66 C192,57 197,52 206,52Z" fill="#FFFFFF"/>
+  <rect x="212" y="78" width="6" height="14" rx="3" fill="#3FB59F"/>
+  <rect x="224" y="70" width="6" height="30" rx="3" fill="#0E7C6B"/>
+  <rect x="236" y="64" width="6" height="42" rx="3" fill="#3FB59F"/>
+  <rect x="248" y="72" width="6" height="26" rx="3" fill="#0E7C6B"/>
+  <rect x="260" y="66" width="6" height="38" rx="3" fill="#3FB59F"/>
+  <rect x="272" y="76" width="6" height="18" rx="3" fill="#0E7C6B"/>
+  <rect x="284" y="80" width="6" height="10" rx="3" fill="#3FB59F"/>
+  <!-- a small heart: he is heard -->
+  <path d="M290,142 c-4,-6 -14,-3 -12,5 c1.5,5 12,12 12,12 c0,0 10.5,-7 12,-12 c2,-8 -8,-11 -12,-5z" fill="#F07862"/>
+  <!-- side table with a cup of chai -->
+  <rect x="70" y="186" width="56" height="8" rx="4" fill="#C97447"/>
+  <rect x="76" y="194" width="6" height="56" rx="3" fill="#B0623A"/>
+  <rect x="114" y="194" width="6" height="56" rx="3" fill="#B0623A"/>
+  <path d="M86,170 L104,170 L102,186 L88,186Z" fill="#FFFFFF"/>
+  <path d="M104,174 c6,0 6,8 0,8" fill="none" stroke="#FFFFFF" stroke-width="2.6"/>
+  <path d="M92,162 c-3,-4 3,-6 0,-10 M98,162 c-3,-4 3,-6 0,-10" fill="none" stroke="#9AD8C9" stroke-width="2" stroke-linecap="round"/>
+  <!-- dadaji -->
+  <use-part name="dadaji_phone" transform="translate(118 20)"/>
+</svg>

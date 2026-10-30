@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The Saathi call, designed for seniors: who they are talking to, one clear status ("Saathi is speaking" /
+  "Your turn"), what Saathi said in large type, three large labelled controls and a full-width End call.
+  The black "earCover" is shown by ProximityGuard while the phone is at the ear.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_call_gradient">
+
+    <LinearLayout
+        android:id="@+id/callContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="20dp">
+
+        <!-- Who + how long -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_caller_avatar_circle"
+                android:importantForAccessibility="no">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/ic_logo"
+                    app:tint="@color/call_ink" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvCaller"
+                style="@style/T.Title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:text="@string/inc_name"
+                android:textColor="@color/call_ink" />
+
+            <TextView
+                android:id="@+id/tvTimer"
+                style="@style/T.Section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFeatureSettings="tnum"
+                android:text="00:00"
+                android:textColor="@color/call_ink_soft" />
+        </LinearLayout>
+
+        <!-- Status: icon + words, never colour alone -->
+        <LinearLayout
+            android:id="@+id/statusChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:accessibilityLiveRegion="polite"
+            android:background="@drawable/bg_status_chip"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="8dp">
+
+            <ImageView
+                android:id="@+id/ivPhase"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_wave"
+                app:tint="@color/call_accent" />
+
+            <TextView
+                android:id="@+id/tvPhase"
+                style="@style/T.Section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/call_connecting"
+                android:textColor="@color/call_ink"
+                android:textSize="21sp" />
+        </LinearLayout>
+
+        <com.aegis.saathi.call.OrbView
+            android:id="@+id/orbView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:importantForAccessibility="no"
+            android:minHeight="120dp" />
+
+        <!-- What Saathi says, large; what they said, under it -->
+        <LinearLayout
+            android:id="@+id/captionCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_call_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/tvAiLine"
+                style="@style/T"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:accessibilityLiveRegion="polite"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.15"
+                android:maxLines="6"
+                android:ellipsize="start"
+                android:minHeight="72dp"
+                android:textColor="@color/call_ink"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHeardLine"
+                style="@style/T"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textColor="@color/call_ink_soft"
+                android:textSize="20sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNote"
+            style="@style/T"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:accessibilityLiveRegion="polite"
+            android:gravity="center"
+            android:textColor="@color/call_listen"
+            android:textSize="19sp"
+            android:visibility="gone" />
+
+        <!-- Typed reply: fallback for noisy rooms / broken microphone -->
+        <LinearLayout
+            android:id="@+id/typeRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etTyped"
+                style="@style/T"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_dark"
+                android:hint="@string/call_type_hint"
+                android:imeOptions="actionSend"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="60dp"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/call_ink"
+                android:textColorHint="@color/call_ink_soft"
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:id="@+id/btnSendTyped"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_btn_primary"
+                android:clickable="true"
+                android:contentDescription="@string/call_send"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/ic_send"
+                    app:tint="@color/call_ink" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Speaker / Mute / Type: large round buttons, each labelled underneath -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btnSpeaker"
+                style="@style/CallControl"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:id="@+id/speakerCircle"
+                    style="@style/CallControlCircle">
+
+                    <ImageView
+                        android:id="@+id/ivSpeaker"
+                        style="@style/CallControlIcon"
+                        app:srcCompat="@drawable/ic_speaker" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvSpeaker"
+                    style="@style/CallControlLabel"
+                    android:text="@string/call_speaker" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnMute"
+                style="@style/CallControl"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:id="@+id/muteCircle"
+                    style="@style/CallControlCircle">
+
+                    <ImageView
+                        android:id="@+id/ivMute"
+                        style="@style/CallControlIcon"
+                        app:srcCompat="@drawable/ic_mic" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvMute"
+                    style="@style/CallControlLabel"
+                    android:text="@string/call_mute" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnTypeToggle"
+                style="@style/CallControl"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <FrameLayout
+                    android:id="@+id/typeCircle"
+                    style="@style/CallControlCircle">
+
+                    <ImageView
+                        android:id="@+id/ivType"
+                        style="@style/CallControlIcon"
+                        app:srcCompat="@drawable/ic_keyboard" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvType"
+                    style="@style/CallControlLabel"
+                    android:text="@string/call_type_short" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- End call: full width, red, words + icon -->
+        <LinearLayout
+            android:id="@+id/btnHangUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_pill_hangup"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:focusable="true"
+            android:gravity="center"
+            android:minHeight="72dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_phone_end"
+                app:tint="@color/call_ink" />
+
+            <TextView
+                style="@style/T.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/call_hangup"
+                android:textColor="@color/call_ink"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Call over: a calm summary for a few seconds -->
+    <LinearLayout
+        android:id="@+id/endPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_call_gradient"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_caller_avatar_circle"
+            android:importantForAccessibility="no">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_check"
+                app:tint="@color/call_ink" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvEndTitle"
+            style="@style/T.Display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:accessibilityLiveRegion="assertive"
+            android:gravity="center"
+            android:textColor="@color/call_ink" />
+
+        <TextView
+            android:id="@+id/tvEndSub"
+            style="@style/T.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/call_ink_soft"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+    <!-- Black cover while the phone is at the ear (ProximityGuard) -->
+    <View
+        android:id="@+id/earCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF000000"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:visibility="gone" />
+</FrameLayout>

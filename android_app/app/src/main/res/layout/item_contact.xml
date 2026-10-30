@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One person: initials, name, relation, and a big Call button -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_card"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvAvatar"
+        style="@style/T.Title"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_circle_primary_soft"
+        android:gravity="center"
+        android:importantForAccessibility="no"
+        android:textColor="@color/primary_dark" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvContactName"
+            style="@style/T.Section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvContactRelation"
+            style="@style/T.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnContactCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:minHeight="60dp"
+        android:background="@drawable/bg_btn_good"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:minWidth="96dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/ic_phone"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            style="@style/T.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/family_call" />
+    </LinearLayout>
+</LinearLayout>

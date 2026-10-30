@@ -1,0 +1,51 @@
+<template>
+  <style>
+    @font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_semibold.ttf") format("truetype"); font-weight: 600; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_bold.ttf") format("truetype"); font-weight: 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Mukta", sans-serif; color: #fff; }
+    #root * { box-sizing: border-box; }
+    #s05-wrap { position: absolute; inset: 0; }
+    .bg { position: absolute; inset: 0; background: radial-gradient(120% 90% at 20% 0%, #10594f 0%, #0a2a26 55%, #061b18 100%); }
+    .frame { position: absolute; overflow: hidden; border-radius: 18px; background: #f4f6f5; box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.08); }
+    .bar { position: absolute; left: 0; right: 0; top: 0; height: 34px; background: #e9eeec; display: flex; align-items: center; gap: 8px; padding-left: 16px; z-index: 3; }
+    .bar i { width: 11px; height: 11px; border-radius: 50%; background: #c9d2ce; }
+    .bar b { margin-left: 18px; font: 600 15px "Mukta"; color: #5f6e69; }
+    .view { position: absolute; left: 0; right: 0; bottom: 0; overflow: hidden; }
+    .cam { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    .cam img { display: block; }
+    .spot { position: absolute; border-radius: 12px; border: 3px solid #f5b03c; box-shadow: 0 0 0 4000px rgba(4,22,19,.42), 0 0 24px rgba(245,176,60,.55); opacity: 0; }
+    .chip { position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 10px 22px 10px 16px; border-radius: 999px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); font: 600 26px "Mukta"; color: #fff; }
+    .kicker { font: 700 28px "Mukta"; letter-spacing: .14em; text-transform: uppercase; color: #8fd9c9; }
+    .phone { position: absolute; border-radius: 52px; background: #0b0f0e; padding: 13px; box-shadow: 0 30px 70px rgba(0,0,0,.5), 0 0 0 2px rgba(255,255,255,.08); }
+    .phone .scr { position: relative; width: 100%; height: 100%; border-radius: 40px; overflow: hidden; background: #fff; }
+    .phone .scr img { position: absolute; left: 0; top: 0; width: 100%; }
+    .pt { display: flex; align-items: flex-start; gap: 18px; font: 600 38px/1.25 "Mukta"; color: #fff; }
+    .pt .ic { flex: none; width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center; background: rgba(143,217,201,.14); color: #8fd9c9; }
+    .pt small { display: block; font: 400 28px/1.35 "Mukta"; color: #b9d6cf; margin-top: 4px; }
+    .bub { position:absolute; max-width:760px; padding:16px 24px; border-radius:22px; font: 400 30px/1.35 "Mukta"; opacity:0; }
+    .bub b { display:block; font: 700 28px "Mukta"; letter-spacing:.08em; text-transform:uppercase; margin-bottom:2px; }
+    .ai { background: rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.16); } .ai b { color:#8fd9c9; }
+    .me { background:#e1f3ee; color:#14211f; } .me b { color:#0d7a69; }
+  </style>
+  <div id="root" data-composition-id="s05" data-width="1920" data-height="1080">
+    <div id="s05-wrap"><div class="bg"></div><div class="kicker" id="s05-kick" style="position:absolute;left:210px;top:70px">AI check-in call · real call on the phone app</div><div class="phone" id="s05-p" style="left:330px;top:150px;width:431px;height:746px"><div class="scr"><img id="s05-p-i0" src="assets/app/app_ringing2.png" style="opacity:1"><img id="s05-p-i1" src="assets/app/c2_reply0.png" style="opacity:0"><img id="s05-p-i2" src="assets/app/c2_reply2.png" style="opacity:0"></div></div><div class="bub ai" id="s05-b0" style="left:1000px;top:150px"><b>Saathi</b>Hello Kamla Devi! How are you feeling today?</div><div class="bub me" id="s05-b1" style="left:1080px;top:290px"><b>Kamla</b>I feel a little dizzy and weak since yesterday.</div><div class="bub ai" id="s05-b2" style="left:1000px;top:430px"><b>Saathi</b>Did you take your medicine? Just say yes or no.</div><div class="bub me" id="s05-b3" style="left:1080px;top:570px"><b>Kamla</b>I took my morning medicine.</div><div class="bub ai" id="s05-b4" style="left:1000px;top:680px"><b>Saathi</b>How did you sleep last night, and is your appetite okay?</div><div class="bub me" id="s05-b5" style="left:1080px;top:820px"><b>Kamla</b>Did not sleep well, maybe four hours.</div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s05-wrap", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, 0);
+    tl.fromTo("#s05-kick", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.20);
+    tl.fromTo("#s05-p", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.05);
+    tl.fromTo("#s05-p-i1", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.inOut" }, 3.65);
+    tl.fromTo("#s05-p-i2", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.inOut" }, 12.15);
+    tl.fromTo("#s05-b0", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 3.65);
+    tl.fromTo("#s05-b1", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 5.41);
+    tl.fromTo("#s05-b2", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 5.98);
+    tl.fromTo("#s05-b3", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 6.81);
+    tl.fromTo("#s05-b4", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 7.37);
+    tl.fromTo("#s05-b5", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 14.94);
+    tl.to("#s05-b0", { opacity: 0.45, duration: 0.4 }, 7.37);
+    tl.to("#s05-wrap", { opacity: 0, duration: 0.35, ease: "power2.in" }, 17.78);
+    window.__timelines["s05"] = tl;
+  </script>
+</template>

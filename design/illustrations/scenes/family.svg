@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300">
+  <!-- Slide 6: the daughter walks arm in arm with dadi in a park - family stays close. -->
+  <path class="blob" id="blob" d="M46,118 C50,58 112,26 176,24 C244,22 306,54 318,114 C330,174 318,232 268,258 C218,284 132,286 86,260 C40,234 42,172 46,118Z" fill="#E3F3EE"/>
+  <!-- trees -->
+  <rect x="78" y="150" width="7" height="80" rx="3" fill="#7A5A44"/>
+  <ellipse cx="81.5" cy="134" rx="24" ry="40" fill="#9AD8C9"/>
+  <ellipse cx="88" cy="128" rx="13" ry="30" fill="#B7E4D8"/>
+  <rect x="279" y="140" width="7" height="90" rx="3" fill="#7A5A44"/>
+  <ellipse cx="282.5" cy="118" rx="27" ry="46" fill="#3FB59F"/>
+  <ellipse cx="290" cy="112" rx="14" ry="34" fill="#5CC4AF"/>
+  <circle cx="140" cy="62" r="11" fill="#FFF3D6"/>
+  <path d="M236,74 c6,-6 14,-6 18,0 c4,-5 12,-4 14,2 c-10,2 -22,2 -32,-2z" fill="#FFFFFF"/>
+  <g clip="blob"><rect x="0" y="226" width="360" height="80" fill="#9AD8C9"/></g>
+  <!-- path -->
+  <g clip="blob"><path d="M40,262 C140,246 230,246 330,262 L330,300 L40,300Z" fill="#B7E4D8"/></g>
+  <use-part name="dadi_walk" transform="translate(160 30) scale(0.95)"/>
+  <use-part name="daughter_walk" transform="translate(77 27)"/>
+</svg>

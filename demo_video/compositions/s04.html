@@ -1,0 +1,43 @@
+<template>
+  <style>
+    @font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_semibold.ttf") format("truetype"); font-weight: 600; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_bold.ttf") format("truetype"); font-weight: 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Mukta", sans-serif; color: #fff; }
+    #root * { box-sizing: border-box; }
+    #s04-wrap { position: absolute; inset: 0; }
+    .bg { position: absolute; inset: 0; background: radial-gradient(120% 90% at 20% 0%, #10594f 0%, #0a2a26 55%, #061b18 100%); }
+    .frame { position: absolute; overflow: hidden; border-radius: 18px; background: #f4f6f5; box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.08); }
+    .bar { position: absolute; left: 0; right: 0; top: 0; height: 34px; background: #e9eeec; display: flex; align-items: center; gap: 8px; padding-left: 16px; z-index: 3; }
+    .bar i { width: 11px; height: 11px; border-radius: 50%; background: #c9d2ce; }
+    .bar b { margin-left: 18px; font: 600 15px "Mukta"; color: #5f6e69; }
+    .view { position: absolute; left: 0; right: 0; bottom: 0; overflow: hidden; }
+    .cam { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    .cam img { display: block; }
+    .spot { position: absolute; border-radius: 12px; border: 3px solid #f5b03c; box-shadow: 0 0 0 4000px rgba(4,22,19,.42), 0 0 24px rgba(245,176,60,.55); opacity: 0; }
+    .chip { position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 10px 22px 10px 16px; border-radius: 999px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); font: 600 26px "Mukta"; color: #fff; }
+    .kicker { font: 700 28px "Mukta"; letter-spacing: .14em; text-transform: uppercase; color: #8fd9c9; }
+    .phone { position: absolute; border-radius: 52px; background: #0b0f0e; padding: 13px; box-shadow: 0 30px 70px rgba(0,0,0,.5), 0 0 0 2px rgba(255,255,255,.08); }
+    .phone .scr { position: relative; width: 100%; height: 100%; border-radius: 40px; overflow: hidden; background: #fff; }
+    .phone .scr img { position: absolute; left: 0; top: 0; width: 100%; }
+    .pt { display: flex; align-items: flex-start; gap: 18px; font: 600 38px/1.25 "Mukta"; color: #fff; }
+    .pt .ic { flex: none; width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center; background: rgba(143,217,201,.14); color: #8fd9c9; }
+    .pt small { display: block; font: 400 28px/1.35 "Mukta"; color: #b9d6cf; margin-top: 4px; }
+    
+  </style>
+  <div id="root" data-composition-id="s04" data-width="1920" data-height="1080">
+    <div id="s04-wrap"><div class="bg"></div><div class="kicker" id="s04-kick" style="position:absolute;left:210px;top:70px">Daily check-in</div><div class="phone" id="s04-p" style="left:330px;top:150px;width:431px;height:746px"><div class="scr"><img id="s04-p-i0" src="assets/app/app_home.png" style="opacity:1"><img id="s04-p-i1" src="assets/app/app_checkin.png" style="opacity:0"></div></div><div class="pt" id="s04-a" style="position:absolute;left:1000px;top:280px;width:760px;opacity:0"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12,19.6C5.5,14.3 3.2,11.5 3.2,8.5A4.6,4.6 0 0 1 12,6.7A4.6,4.6 0 0 1 20.8,8.5C20.8,11.5 18.5,14.3 12,19.6z"/></svg></span><span>How do you feel today?<small>Fine, a bit weak, or not well</small></span></div><div class="pt" id="s04-b" style="position:absolute;left:1000px;top:460px;width:760px;opacity:0"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g transform="rotate(-45 12 12)"><path d="M8,8.2H16A3.8,3.8 0 0 1 16,15.8H8A3.8,3.8 0 0 1 8,8.2z"/><path d="M12,8.2V15.8"/></g></svg></span><span>Did you take your medicine?<small>Taken, later, or skipped</small></span></div><div class="pt" id="s04-c" style="position:absolute;left:1000px;top:640px;width:760px;opacity:0"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.2,12.6l4.4,4.4L18.8,7.6"/></svg></span><span>Care manager told at once<small>The answer reaches their list immediately</small></span></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s04-wrap", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, 0);
+    tl.fromTo("#s04-kick", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.20);
+    tl.fromTo("#s04-p", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.05);
+    tl.fromTo("#s04-a", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 2.18);
+    tl.fromTo("#s04-b", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 4.17);
+    tl.fromTo("#s04-p-i1", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.inOut" }, 5.64);
+    tl.fromTo("#s04-c", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 7.05);
+    tl.to("#s04-wrap", { opacity: 0, duration: 0.35, ease: "power2.in" }, 10.36);
+    window.__timelines["s04"] = tl;
+  </script>
+</template>

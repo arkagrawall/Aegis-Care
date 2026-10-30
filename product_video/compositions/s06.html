@@ -1,0 +1,48 @@
+<template>
+  <style>
+    @font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_semibold.ttf") format("truetype"); font-weight: 600; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_bold.ttf") format("truetype"); font-weight: 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Mukta", sans-serif; color: #fff; }
+    #root * { box-sizing: border-box; }
+    #s06-wrap { position: absolute; inset: 0; }
+    .bg { position: absolute; inset: 0; background: radial-gradient(120% 90% at 15% 0%, #8a2a69 0%, #4a1137 45%, #2a0a1f 100%); }
+    .frame { position: absolute; overflow: hidden; border-radius: 18px; background: #fff; box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.1); }
+    .bar { position: absolute; left: 0; right: 0; top: 0; height: 34px; background: #efe6eb; display: flex; align-items: center; gap: 8px; padding-left: 16px; z-index: 3; }
+    .bar i { width: 11px; height: 11px; border-radius: 50%; background: #d9c8d2; }
+    .bar b { margin-left: 18px; font: 600 15px "Mukta"; color: #6b5562; }
+    .view { position: absolute; left: 0; right: 0; bottom: 0; overflow: hidden; }
+    .cam { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    .cam img { display: block; }
+    .spot { position: absolute; border-radius: 14px; border: 4px solid #f7941e; box-shadow: 0 0 0 4000px rgba(42,10,31,.40), 0 0 26px rgba(247,148,30,.6); opacity: 0; }
+    .kicker { font: 700 30px "Mukta"; letter-spacing: .16em; text-transform: uppercase; color: #f7941e; }
+    .title { font: 700 62px/1.08 "Mukta"; color: #fff; }
+    .phone { position: absolute; border-radius: 54px; background: #0b0a0b; padding: 13px; box-shadow: 0 30px 70px rgba(0,0,0,.55), 0 0 0 2px rgba(255,255,255,.1); }
+    .phone .scr { position: relative; width: 100%; height: 100%; border-radius: 42px; overflow: hidden; background: #fff; }
+    .phone .scr img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .pt { display: flex; align-items: flex-start; gap: 20px; font: 600 40px/1.22 "Mukta"; color: #fff; }
+    .pt .ic { flex: none; width: 60px; height: 60px; border-radius: 18px; display: grid; place-items: center; background: rgba(247,148,30,.16); color: #f7941e; }
+    .pt small { display: block; font: 400 28px/1.35 "Mukta"; color: #e9cfdf; margin-top: 4px; }
+    .num { background: #f7941e !important; color: #4a1137 !important; font: 700 30px "Mukta"; }
+    
+  </style>
+  <div data-hf-id="hf-utsa" id="root" data-composition-id="s06" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-h8xf" id="s06-wrap"><div data-hf-id="hf-m7dd" class="bg"></div><div data-hf-id="hf-i1n8" class="phone" id="s06-ph" style="left:330px;top:70px;width:426px;height:915px"><div data-hf-id="hf-zn7g" class="scr"><img data-hf-id="hf-3ip9" id="s06-ph-i0" src="assets/app/setup_lang.png" style="opacity:1"><img data-hf-id="hf-2dx8" id="s06-ph-i1" src="assets/app/setup_name.png" style="opacity:0"><img data-hf-id="hf-fdvx" id="s06-ph-i2" src="assets/app/setup_code.png" style="opacity:0"><img data-hf-id="hf-sfuz" id="s06-ph-i3" src="assets/app/home_new.png" style="opacity:0"></div></div><div data-hf-id="hf-ktd7" id="s06-k" class="kicker" style="position:absolute;left:860px;top:120px;opacity:0">One-minute setup</div><div data-hf-id="hf-9tpb" id="s06-t" class="title" style="position:absolute;left:860px;top:164px;width:920px;opacity:0">Redeem the code.</div><div data-hf-id="hf-69tx" class="pt" id="s06-p1" style="position:absolute;left:860px;top:380px;width:820px;opacity:0"><span data-hf-id="hf-l4lo" class="ic num">1</span><span data-hf-id="hf-1fg3">Choose the language</span></div><div data-hf-id="hf-7gtq" class="pt" id="s06-p2" style="position:absolute;left:860px;top:500px;width:820px;opacity:0"><span data-hf-id="hf-jxol" class="ic num">2</span><span data-hf-id="hf-jhl8">Type their name</span></div><div data-hf-id="hf-tow0" class="pt" id="s06-p3" style="position:absolute;left:860px;top:620px;width:820px;opacity:0"><span data-hf-id="hf-kbzm" class="ic num">3</span><span data-hf-id="hf-2265">Enter the Saathi code<small data-hf-id="hf-tlhv">SAATHI-X4U52V</small></span></div><div data-hf-id="hf-iumt" class="pt" id="s06-p4" style="position:absolute;left:860px;top:790px;width:820px;opacity:0"><span data-hf-id="hf-8dw9" class="ic"><svg data-hf-id="hf-mcjy" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path data-hf-id="hf-fdwl" d="M5.2,12.6l4.4,4.4L18.8,7.6"/></svg></span><span data-hf-id="hf-xzon">Linked to Rajesh Verma<small data-hf-id="hf-nlpa">Their Samarth Care Manager</small></span></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s06-wrap", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, 0);
+    tl.fromTo("#s06-ph", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 0.10);
+    tl.fromTo("#s06-ph-i1", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.inOut" }, 4.06);
+    tl.fromTo("#s06-ph-i2", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.inOut" }, 5.39);
+    tl.fromTo("#s06-ph-i3", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.inOut" }, 7.61);
+    tl.fromTo("#s06-k", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.30);
+    tl.fromTo("#s06-t", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.42);
+    tl.fromTo("#s06-p1", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 2.98);
+    tl.fromTo("#s06-p2", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 4.26);
+    tl.fromTo("#s06-p3", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 5.59);
+    tl.fromTo("#s06-p4", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 7.71);
+    tl.to("#s06-wrap", { opacity: 0, duration: 0.35, ease: "power2.in" }, 11.46);
+    window.__timelines["s06"] = tl;
+  </script>
+</template>

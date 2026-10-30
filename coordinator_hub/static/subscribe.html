@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#761f58">
+<title>Get Saathi for your parent · Samarth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="/static/portal.css">
+<link rel="stylesheet" href="/static/site.css">
+</head>
+<body class="samarth buy">
+<header class="s-nav">
+  <div class="wrap">
+    <a class="wordmark" href="/" aria-label="Samarth Saathi home"><b>samarth<i>.</i></b><span>Saathi</span></a>
+    <nav class="links" aria-label="Main"><a href="/#saathi">How Saathi works</a><a href="/#plans">Plans</a></nav>
+  </div>
+</header>
+
+<main class="buy-main" id="main"><div class="wrap" id="view"></div></main>
+
+<script>
+(() => {
+"use strict";
+const $ = (s) => document.querySelector(s);
+const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const inr = (n) => "₹" + Number(n).toLocaleString("en-IN");
+const view = $("#view");
+const CITIES = ["Delhi NCR", "Lucknow", "Jaipur", "Varanasi", "Indore", "Mumbai", "Bengaluru", "Kolkata", "Chennai", "Hyderabad", "Pune", "Ahmedabad"];
+let cfg = null, plan = new URLSearchParams(location.search).get("plan") === "monthly" ? "monthly" : "yearly";
+const typed = { elder_language: "hi" };
+const KEYS = ["elder_name", "elder_city", "elder_language", "name", "email", "phone"];
+
+async function start() {
+  try { cfg = await fetch("/api/billing/config").then((r) => r.json()); }
+  catch (e) { cfg = { enabled: false, reason: "Could not reach the server. Please try again.", plans: [] }; }
+  if (location.hash === "#phone") return phoneForm({});
+  form();
+}
+
+// Parents with a basic (feature) phone: no app. The family redeems the code here and Saathi rings that number daily.
+function phoneForm(pre, err) {
+  const hindi = (pre.language || typed.elder_language) !== "en";
+  const times = ["08:00", "09:00", "10:00", "11:00", "12:00", "16:00", "17:00", "18:00", "19:00"];
+  view.innerHTML = `
+    <div class="panel"><h2>Set up Saathi by phone call</h2>
+      <p>For a parent with a basic phone, or anyone who prefers a normal call. No app needed: Saathi rings their number every day at the time you choose.</p>
+      <form id="pf" novalidate><div class="fields">
+        <label class="field full"><span class="label">Saathi code</span><input class="input" name="saathi_code" value="${esc(pre.code || "")}" placeholder="SAATHI-XXXXXX" required></label>
+        <label class="field"><span class="label">Parent's name</span><input class="input" name="name" value="${esc(pre.name || typed.elder_name || "")}" required></label>
+        <label class="field"><span class="label">Parent's mobile number</span><input class="input" name="phone" type="tel" inputmode="tel" placeholder="+91" required></label>
+        <label class="field"><span class="label">Age</span><input class="input" name="age" type="number" min="50" max="110" value="70"></label>
+        <label class="field"><span class="label">Daily call time</span><select class="input" name="call_time">${times.map((t) => `<option ${t === "10:00" ? "selected" : ""}>${t}</option>`).join("")}</select></label>
+        <div class="field full"><span class="label" id="pl-l">Saathi speaks</span>
+          <div class="seg2" role="radiogroup" aria-labelledby="pl-l">
+            <label><input type="radio" name="language" value="hi" ${hindi ? "checked" : ""}>हिंदी</label>
+            <label><input type="radio" name="language" value="en" ${hindi ? "" : "checked"}>English</label></div></div>
+        <label class="field"><span class="label">Emergency contact (your name)</span><input class="input" name="emergency_name" value="${esc(typed.name || "")}"></label>
+        <label class="field"><span class="label">Emergency contact number</span><input class="input" name="emergency_phone" type="tel" inputmode="tel" value="${esc(typed.phone || "")}"></label>
+      </div>
+      <p class="fine">If your parent ever says on a call that they are in danger, Saathi alerts their Care Manager and calls this number.</p>
+      ${err ? `<p class="err-box" role="alert">${esc(err)}</p>` : ""}
+      <button class="pill plum lg" id="psend">Start daily calls</button></form></div>`;
+  $("#pf").onsubmit = async (e) => {
+    e.preventDefault();
+    const f = e.target, b = $("#psend");
+    const body = Object.fromEntries(new FormData(f).entries());
+    body.age = parseInt(body.age || "70", 10);
+    b.disabled = true; b.textContent = "Setting up…";
+    try {
+      const r = await fetch("/api/senior/onboard-phone", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+      const d = await r.json();
+      if (!r.ok) return phoneForm({ ...pre, code: body.saathi_code, name: body.name, language: body.language }, d.detail || "Could not set up.");
+      const first = (d.name || "").split(" ")[0];
+      view.innerHTML = `<div class="panel done" role="status">
+        <img src="/static/illustrations/family_phone.svg" alt="" width="360" height="300">
+        <h2>Saathi will call ${esc(first)} every day at ${esc(d.call_time)}</h2>
+        <p class="lead">The call comes from Samarth's Saathi number to ${esc(body.phone)}. ${esc(d.coordinator_name)} is ${esc(first)}'s Care Manager and will see every call.</p>
+        <ol class="next"><li>Tell ${esc(first)} to expect a friendly call from Saathi at ${esc(d.call_time)}.</li>
+          <li>Save the Saathi number in their phone so they know who is calling.</li></ol>
+        <a class="pill plum lg" href="/" style="margin-top:18px">Back to Samarth</a></div>`;
+    } catch (err) { phoneForm(pre, err.message); }
+  };
+}
+
+function form(err) {
+  const plans = cfg.plans.length ? cfg.plans : [{ id: "monthly", rupees: 299, days: 30 }, { id: "yearly", rupees: 2999, days: 365 }];
+  const p = plans.find((x) => x.id === plan) || plans[0];
+  view.innerHTML = `
+    <div class="progress" aria-label="Steps"><span class="on">1 · Plan</span><span class="on">2 · Your parent</span><span class="on">3 · You</span><span>4 · Pay</span><span>5 · Saathi code</span></div>
+    <div class="buy-grid"><form id="f" novalidate>
+      <div class="panel"><h2>Choose a plan</h2><p>Everything is included in both. Yearly gives you two months free.</p>
+        <fieldset class="choose"><legend class="sr-only">Plan</legend>
+          ${plans.map((x) => `<label><input type="radio" name="plan" value="${x.id}" ${x.id === plan ? "checked" : ""}>
+            <span style="font-weight:700;color:var(--ink)">${x.id === "yearly" ? "Yearly" : "Monthly"}</span><b>${inr(x.rupees)}</b>
+            <small>${x.id === "yearly" ? "per year · about ₹250 a month" : "per month"}</small>${x.id === "yearly" ? '<span class="save">Save ₹589</span>' : ""}</label>`).join("")}
+        </fieldset></div>
+      <div class="panel"><h2>Who is Saathi for?</h2><p>We assign a Samarth Care Manager in your parent's city.</p>
+        <div class="fields">
+          <label class="field full"><span class="label">Your parent's name</span><input class="input" name="elder_name" placeholder="e.g. Kamla Devi" required></label>
+          <label class="field"><span class="label">City they live in</span><input class="input" name="elder_city" list="cities" placeholder="e.g. Lucknow" required>
+            <datalist id="cities">${CITIES.map((c) => `<option value="${c}">`).join("")}</datalist></label>
+          <div class="field"><span class="label" id="lang-l">Language Saathi speaks</span>
+            <div class="seg2" role="radiogroup" aria-labelledby="lang-l">
+              <label><input type="radio" name="elder_language" value="hi" ${typed.elder_language !== "en" ? "checked" : ""}>हिंदी</label>
+              <label><input type="radio" name="elder_language" value="en" ${typed.elder_language === "en" ? "checked" : ""}>English</label></div></div>
+        </div></div>
+      <div class="panel"><h2>Your details</h2><p>For the receipt and the Saathi code. Your parent's details stay with their Care Manager.</p>
+        <div class="fields">
+          <label class="field full"><span class="label">Your name</span><input class="input" name="name" autocomplete="name" required></label>
+          <label class="field"><span class="label">Email</span><input class="input" name="email" type="email" autocomplete="email" required></label>
+          <label class="field"><span class="label">Mobile number</span><input class="input" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+91" required></label>
+        </div>
+        ${err ? `<p class="err-box" role="alert" style="margin-top:16px">${esc(err)}</p>` : ""}</div>
+    </form>
+    <aside class="panel summary" aria-label="Order summary">
+      <h2>Summary</h2>
+      <div class="row"><span>Samarth Saathi, ${p.id === "yearly" ? "yearly" : "monthly"}</span><b style="color:var(--ink)">${inr(p.rupees)}</b></div>
+      <div class="row"><span>Valid for</span><span>${p.days} days</span></div>
+      <div class="row"><span>Includes</span><span style="text-align:right">Care Manager, daily calls, reminders, SOS</span></div>
+      <div class="row total"><span>Total</span><span>${inr(p.rupees)}</span></div>
+      ${cfg.enabled ? `<p class="testnote">Test mode: no real money is charged.</p>` : `<p class="err-box">${esc(cfg.reason)}</p>`}
+      <button class="pill plum lg" id="pay" ${cfg.enabled ? "" : "disabled"}>Pay ${inr(p.rupees)} securely</button>
+      <p class="fine" style="margin:0">Payments by Razorpay. Samarth never sees your card details.</p>
+    </aside></div>`;
+  view.querySelectorAll('input[name="plan"]').forEach((r) => (r.onchange = () => { keep(); plan = r.value; form(); }));
+  restore();
+  $("#pay").onclick = pay;
+  $("#f").onsubmit = (e) => { e.preventDefault(); pay(); };
+}
+function keep() { const f = $("#f"); if (!f) return; KEYS.forEach((k) => { const el = f.elements[k]; if (el) typed[k] = el.value; }); }
+function restore() { const f = $("#f"); KEYS.forEach((k) => { if (typed[k] && k !== "elder_language") f.elements[k].value = typed[k]; }); }
+
+function loadCheckout() {
+  if (window.Razorpay) return Promise.resolve();
+  return new Promise((ok, no) => { const s = document.createElement("script"); s.src = "https://checkout.razorpay.com/v1/checkout.js"; s.onload = ok; s.onerror = () => no(new Error("Could not load Razorpay. Check the internet connection.")); document.head.appendChild(s); });
+}
+
+async function pay() {
+  keep();
+  const b = $("#pay"); b.disabled = true; b.textContent = "Opening payment…";
+  try {
+    const r = await fetch("/api/billing/order", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ plan, ...typed }) });
+    const o = await r.json();
+    if (!r.ok) return form(o.detail || "Could not start the payment.");
+    await loadCheckout();
+    const rz = new Razorpay({
+      key: o.key_id, amount: o.amount, currency: o.currency, order_id: o.order_id,
+      name: "Samarth Saathi", description: `${plan === "yearly" ? "Yearly" : "Monthly"} plan for ${typed.elder_name}`,
+      prefill: o.prefill, theme: { color: "#761f58" },
+      handler: (resp) => verify(resp),
+      modal: { ondismiss: () => form("Payment was cancelled. You can try again.") },
+    });
+    rz.on("payment.failed", (e) => form("Payment failed: " + ((e.error && e.error.description) || "please try again.")));
+    rz.open();
+  } catch (e) { form(e.message); }
+}
+
+async function verify(resp) {
+  view.innerHTML = `<div class="panel done"><h2>Confirming your payment…</h2><p>This takes a few seconds.</p></div>`;
+  try {
+    const r = await fetch("/api/billing/verify", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(resp) });
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.detail || "We could not confirm the payment.");
+    success(d);
+  } catch (e) { form(e.message + " If money was taken, write to us with your payment ID: " + (resp.razorpay_payment_id || "")); }
+}
+
+function success(d) {
+  const first = (d.elder_name || "").split(" ")[0];
+  const hindi = d.elder_language !== "en";
+  const msg = hindi
+    ? `नमस्ते ${first} जी! मैंने आपके लिए समर्थ साथी शुरू किया है। फ़ोन पर Saathi ऐप खोलें और यह कोड डालें: ${d.saathi_code}. आपके केयर मैनेजर ${d.coordinator_name} हैं।`
+    : `Hello ${first}! I've set up Samarth Saathi for you. Open the Saathi app on your phone and enter this code: ${d.saathi_code}. Your Care Manager is ${d.coordinator_name}.`;
+  const initials = (d.coordinator_name || "?").split(" ").map((w) => w[0]).slice(0, 2).join("");
+  view.innerHTML = `
+    <div class="progress"><span class="on">1 · Plan</span><span class="on">2 · Your parent</span><span class="on">3 · You</span><span class="on">4 · Pay</span><span class="on">5 · Saathi code</span></div>
+    <div class="panel done" role="status">
+      <img src="/static/illustrations/family_phone.svg" alt="" width="360" height="300">
+      <h2>Saathi is ready for ${esc(first)}!</h2>
+      <p class="lead">Your ${d.plan === "yearly" ? "yearly" : "monthly"} plan is active until <b style="color:var(--ink)">${esc(new Date(d.valid_until + "T12:00:00").toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" }))}</b>.</p>
+      <div class="codebig"><span>${esc(first)}'s Saathi code</span><b id="code">${esc(d.saathi_code)}</b>
+        <button class="pill ghost" id="copy">Copy code</button>
+        <a class="pill saffron" href="https://wa.me/?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener">Send on WhatsApp</a></div>
+      <div class="cm"><span class="av">${esc(initials)}</span><div><span class="fine">Their Samarth Care Manager</span><b>${esc(d.coordinator_name)}</b></div>
+        ${d.coordinator_phone ? `<a class="pill ghost" href="tel:${esc(String(d.coordinator_phone).replace(/\s/g, ""))}">Call</a>` : ""}</div>
+      <ol class="next">
+        <li><b>Install the Saathi app</b> on ${esc(first)}'s phone.</li>
+        <li>Choose ${hindi ? "<b>हिंदी</b>" : "<b>English</b>"}, enter their name, then type the Saathi code <b>${esc(d.saathi_code)}</b> where it asks for the code.</li>
+        <li>Allow the microphone and notifications. ${esc(d.coordinator_name)} will call within a day to finish the setup with you.</li>
+      </ol>
+      <p class="fine" style="margin-top:16px">The code works on one phone. Keep it safe until it's entered.</p>
+      <p style="margin-top:12px"><b>Basic phone, or no smartphone?</b> <button class="pill ghost" id="byphone">Set up daily calls instead</button></p>
+      <a class="pill plum lg" href="/" style="margin-top:18px">Back to Samarth</a></div>`;
+  $("#copy").onclick = async () => { try { await navigator.clipboard.writeText(d.saathi_code); $("#copy").textContent = "Copied"; } catch (e) {} };
+  $("#byphone").onclick = () => phoneForm({ code: d.saathi_code, name: d.elder_name, language: d.elder_language });
+}
+
+start();
+})();
+</script>
+</body>
+</html>

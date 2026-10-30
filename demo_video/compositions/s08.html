@@ -1,0 +1,43 @@
+<template>
+  <style>
+    @font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_semibold.ttf") format("truetype"); font-weight: 600; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_bold.ttf") format("truetype"); font-weight: 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Mukta", sans-serif; color: #fff; }
+    #root * { box-sizing: border-box; }
+    #s08-wrap { position: absolute; inset: 0; }
+    .bg { position: absolute; inset: 0; background: radial-gradient(120% 90% at 20% 0%, #10594f 0%, #0a2a26 55%, #061b18 100%); }
+    .frame { position: absolute; overflow: hidden; border-radius: 18px; background: #f4f6f5; box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.08); }
+    .bar { position: absolute; left: 0; right: 0; top: 0; height: 34px; background: #e9eeec; display: flex; align-items: center; gap: 8px; padding-left: 16px; z-index: 3; }
+    .bar i { width: 11px; height: 11px; border-radius: 50%; background: #c9d2ce; }
+    .bar b { margin-left: 18px; font: 600 15px "Mukta"; color: #5f6e69; }
+    .view { position: absolute; left: 0; right: 0; bottom: 0; overflow: hidden; }
+    .cam { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    .cam img { display: block; }
+    .spot { position: absolute; border-radius: 12px; border: 3px solid #f5b03c; box-shadow: 0 0 0 4000px rgba(4,22,19,.42), 0 0 24px rgba(245,176,60,.55); opacity: 0; }
+    .chip { position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 10px 22px 10px 16px; border-radius: 999px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); font: 600 26px "Mukta"; color: #fff; }
+    .kicker { font: 700 28px "Mukta"; letter-spacing: .14em; text-transform: uppercase; color: #8fd9c9; }
+    .phone { position: absolute; border-radius: 52px; background: #0b0f0e; padding: 13px; box-shadow: 0 30px 70px rgba(0,0,0,.5), 0 0 0 2px rgba(255,255,255,.08); }
+    .phone .scr { position: relative; width: 100%; height: 100%; border-radius: 40px; overflow: hidden; background: #fff; }
+    .phone .scr img { position: absolute; left: 0; top: 0; width: 100%; }
+    .pt { display: flex; align-items: flex-start; gap: 18px; font: 600 38px/1.25 "Mukta"; color: #fff; }
+    .pt .ic { flex: none; width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center; background: rgba(143,217,201,.14); color: #8fd9c9; }
+    .pt small { display: block; font: 400 28px/1.35 "Mukta"; color: #b9d6cf; margin-top: 4px; }
+    
+  </style>
+  <div id="root" data-composition-id="s08" data-width="1920" data-height="1080">
+    <div id="s08-wrap"><div class="bg"></div><div class="frame" id="s08-frame" style="left:210px;top:40px;width:1500px;height:878px"><div class="bar"><i></i><i></i><i></i><b>Care portal · Health readings</b></div><div class="view" style="top:34px;height:844px"><div class="cam" id="s08-cam" style="width:1500px;height:844px"><img src="assets/shots/readings.png" width="1500" height="844"><div class="spot" id="s08-sp1" style="left:663px;top:581px;width:146px;height:127px"></div><div class="spot" id="s08-sp2" style="left:1082px;top:581px;width:146px;height:127px"></div></div></div></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s08-wrap", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, 0);
+    tl.fromTo("#s08-frame", { y: 40, scale: 0.97 }, { y: 0, scale: 1, duration: 0.9, ease: "power3.out" }, 0);
+    tl.to("#s08-cam", { x: -750.0, y: -422.0, scale: 1.5, duration: 1.1, ease: "power2.inOut" }, 0.60);
+    tl.fromTo("#s08-sp1", { opacity: 0, scale: 1.04 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power2.out" }, 3.42);
+    tl.to("#s08-sp1", { opacity: 0, duration: 0.3, ease: "power2.in" }, 6.84);
+    tl.fromTo("#s08-sp2", { opacity: 0, scale: 1.04 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power2.out" }, 10.18);
+    tl.to("#s08-sp2", { opacity: 0, duration: 0.3, ease: "power2.in" }, 13.85);
+    tl.to("#s08-wrap", { opacity: 0, duration: 0.35, ease: "power2.in" }, 14.13);
+    window.__timelines["s08"] = tl;
+  </script>
+</template>

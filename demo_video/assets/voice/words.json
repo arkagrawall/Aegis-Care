@@ -1,0 +1,2589 @@
+[
+ {
+  "id": "s01",
+  "file": "assets/voice/s01.mp3",
+  "duration": 19.104,
+  "words": [
+   {
+    "text": "Across",
+    "start": 0.1,
+    "end": 0.687
+   },
+   {
+    "text": "India",
+    "start": 0.7,
+    "end": 1.159
+   },
+   {
+    "text": "millions",
+    "start": 1.325,
+    "end": 1.835
+   },
+   {
+    "text": "of",
+    "start": 1.847,
+    "end": 2.039
+   },
+   {
+    "text": "older",
+    "start": 2.052,
+    "end": 2.421
+   },
+   {
+    "text": "people",
+    "start": 2.434,
+    "end": 2.791
+   },
+   {
+    "text": "live",
+    "start": 2.804,
+    "end": 3.11
+   },
+   {
+    "text": "on",
+    "start": 3.123,
+    "end": 3.289
+   },
+   {
+    "text": "their",
+    "start": 3.302,
+    "end": 3.544
+   },
+   {
+    "text": "own",
+    "start": 3.557,
+    "end": 3.773
+   },
+   {
+    "text": "at",
+    "start": 3.786,
+    "end": 3.965
+   },
+   {
+    "text": "home",
+    "start": 3.978,
+    "end": 4.36
+   },
+   {
+    "text": "When",
+    "start": 5.241,
+    "end": 5.535
+   },
+   {
+    "text": "their",
+    "start": 5.547,
+    "end": 5.713
+   },
+   {
+    "text": "health",
+    "start": 5.726,
+    "end": 6.019
+   },
+   {
+    "text": "starts",
+    "start": 6.032,
+    "end": 6.504
+   },
+   {
+    "text": "to",
+    "start": 6.517,
+    "end": 6.632
+   },
+   {
+    "text": "slip",
+    "start": 6.644,
+    "end": 7.065
+   },
+   {
+    "text": "the",
+    "start": 7.193,
+    "end": 7.359
+   },
+   {
+    "text": "warning",
+    "start": 7.371,
+    "end": 7.78
+   },
+   {
+    "text": "signs",
+    "start": 7.792,
+    "end": 8.251
+   },
+   {
+    "text": "often",
+    "start": 8.264,
+    "end": 8.647
+   },
+   {
+    "text": "appear",
+    "start": 8.66,
+    "end": 9.068
+   },
+   {
+    "text": "days",
+    "start": 9.081,
+    "end": 9.412
+   },
+   {
+    "text": "before",
+    "start": 9.425,
+    "end": 9.91
+   },
+   {
+    "text": "an",
+    "start": 9.922,
+    "end": 10.063
+   },
+   {
+    "text": "emergency",
+    "start": 10.075,
+    "end": 10.892
+   },
+   {
+    "text": "fewer",
+    "start": 11.058,
+    "end": 11.428
+   },
+   {
+    "text": "steps",
+    "start": 11.44,
+    "end": 11.963
+   },
+   {
+    "text": "poorer",
+    "start": 12.116,
+    "end": 12.461
+   },
+   {
+    "text": "sleep",
+    "start": 12.473,
+    "end": 12.92
+   },
+   {
+    "text": "a",
+    "start": 13.149,
+    "end": 13.264
+   },
+   {
+    "text": "missed",
+    "start": 13.277,
+    "end": 13.647
+   },
+   {
+    "text": "medicine",
+    "start": 13.66,
+    "end": 14.272
+   },
+   {
+    "text": "But",
+    "start": 15.152,
+    "end": 15.445
+   },
+   {
+    "text": "no",
+    "start": 15.458,
+    "end": 15.7
+   },
+   {
+    "text": "one",
+    "start": 15.713,
+    "end": 15.892
+   },
+   {
+    "text": "is",
+    "start": 15.905,
+    "end": 16.07
+   },
+   {
+    "text": "watching",
+    "start": 16.083,
+    "end": 16.542
+   },
+   {
+    "text": "closely",
+    "start": 16.555,
+    "end": 17.116
+   },
+   {
+    "text": "enough",
+    "start": 17.129,
+    "end": 17.473
+   },
+   {
+    "text": "to",
+    "start": 17.486,
+    "end": 17.614
+   },
+   {
+    "text": "notice",
+    "start": 17.627,
+    "end": 18.213
+   }
+  ]
+ },
+ {
+  "id": "s02",
+  "file": "assets/voice/s02.mp3",
+  "duration": 13.512,
+  "words": [
+   {
+    "text": "Aegis",
+    "start": 0.1,
+    "end": 0.597
+   },
+   {
+    "text": "Saathi",
+    "start": 0.61,
+    "end": 1.146
+   },
+   {
+    "text": "is",
+    "start": 1.159,
+    "end": 1.337
+   },
+   {
+    "text": "an",
+    "start": 1.35,
+    "end": 1.567
+   },
+   {
+    "text": "early-warning",
+    "start": 1.58,
+    "end": 2.268
+   },
+   {
+    "text": "system",
+    "start": 2.281,
+    "end": 2.715
+   },
+   {
+    "text": "for",
+    "start": 2.728,
+    "end": 2.881
+   },
+   {
+    "text": "seniors",
+    "start": 2.893,
+    "end": 3.365
+   },
+   {
+    "text": "living",
+    "start": 3.378,
+    "end": 3.735
+   },
+   {
+    "text": "at",
+    "start": 3.748,
+    "end": 3.914
+   },
+   {
+    "text": "home",
+    "start": 3.927,
+    "end": 4.322
+   },
+   {
+    "text": "It",
+    "start": 5.216,
+    "end": 5.433
+   },
+   {
+    "text": "connects",
+    "start": 5.445,
+    "end": 5.905
+   },
+   {
+    "text": "the",
+    "start": 5.917,
+    "end": 6.032
+   },
+   {
+    "text": "senior's",
+    "start": 6.045,
+    "end": 6.593
+   },
+   {
+    "text": "phone",
+    "start": 6.606,
+    "end": 7.04
+   },
+   {
+    "text": "their",
+    "start": 7.231,
+    "end": 7.461
+   },
+   {
+    "text": "care",
+    "start": 7.473,
+    "end": 7.78
+   },
+   {
+    "text": "coordinator",
+    "start": 7.792,
+    "end": 8.519
+   },
+   {
+    "text": "and",
+    "start": 8.66,
+    "end": 8.902
+   },
+   {
+    "text": "their",
+    "start": 8.915,
+    "end": 9.081
+   },
+   {
+    "text": "family",
+    "start": 9.093,
+    "end": 9.718
+   },
+   {
+    "text": "so",
+    "start": 9.846,
+    "end": 10.063
+   },
+   {
+    "text": "the",
+    "start": 10.075,
+    "end": 10.178
+   },
+   {
+    "text": "right",
+    "start": 10.19,
+    "end": 10.573
+   },
+   {
+    "text": "person",
+    "start": 10.586,
+    "end": 11.007
+   },
+   {
+    "text": "knows",
+    "start": 11.019,
+    "end": 11.364
+   },
+   {
+    "text": "who",
+    "start": 11.377,
+    "end": 11.568
+   },
+   {
+    "text": "needs",
+    "start": 11.581,
+    "end": 11.912
+   },
+   {
+    "text": "care",
+    "start": 11.925,
+    "end": 12.206
+   },
+   {
+    "text": "today",
+    "start": 12.218,
+    "end": 12.614
+   }
+  ]
+ },
+ {
+  "id": "s03",
+  "file": "assets/voice/s03.mp3",
+  "duration": 10.368,
+  "words": [
+   {
+    "text": "It",
+    "start": 0.1,
+    "end": 0.317
+   },
+   {
+    "text": "starts",
+    "start": 0.33,
+    "end": 0.814
+   },
+   {
+    "text": "with",
+    "start": 0.827,
+    "end": 0.98
+   },
+   {
+    "text": "a",
+    "start": 0.993,
+    "end": 1.044
+   },
+   {
+    "text": "simple",
+    "start": 1.057,
+    "end": 1.503
+   },
+   {
+    "text": "phone",
+    "start": 1.516,
+    "end": 1.886
+   },
+   {
+    "text": "app",
+    "start": 1.898,
+    "end": 2.154
+   },
+   {
+    "text": "for",
+    "start": 2.166,
+    "end": 2.345
+   },
+   {
+    "text": "the",
+    "start": 2.358,
+    "end": 2.447
+   },
+   {
+    "text": "senior",
+    "start": 2.46,
+    "end": 3.072
+   },
+   {
+    "text": "Big",
+    "start": 3.966,
+    "end": 4.285
+   },
+   {
+    "text": "buttons",
+    "start": 4.297,
+    "end": 4.846
+   },
+   {
+    "text": "plain",
+    "start": 4.973,
+    "end": 5.292
+   },
+   {
+    "text": "words",
+    "start": 5.305,
+    "end": 5.764
+   },
+   {
+    "text": "and",
+    "start": 5.892,
+    "end": 6.096
+   },
+   {
+    "text": "the",
+    "start": 6.109,
+    "end": 6.185
+   },
+   {
+    "text": "whole",
+    "start": 6.198,
+    "end": 6.453
+   },
+   {
+    "text": "app",
+    "start": 6.466,
+    "end": 6.619
+   },
+   {
+    "text": "switches",
+    "start": 6.632,
+    "end": 7.104
+   },
+   {
+    "text": "between",
+    "start": 7.116,
+    "end": 7.486
+   },
+   {
+    "text": "Hindi",
+    "start": 7.499,
+    "end": 7.971
+   },
+   {
+    "text": "and",
+    "start": 7.984,
+    "end": 8.175
+   },
+   {
+    "text": "English",
+    "start": 8.188,
+    "end": 8.596
+   },
+   {
+    "text": "with",
+    "start": 8.609,
+    "end": 8.813
+   },
+   {
+    "text": "one",
+    "start": 8.825,
+    "end": 9.093
+   },
+   {
+    "text": "tap",
+    "start": 9.106,
+    "end": 9.489
+   }
+  ]
+ },
+ {
+  "id": "s04",
+  "file": "assets/voice/s04.mp3",
+  "duration": 9.48,
+  "words": [
+   {
+    "text": "Each",
+    "start": 0.1,
+    "end": 0.47
+   },
+   {
+    "text": "day",
+    "start": 0.483,
+    "end": 0.687
+   },
+   {
+    "text": "they",
+    "start": 0.7,
+    "end": 0.827
+   },
+   {
+    "text": "tell",
+    "start": 0.84,
+    "end": 1.095
+   },
+   {
+    "text": "Saathi",
+    "start": 1.108,
+    "end": 1.567
+   },
+   {
+    "text": "how",
+    "start": 1.58,
+    "end": 1.847
+   },
+   {
+    "text": "they",
+    "start": 1.86,
+    "end": 2.026
+   },
+   {
+    "text": "feel",
+    "start": 2.039,
+    "end": 2.447
+   },
+   {
+    "text": "and",
+    "start": 2.46,
+    "end": 2.651
+   },
+   {
+    "text": "whether",
+    "start": 2.664,
+    "end": 2.944
+   },
+   {
+    "text": "they",
+    "start": 2.957,
+    "end": 3.085
+   },
+   {
+    "text": "took",
+    "start": 3.097,
+    "end": 3.314
+   },
+   {
+    "text": "their",
+    "start": 3.327,
+    "end": 3.557
+   },
+   {
+    "text": "medicine",
+    "start": 3.569,
+    "end": 4.156
+   },
+   {
+    "text": "One",
+    "start": 5.037,
+    "end": 5.433
+   },
+   {
+    "text": "tap",
+    "start": 5.445,
+    "end": 5.866
+   },
+   {
+    "text": "and",
+    "start": 6.032,
+    "end": 6.262
+   },
+   {
+    "text": "their",
+    "start": 6.274,
+    "end": 6.44
+   },
+   {
+    "text": "care",
+    "start": 6.453,
+    "end": 6.695
+   },
+   {
+    "text": "manager",
+    "start": 6.708,
+    "end": 7.295
+   },
+   {
+    "text": "is",
+    "start": 7.308,
+    "end": 7.448
+   },
+   {
+    "text": "told",
+    "start": 7.461,
+    "end": 7.818
+   },
+   {
+    "text": "right",
+    "start": 7.831,
+    "end": 8.137
+   },
+   {
+    "text": "away",
+    "start": 8.149,
+    "end": 8.583
+   }
+  ]
+ },
+ {
+  "id": "s05",
+  "file": "assets/voice/s05.mp3",
+  "duration": 16.896,
+  "words": [
+   {
+    "text": "Saathi",
+    "start": 0.1,
+    "end": 0.75
+   },
+   {
+    "text": "also",
+    "start": 0.763,
+    "end": 1.197
+   },
+   {
+    "text": "calls",
+    "start": 1.21,
+    "end": 1.592
+   },
+   {
+    "text": "them",
+    "start": 1.605,
+    "end": 1.975
+   },
+   {
+    "text": "The",
+    "start": 2.856,
+    "end": 3.035
+   },
+   {
+    "text": "check-in",
+    "start": 3.047,
+    "end": 3.443
+   },
+   {
+    "text": "call",
+    "start": 3.456,
+    "end": 3.8
+   },
+   {
+    "text": "asks",
+    "start": 3.813,
+    "end": 4.234
+   },
+   {
+    "text": "about",
+    "start": 4.246,
+    "end": 4.604
+   },
+   {
+    "text": "their",
+    "start": 4.616,
+    "end": 4.795
+   },
+   {
+    "text": "health",
+    "start": 4.808,
+    "end": 5.203
+   },
+   {
+    "text": "medicine",
+    "start": 5.382,
+    "end": 6.032
+   },
+   {
+    "text": "sleep",
+    "start": 6.211,
+    "end": 6.606
+   },
+   {
+    "text": "and",
+    "start": 6.619,
+    "end": 6.759
+   },
+   {
+    "text": "appetite",
+    "start": 6.772,
+    "end": 7.422
+   },
+   {
+    "text": "and",
+    "start": 7.575,
+    "end": 7.818
+   },
+   {
+    "text": "understands",
+    "start": 7.831,
+    "end": 8.609
+   },
+   {
+    "text": "everyday",
+    "start": 8.621,
+    "end": 9.195
+   },
+   {
+    "text": "answers",
+    "start": 9.208,
+    "end": 9.935
+   },
+   {
+    "text": "Here",
+    "start": 10.815,
+    "end": 11.338
+   },
+   {
+    "text": "Kamla",
+    "start": 11.555,
+    "end": 11.938
+   },
+   {
+    "text": "says",
+    "start": 11.95,
+    "end": 12.308
+   },
+   {
+    "text": "she",
+    "start": 12.32,
+    "end": 12.473
+   },
+   {
+    "text": "feels",
+    "start": 12.486,
+    "end": 12.869
+   },
+   {
+    "text": "dizzy",
+    "start": 12.882,
+    "end": 13.264
+   },
+   {
+    "text": "and",
+    "start": 13.277,
+    "end": 13.481
+   },
+   {
+    "text": "weak",
+    "start": 13.494,
+    "end": 13.877
+   },
+   {
+    "text": "and",
+    "start": 14.042,
+    "end": 14.323
+   },
+   {
+    "text": "slept",
+    "start": 14.336,
+    "end": 14.769
+   },
+   {
+    "text": "only",
+    "start": 14.782,
+    "end": 15.127
+   },
+   {
+    "text": "four",
+    "start": 15.139,
+    "end": 15.522
+   },
+   {
+    "text": "hours",
+    "start": 15.535,
+    "end": 16.007
+   }
+  ]
+ },
+ {
+  "id": "s06",
+  "file": "assets/voice/s06.mp3",
+  "duration": 14.952,
+  "words": [
+   {
+    "text": "Now",
+    "start": 0.1,
+    "end": 0.457
+   },
+   {
+    "text": "the",
+    "start": 0.47,
+    "end": 0.585
+   },
+   {
+    "text": "care",
+    "start": 0.597,
+    "end": 0.904
+   },
+   {
+    "text": "coordinator's",
+    "start": 0.916,
+    "end": 1.669
+   },
+   {
+    "text": "view",
+    "start": 1.682,
+    "end": 2.026
+   },
+   {
+    "text": "The",
+    "start": 2.907,
+    "end": 3.098
+   },
+   {
+    "text": "Today",
+    "start": 3.111,
+    "end": 3.417
+   },
+   {
+    "text": "list",
+    "start": 3.43,
+    "end": 3.736
+   },
+   {
+    "text": "puts",
+    "start": 3.749,
+    "end": 4.081
+   },
+   {
+    "text": "everyone",
+    "start": 4.093,
+    "end": 4.68
+   },
+   {
+    "text": "in",
+    "start": 4.693,
+    "end": 4.833
+   },
+   {
+    "text": "order",
+    "start": 4.846,
+    "end": 5.203
+   },
+   {
+    "text": "of",
+    "start": 5.216,
+    "end": 5.42
+   },
+   {
+    "text": "urgency",
+    "start": 5.433,
+    "end": 6.109
+   },
+   {
+    "text": "urgent",
+    "start": 6.313,
+    "end": 6.887
+   },
+   {
+    "text": "needs",
+    "start": 7.04,
+    "end": 7.422
+   },
+   {
+    "text": "attention",
+    "start": 7.435,
+    "end": 8.111
+   },
+   {
+    "text": "watch",
+    "start": 8.226,
+    "end": 8.774
+   },
+   {
+    "text": "and",
+    "start": 8.953,
+    "end": 9.246
+   },
+   {
+    "text": "stable",
+    "start": 9.259,
+    "end": 9.795
+   },
+   {
+    "text": "Each",
+    "start": 10.675,
+    "end": 11.032
+   },
+   {
+    "text": "person",
+    "start": 11.045,
+    "end": 11.491
+   },
+   {
+    "text": "comes",
+    "start": 11.504,
+    "end": 11.887
+   },
+   {
+    "text": "with",
+    "start": 11.899,
+    "end": 12.027
+   },
+   {
+    "text": "the",
+    "start": 12.04,
+    "end": 12.167
+   },
+   {
+    "text": "one",
+    "start": 12.18,
+    "end": 12.473
+   },
+   {
+    "text": "reason",
+    "start": 12.486,
+    "end": 12.907
+   },
+   {
+    "text": "they",
+    "start": 12.92,
+    "end": 13.073
+   },
+   {
+    "text": "are",
+    "start": 13.086,
+    "end": 13.328
+   },
+   {
+    "text": "on",
+    "start": 13.341,
+    "end": 13.494
+   },
+   {
+    "text": "the",
+    "start": 13.507,
+    "end": 13.57
+   },
+   {
+    "text": "list",
+    "start": 13.583,
+    "end": 14.055
+   }
+  ]
+ },
+ {
+  "id": "s07",
+  "file": "assets/voice/s07.mp3",
+  "duration": 17.064,
+  "words": [
+   {
+    "text": "Open",
+    "start": 0.1,
+    "end": 0.534
+   },
+   {
+    "text": "a",
+    "start": 0.546,
+    "end": 0.597
+   },
+   {
+    "text": "record",
+    "start": 0.61,
+    "end": 1.197
+   },
+   {
+    "text": "and",
+    "start": 1.363,
+    "end": 1.592
+   },
+   {
+    "text": "Saathi",
+    "start": 1.605,
+    "end": 2.09
+   },
+   {
+    "text": "explains",
+    "start": 2.103,
+    "end": 2.702
+   },
+   {
+    "text": "itself",
+    "start": 2.715,
+    "end": 3.365
+   },
+   {
+    "text": "Sita's",
+    "start": 4.246,
+    "end": 4.897
+   },
+   {
+    "text": "steps",
+    "start": 4.91,
+    "end": 5.318
+   },
+   {
+    "text": "are",
+    "start": 5.331,
+    "end": 5.573
+   },
+   {
+    "text": "eighty-five",
+    "start": 5.586,
+    "end": 6.211
+   },
+   {
+    "text": "percent",
+    "start": 6.223,
+    "end": 6.708
+   },
+   {
+    "text": "below",
+    "start": 6.721,
+    "end": 7.104
+   },
+   {
+    "text": "her",
+    "start": 7.116,
+    "end": 7.346
+   },
+   {
+    "text": "own",
+    "start": 7.359,
+    "end": 7.588
+   },
+   {
+    "text": "normal",
+    "start": 7.601,
+    "end": 8.137
+   },
+   {
+    "text": "her",
+    "start": 8.341,
+    "end": 8.507
+   },
+   {
+    "text": "activity",
+    "start": 8.519,
+    "end": 9.144
+   },
+   {
+    "text": "has",
+    "start": 9.157,
+    "end": 9.399
+   },
+   {
+    "text": "fallen",
+    "start": 9.412,
+    "end": 9.808
+   },
+   {
+    "text": "for",
+    "start": 9.82,
+    "end": 9.999
+   },
+   {
+    "text": "five",
+    "start": 10.012,
+    "end": 10.369
+   },
+   {
+    "text": "days",
+    "start": 10.382,
+    "end": 10.803
+   },
+   {
+    "text": "and",
+    "start": 11.019,
+    "end": 11.3
+   },
+   {
+    "text": "in",
+    "start": 11.313,
+    "end": 11.428
+   },
+   {
+    "text": "a",
+    "start": 11.44,
+    "end": 11.491
+   },
+   {
+    "text": "call",
+    "start": 11.504,
+    "end": 11.836
+   },
+   {
+    "text": "she",
+    "start": 11.848,
+    "end": 12.014
+   },
+   {
+    "text": "mentioned",
+    "start": 12.027,
+    "end": 12.55
+   },
+   {
+    "text": "pain",
+    "start": 12.563,
+    "end": 12.996
+   },
+   {
+    "text": "Each",
+    "start": 13.864,
+    "end": 14.221
+   },
+   {
+    "text": "reason",
+    "start": 14.234,
+    "end": 14.616
+   },
+   {
+    "text": "says",
+    "start": 14.629,
+    "end": 15.024
+   },
+   {
+    "text": "where",
+    "start": 15.037,
+    "end": 15.267
+   },
+   {
+    "text": "it",
+    "start": 15.28,
+    "end": 15.407
+   },
+   {
+    "text": "came",
+    "start": 15.42,
+    "end": 15.713
+   },
+   {
+    "text": "from",
+    "start": 15.726,
+    "end": 16.16
+   }
+  ]
+ },
+ {
+  "id": "s08",
+  "file": "assets/voice/s08.mp3",
+  "duration": 13.248,
+  "words": [
+   {
+    "text": "Readings",
+    "start": 0.1,
+    "end": 0.7
+   },
+   {
+    "text": "are",
+    "start": 0.712,
+    "end": 0.84
+   },
+   {
+    "text": "compared",
+    "start": 0.853,
+    "end": 1.414
+   },
+   {
+    "text": "with",
+    "start": 1.427,
+    "end": 1.656
+   },
+   {
+    "text": "each",
+    "start": 1.669,
+    "end": 1.924
+   },
+   {
+    "text": "person's",
+    "start": 1.937,
+    "end": 2.536
+   },
+   {
+    "text": "own",
+    "start": 2.549,
+    "end": 2.804
+   },
+   {
+    "text": "fourteen-day",
+    "start": 2.817,
+    "end": 3.467
+   },
+   {
+    "text": "average",
+    "start": 3.48,
+    "end": 4.041
+   },
+   {
+    "text": "not",
+    "start": 4.207,
+    "end": 4.5
+   },
+   {
+    "text": "a",
+    "start": 4.513,
+    "end": 4.59
+   },
+   {
+    "text": "one-size-fits-all",
+    "start": 4.603,
+    "end": 5.699
+   },
+   {
+    "text": "rule",
+    "start": 5.712,
+    "end": 6.12
+   },
+   {
+    "text": "with",
+    "start": 6.324,
+    "end": 6.529
+   },
+   {
+    "text": "trends",
+    "start": 6.541,
+    "end": 6.924
+   },
+   {
+    "text": "for",
+    "start": 6.937,
+    "end": 7.09
+   },
+   {
+    "text": "steps",
+    "start": 7.103,
+    "end": 7.638
+   },
+   {
+    "text": "heart",
+    "start": 7.817,
+    "end": 8.161
+   },
+   {
+    "text": "rate",
+    "start": 8.174,
+    "end": 8.557
+   },
+   {
+    "text": "oxygen",
+    "start": 8.761,
+    "end": 9.437
+   },
+   {
+    "text": "blood",
+    "start": 9.577,
+    "end": 9.934
+   },
+   {
+    "text": "pressure",
+    "start": 9.947,
+    "end": 10.47
+   },
+   {
+    "text": "sugar",
+    "start": 10.597,
+    "end": 11.12
+   },
+   {
+    "text": "weight",
+    "start": 11.35,
+    "end": 11.694
+   },
+   {
+    "text": "and",
+    "start": 11.707,
+    "end": 11.898
+   },
+   {
+    "text": "sleep",
+    "start": 11.911,
+    "end": 12.358
+   }
+  ]
+ },
+ {
+  "id": "s09",
+  "file": "assets/voice/s09.mp3",
+  "duration": 10.872,
+  "words": [
+   {
+    "text": "Every",
+    "start": 0.1,
+    "end": 0.534
+   },
+   {
+    "text": "check-in",
+    "start": 0.546,
+    "end": 0.967
+   },
+   {
+    "text": "call",
+    "start": 0.98,
+    "end": 1.273
+   },
+   {
+    "text": "lands",
+    "start": 1.286,
+    "end": 1.707
+   },
+   {
+    "text": "in",
+    "start": 1.72,
+    "end": 1.835
+   },
+   {
+    "text": "the",
+    "start": 1.847,
+    "end": 1.924
+   },
+   {
+    "text": "record",
+    "start": 1.937,
+    "end": 2.523
+   },
+   {
+    "text": "The",
+    "start": 3.417,
+    "end": 3.609
+   },
+   {
+    "text": "coordinator",
+    "start": 3.621,
+    "end": 4.31
+   },
+   {
+    "text": "sees",
+    "start": 4.323,
+    "end": 4.667
+   },
+   {
+    "text": "what",
+    "start": 4.68,
+    "end": 4.91
+   },
+   {
+    "text": "Saathi",
+    "start": 4.922,
+    "end": 5.369
+   },
+   {
+    "text": "heard",
+    "start": 5.382,
+    "end": 5.764
+   },
+   {
+    "text": "the",
+    "start": 5.943,
+    "end": 6.083
+   },
+   {
+    "text": "full",
+    "start": 6.096,
+    "end": 6.351
+   },
+   {
+    "text": "conversation",
+    "start": 6.364,
+    "end": 7.206
+   },
+   {
+    "text": "and",
+    "start": 7.346,
+    "end": 7.575
+   },
+   {
+    "text": "a",
+    "start": 7.588,
+    "end": 7.627
+   },
+   {
+    "text": "flag",
+    "start": 7.639,
+    "end": 8.035
+   },
+   {
+    "text": "when",
+    "start": 8.047,
+    "end": 8.226
+   },
+   {
+    "text": "it",
+    "start": 8.239,
+    "end": 8.354
+   },
+   {
+    "text": "thinks",
+    "start": 8.366,
+    "end": 8.749
+   },
+   {
+    "text": "they",
+    "start": 8.762,
+    "end": 8.953
+   },
+   {
+    "text": "should",
+    "start": 8.966,
+    "end": 9.208
+   },
+   {
+    "text": "follow",
+    "start": 9.221,
+    "end": 9.642
+   },
+   {
+    "text": "up",
+    "start": 9.655,
+    "end": 9.973
+   }
+  ]
+ },
+ {
+  "id": "s10",
+  "file": "assets/voice/s10.mp3",
+  "duration": 15.624,
+  "words": [
+   {
+    "text": "Emergencies",
+    "start": 0.1,
+    "end": 1.044
+   },
+   {
+    "text": "come",
+    "start": 1.057,
+    "end": 1.35
+   },
+   {
+    "text": "first",
+    "start": 1.363,
+    "end": 1.937
+   },
+   {
+    "text": "When",
+    "start": 2.831,
+    "end": 3.124
+   },
+   {
+    "text": "a",
+    "start": 3.137,
+    "end": 3.201
+   },
+   {
+    "text": "senior",
+    "start": 3.213,
+    "end": 3.711
+   },
+   {
+    "text": "holds",
+    "start": 3.723,
+    "end": 4.106
+   },
+   {
+    "text": "the",
+    "start": 4.119,
+    "end": 4.297
+   },
+   {
+    "text": "SOS",
+    "start": 4.31,
+    "end": 4.897
+   },
+   {
+    "text": "button",
+    "start": 4.91,
+    "end": 5.382
+   },
+   {
+    "text": "the",
+    "start": 5.522,
+    "end": 5.688
+   },
+   {
+    "text": "alert",
+    "start": 5.7,
+    "end": 6.083
+   },
+   {
+    "text": "reaches",
+    "start": 6.096,
+    "end": 6.542
+   },
+   {
+    "text": "the",
+    "start": 6.555,
+    "end": 6.644
+   },
+   {
+    "text": "coordinator",
+    "start": 6.657,
+    "end": 7.397
+   },
+   {
+    "text": "in",
+    "start": 7.41,
+    "end": 7.524
+   },
+   {
+    "text": "seconds",
+    "start": 7.537,
+    "end": 8.111
+   },
+   {
+    "text": "and",
+    "start": 8.239,
+    "end": 8.507
+   },
+   {
+    "text": "stays",
+    "start": 8.519,
+    "end": 8.953
+   },
+   {
+    "text": "at",
+    "start": 8.966,
+    "end": 9.093
+   },
+   {
+    "text": "the",
+    "start": 9.106,
+    "end": 9.183
+   },
+   {
+    "text": "top",
+    "start": 9.195,
+    "end": 9.514
+   },
+   {
+    "text": "of",
+    "start": 9.527,
+    "end": 9.769
+   },
+   {
+    "text": "every",
+    "start": 9.782,
+    "end": 10.152
+   },
+   {
+    "text": "page",
+    "start": 10.165,
+    "end": 10.637
+   },
+   {
+    "text": "until",
+    "start": 10.649,
+    "end": 11.058
+   },
+   {
+    "text": "someone",
+    "start": 11.07,
+    "end": 11.568
+   },
+   {
+    "text": "confirms",
+    "start": 11.581,
+    "end": 12.167
+   },
+   {
+    "text": "it",
+    "start": 12.18,
+    "end": 12.435
+   },
+   {
+    "text": "or",
+    "start": 12.678,
+    "end": 12.882
+   },
+   {
+    "text": "marks",
+    "start": 12.894,
+    "end": 13.315
+   },
+   {
+    "text": "it",
+    "start": 13.328,
+    "end": 13.558
+   },
+   {
+    "text": "as",
+    "start": 13.57,
+    "end": 13.774
+   },
+   {
+    "text": "a",
+    "start": 13.787,
+    "end": 13.838
+   },
+   {
+    "text": "false",
+    "start": 13.851,
+    "end": 14.246
+   },
+   {
+    "text": "alarm",
+    "start": 14.259,
+    "end": 14.731
+   }
+  ]
+ },
+ {
+  "id": "s11",
+  "file": "assets/voice/s11.mp3",
+  "duration": 17.112,
+  "words": [
+   {
+    "text": "The",
+    "start": 0.1,
+    "end": 0.304
+   },
+   {
+    "text": "phone",
+    "start": 0.317,
+    "end": 0.648
+   },
+   {
+    "text": "can",
+    "start": 0.661,
+    "end": 0.853
+   },
+   {
+    "text": "also",
+    "start": 0.865,
+    "end": 1.184
+   },
+   {
+    "text": "notice",
+    "start": 1.197,
+    "end": 1.631
+   },
+   {
+    "text": "a",
+    "start": 1.643,
+    "end": 1.694
+   },
+   {
+    "text": "fall",
+    "start": 1.707,
+    "end": 2.166
+   },
+   {
+    "text": "After",
+    "start": 3.047,
+    "end": 3.494
+   },
+   {
+    "text": "a",
+    "start": 3.507,
+    "end": 3.558
+   },
+   {
+    "text": "hard",
+    "start": 3.57,
+    "end": 3.928
+   },
+   {
+    "text": "impact",
+    "start": 3.94,
+    "end": 4.412
+   },
+   {
+    "text": "followed",
+    "start": 4.425,
+    "end": 4.897
+   },
+   {
+    "text": "by",
+    "start": 4.91,
+    "end": 5.127
+   },
+   {
+    "text": "stillness",
+    "start": 5.139,
+    "end": 5.739
+   },
+   {
+    "text": "it",
+    "start": 5.879,
+    "end": 6.07
+   },
+   {
+    "text": "asks",
+    "start": 6.083,
+    "end": 6.453
+   },
+   {
+    "text": "the",
+    "start": 6.466,
+    "end": 6.581
+   },
+   {
+    "text": "senior",
+    "start": 6.593,
+    "end": 7.155
+   },
+   {
+    "text": "if",
+    "start": 7.167,
+    "end": 7.295
+   },
+   {
+    "text": "they",
+    "start": 7.308,
+    "end": 7.473
+   },
+   {
+    "text": "are",
+    "start": 7.486,
+    "end": 7.729
+   },
+   {
+    "text": "okay",
+    "start": 7.741,
+    "end": 8.226
+   },
+   {
+    "text": "If",
+    "start": 9.106,
+    "end": 9.323
+   },
+   {
+    "text": "they",
+    "start": 9.336,
+    "end": 9.514
+   },
+   {
+    "text": "ask",
+    "start": 9.527,
+    "end": 9.846
+   },
+   {
+    "text": "for",
+    "start": 9.859,
+    "end": 10.012
+   },
+   {
+    "text": "help",
+    "start": 10.024,
+    "end": 10.433
+   },
+   {
+    "text": "or",
+    "start": 10.624,
+    "end": 10.828
+   },
+   {
+    "text": "don't",
+    "start": 10.841,
+    "end": 11.211
+   },
+   {
+    "text": "answer",
+    "start": 11.223,
+    "end": 11.708
+   },
+   {
+    "text": "within",
+    "start": 11.721,
+    "end": 12.04
+   },
+   {
+    "text": "thirty",
+    "start": 12.053,
+    "end": 12.397
+   },
+   {
+    "text": "seconds",
+    "start": 12.41,
+    "end": 13.022
+   },
+   {
+    "text": "an",
+    "start": 13.149,
+    "end": 13.366
+   },
+   {
+    "text": "emergency",
+    "start": 13.379,
+    "end": 14.132
+   },
+   {
+    "text": "alert",
+    "start": 14.144,
+    "end": 14.629
+   },
+   {
+    "text": "is",
+    "start": 14.642,
+    "end": 14.833
+   },
+   {
+    "text": "raised",
+    "start": 14.846,
+    "end": 15.28
+   },
+   {
+    "text": "automatically",
+    "start": 15.292,
+    "end": 16.198
+   }
+  ]
+ },
+ {
+  "id": "s12",
+  "file": "assets/voice/s12.mp3",
+  "duration": 13.248,
+  "words": [
+   {
+    "text": "After",
+    "start": 0.1,
+    "end": 0.597
+   },
+   {
+    "text": "acting",
+    "start": 0.61,
+    "end": 1.197
+   },
+   {
+    "text": "the",
+    "start": 1.363,
+    "end": 1.49
+   },
+   {
+    "text": "coordinator",
+    "start": 1.503,
+    "end": 2.154
+   },
+   {
+    "text": "logs",
+    "start": 2.166,
+    "end": 2.562
+   },
+   {
+    "text": "a",
+    "start": 2.575,
+    "end": 2.626
+   },
+   {
+    "text": "quick",
+    "start": 2.638,
+    "end": 2.919
+   },
+   {
+    "text": "follow-up",
+    "start": 2.932,
+    "end": 3.531
+   },
+   {
+    "text": "and",
+    "start": 3.544,
+    "end": 3.799
+   },
+   {
+    "text": "says",
+    "start": 3.812,
+    "end": 4.156
+   },
+   {
+    "text": "whether",
+    "start": 4.169,
+    "end": 4.5
+   },
+   {
+    "text": "the",
+    "start": 4.513,
+    "end": 4.628
+   },
+   {
+    "text": "alert",
+    "start": 4.641,
+    "end": 5.036
+   },
+   {
+    "text": "was",
+    "start": 5.049,
+    "end": 5.279
+   },
+   {
+    "text": "useful",
+    "start": 5.291,
+    "end": 5.904
+   },
+   {
+    "text": "Saathi",
+    "start": 6.785,
+    "end": 7.359
+   },
+   {
+    "text": "learns",
+    "start": 7.371,
+    "end": 7.767
+   },
+   {
+    "text": "from",
+    "start": 7.78,
+    "end": 7.996
+   },
+   {
+    "text": "these",
+    "start": 8.009,
+    "end": 8.251
+   },
+   {
+    "text": "ratings",
+    "start": 8.264,
+    "end": 8.851
+   },
+   {
+    "text": "so",
+    "start": 8.991,
+    "end": 9.195
+   },
+   {
+    "text": "reasons",
+    "start": 9.208,
+    "end": 9.706
+   },
+   {
+    "text": "that",
+    "start": 9.718,
+    "end": 9.961
+   },
+   {
+    "text": "rarely",
+    "start": 9.973,
+    "end": 10.343
+   },
+   {
+    "text": "matter",
+    "start": 10.356,
+    "end": 10.739
+   },
+   {
+    "text": "count",
+    "start": 10.752,
+    "end": 11.109
+   },
+   {
+    "text": "for",
+    "start": 11.121,
+    "end": 11.287
+   },
+   {
+    "text": "less",
+    "start": 11.3,
+    "end": 11.632
+   },
+   {
+    "text": "over",
+    "start": 11.644,
+    "end": 11.95
+   },
+   {
+    "text": "time",
+    "start": 11.963,
+    "end": 12.371
+   }
+  ]
+ },
+ {
+  "id": "s13",
+  "file": "assets/voice/s13.mp3",
+  "duration": 12.816,
+  "words": [
+   {
+    "text": "Operations",
+    "start": 0.1,
+    "end": 0.916
+   },
+   {
+    "text": "teams",
+    "start": 0.929,
+    "end": 1.299
+   },
+   {
+    "text": "see",
+    "start": 1.312,
+    "end": 1.49
+   },
+   {
+    "text": "the",
+    "start": 1.503,
+    "end": 1.592
+   },
+   {
+    "text": "whole",
+    "start": 1.605,
+    "end": 1.873
+   },
+   {
+    "text": "programme",
+    "start": 1.886,
+    "end": 2.396
+   },
+   {
+    "text": "at",
+    "start": 2.409,
+    "end": 2.549
+   },
+   {
+    "text": "a",
+    "start": 2.562,
+    "end": 2.613
+   },
+   {
+    "text": "glance",
+    "start": 2.626,
+    "end": 3.161
+   },
+   {
+    "text": "people",
+    "start": 3.391,
+    "end": 3.761
+   },
+   {
+    "text": "monitored",
+    "start": 3.773,
+    "end": 4.462
+   },
+   {
+    "text": "who",
+    "start": 4.615,
+    "end": 4.781
+   },
+   {
+    "text": "needs",
+    "start": 4.794,
+    "end": 5.113
+   },
+   {
+    "text": "attention",
+    "start": 5.125,
+    "end": 5.674
+   },
+   {
+    "text": "today",
+    "start": 5.687,
+    "end": 6.095
+   },
+   {
+    "text": "open",
+    "start": 6.222,
+    "end": 6.592
+   },
+   {
+    "text": "emergencies",
+    "start": 6.605,
+    "end": 7.498
+   },
+   {
+    "text": "response",
+    "start": 7.664,
+    "end": 8.289
+   },
+   {
+    "text": "times",
+    "start": 8.302,
+    "end": 8.812
+   },
+   {
+    "text": "and",
+    "start": 8.952,
+    "end": 9.169
+   },
+   {
+    "text": "the",
+    "start": 9.182,
+    "end": 9.284
+   },
+   {
+    "text": "workload",
+    "start": 9.296,
+    "end": 9.832
+   },
+   {
+    "text": "of",
+    "start": 9.845,
+    "end": 10.049
+   },
+   {
+    "text": "every",
+    "start": 10.062,
+    "end": 10.444
+   },
+   {
+    "text": "coordinator",
+    "start": 10.457,
+    "end": 11.21
+   },
+   {
+    "text": "and",
+    "start": 11.222,
+    "end": 11.439
+   },
+   {
+    "text": "city",
+    "start": 11.452,
+    "end": 11.898
+   }
+  ]
+ },
+ {
+  "id": "s14",
+  "file": "assets/voice/s14.mp3",
+  "duration": 18.912,
+  "words": [
+   {
+    "text": "Accuracy",
+    "start": 0.1,
+    "end": 0.98
+   },
+   {
+    "text": "is",
+    "start": 0.993,
+    "end": 1.21
+   },
+   {
+    "text": "measured",
+    "start": 1.222,
+    "end": 1.784
+   },
+   {
+    "text": "not",
+    "start": 1.962,
+    "end": 2.319
+   },
+   {
+    "text": "claimed",
+    "start": 2.332,
+    "end": 2.855
+   },
+   {
+    "text": "On",
+    "start": 3.736,
+    "end": 3.979
+   },
+   {
+    "text": "a",
+    "start": 3.991,
+    "end": 4.055
+   },
+   {
+    "text": "simulated",
+    "start": 4.068,
+    "end": 4.846
+   },
+   {
+    "text": "validation",
+    "start": 4.859,
+    "end": 5.547
+   },
+   {
+    "text": "group",
+    "start": 5.56,
+    "end": 5.994
+   },
+   {
+    "text": "Saathi",
+    "start": 6.134,
+    "end": 6.606
+   },
+   {
+    "text": "caught",
+    "start": 6.619,
+    "end": 6.95
+   },
+   {
+    "text": "all",
+    "start": 6.963,
+    "end": 7.218
+   },
+   {
+    "text": "thirty",
+    "start": 7.231,
+    "end": 7.601
+   },
+   {
+    "text": "decline",
+    "start": 7.614,
+    "end": 8.137
+   },
+   {
+    "text": "cases",
+    "start": 8.149,
+    "end": 8.736
+   },
+   {
+    "text": "a",
+    "start": 8.928,
+    "end": 9.055
+   },
+   {
+    "text": "median",
+    "start": 9.068,
+    "end": 9.476
+   },
+   {
+    "text": "of",
+    "start": 9.489,
+    "end": 9.667
+   },
+   {
+    "text": "nine",
+    "start": 9.68,
+    "end": 10.024
+   },
+   {
+    "text": "days",
+    "start": 10.037,
+    "end": 10.433
+   },
+   {
+    "text": "early",
+    "start": 10.445,
+    "end": 10.879
+   },
+   {
+    "text": "with",
+    "start": 11.096,
+    "end": 11.3
+   },
+   {
+    "text": "fewer",
+    "start": 11.313,
+    "end": 11.67
+   },
+   {
+    "text": "than",
+    "start": 11.683,
+    "end": 11.899
+   },
+   {
+    "text": "one",
+    "start": 11.912,
+    "end": 12.193
+   },
+   {
+    "text": "false",
+    "start": 12.206,
+    "end": 12.601
+   },
+   {
+    "text": "alert",
+    "start": 12.614,
+    "end": 13.022
+   },
+   {
+    "text": "per",
+    "start": 13.035,
+    "end": 13.277
+   },
+   {
+    "text": "coordinator",
+    "start": 13.29,
+    "end": 14.03
+   },
+   {
+    "text": "each",
+    "start": 14.042,
+    "end": 14.336
+   },
+   {
+    "text": "week",
+    "start": 14.348,
+    "end": 14.795
+   },
+   {
+    "text": "The",
+    "start": 15.688,
+    "end": 15.892
+   },
+   {
+    "text": "limits",
+    "start": 15.905,
+    "end": 16.325
+   },
+   {
+    "text": "are",
+    "start": 16.338,
+    "end": 16.428
+   },
+   {
+    "text": "listed",
+    "start": 16.44,
+    "end": 16.899
+   },
+   {
+    "text": "right",
+    "start": 16.912,
+    "end": 17.269
+   },
+   {
+    "text": "on",
+    "start": 17.282,
+    "end": 17.41
+   },
+   {
+    "text": "the",
+    "start": 17.422,
+    "end": 17.512
+   },
+   {
+    "text": "page",
+    "start": 17.524,
+    "end": 18.022
+   }
+  ]
+ },
+ {
+  "id": "s15",
+  "file": "assets/voice/s15.mp3",
+  "duration": 14.928,
+  "words": [
+   {
+    "text": "Families",
+    "start": 0.1,
+    "end": 0.789
+   },
+   {
+    "text": "get",
+    "start": 0.802,
+    "end": 1.031
+   },
+   {
+    "text": "a",
+    "start": 1.044,
+    "end": 1.095
+   },
+   {
+    "text": "calm",
+    "start": 1.108,
+    "end": 1.554
+   },
+   {
+    "text": "simple",
+    "start": 1.682,
+    "end": 2.217
+   },
+   {
+    "text": "view",
+    "start": 2.23,
+    "end": 2.625
+   },
+   {
+    "text": "shared",
+    "start": 2.753,
+    "end": 3.174
+   },
+   {
+    "text": "only",
+    "start": 3.187,
+    "end": 3.557
+   },
+   {
+    "text": "with",
+    "start": 3.569,
+    "end": 3.748
+   },
+   {
+    "text": "the",
+    "start": 3.761,
+    "end": 3.863
+   },
+   {
+    "text": "senior's",
+    "start": 3.876,
+    "end": 4.45
+   },
+   {
+    "text": "consent",
+    "start": 4.462,
+    "end": 5.1
+   },
+   {
+    "text": "how",
+    "start": 5.304,
+    "end": 5.572
+   },
+   {
+    "text": "they",
+    "start": 5.585,
+    "end": 5.751
+   },
+   {
+    "text": "are",
+    "start": 5.763,
+    "end": 5.878
+   },
+   {
+    "text": "today",
+    "start": 5.891,
+    "end": 6.312
+   },
+   {
+    "text": "their",
+    "start": 6.465,
+    "end": 6.694
+   },
+   {
+    "text": "steps",
+    "start": 6.707,
+    "end": 7.166
+   },
+   {
+    "text": "and",
+    "start": 7.179,
+    "end": 7.37
+   },
+   {
+    "text": "medicines",
+    "start": 7.383,
+    "end": 7.932
+   },
+   {
+    "text": "this",
+    "start": 7.944,
+    "end": 8.212
+   },
+   {
+    "text": "week",
+    "start": 8.225,
+    "end": 8.62
+   },
+   {
+    "text": "and",
+    "start": 8.748,
+    "end": 8.99
+   },
+   {
+    "text": "who",
+    "start": 9.003,
+    "end": 9.156
+   },
+   {
+    "text": "their",
+    "start": 9.169,
+    "end": 9.373
+   },
+   {
+    "text": "care",
+    "start": 9.386,
+    "end": 9.654
+   },
+   {
+    "text": "manager",
+    "start": 9.666,
+    "end": 10.253
+   },
+   {
+    "text": "is",
+    "start": 10.266,
+    "end": 10.61
+   },
+   {
+    "text": "No",
+    "start": 11.479,
+    "end": 11.836
+   },
+   {
+    "text": "scores",
+    "start": 11.848,
+    "end": 12.41
+   },
+   {
+    "text": "and",
+    "start": 12.537,
+    "end": 12.78
+   },
+   {
+    "text": "no",
+    "start": 12.792,
+    "end": 12.984
+   },
+   {
+    "text": "medical",
+    "start": 12.996,
+    "end": 13.481
+   },
+   {
+    "text": "detail",
+    "start": 13.494,
+    "end": 14.042
+   }
+  ]
+ },
+ {
+  "id": "s16",
+  "file": "assets/voice/s16.mp3",
+  "duration": 6.864,
+  "words": [
+   {
+    "text": "Aegis",
+    "start": 0.1,
+    "end": 0.585
+   },
+   {
+    "text": "Saathi",
+    "start": 0.597,
+    "end": 1.171
+   },
+   {
+    "text": "See",
+    "start": 2.053,
+    "end": 2.435
+   },
+   {
+    "text": "who",
+    "start": 2.448,
+    "end": 2.614
+   },
+   {
+    "text": "needs",
+    "start": 2.627,
+    "end": 2.984
+   },
+   {
+    "text": "care",
+    "start": 2.996,
+    "end": 3.277
+   },
+   {
+    "text": "today",
+    "start": 3.29,
+    "end": 3.698
+   },
+   {
+    "text": "before",
+    "start": 3.838,
+    "end": 4.336
+   },
+   {
+    "text": "it",
+    "start": 4.348,
+    "end": 4.45
+   },
+   {
+    "text": "becomes",
+    "start": 4.463,
+    "end": 4.986
+   },
+   {
+    "text": "an",
+    "start": 4.999,
+    "end": 5.152
+   },
+   {
+    "text": "emergency",
+    "start": 5.165,
+    "end": 5.994
+   }
+  ]
+ }
+]

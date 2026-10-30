@@ -1,0 +1,1494 @@
+◆  Capturing review frames (beats, seams, phone) from demo_video
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (Intel)" renderer="ANGLE (Intel, Intel(R) HD Graphics 620 (0x00005916) Direct3D11 vs_5_0 ps_5_0, D3D11)")
+
+   Fonts: 3 loaded
+   Review: 32 beat(s) and 15 seam(s) within 0–249.29s
+[hyperframes] snapshot: frame 1/107 at 0.3s
+[hyperframes] snapshot: frame 2/107 at 10.6s
+[hyperframes] snapshot: frame 3/107 at 21.5s
+[hyperframes] snapshot: frame 4/107 at 28.605s
+[hyperframes] snapshot: frame 5/107 at 36.31s
+[hyperframes] snapshot: frame 6/107 at 41.845s
+[hyperframes] snapshot: frame 7/107 at 47.98s
+[hyperframes] snapshot: frame 8/107 at 53.07s
+[hyperframes] snapshot: frame 9/107 at 58.76s
+[hyperframes] snapshot: frame 10/107 at 67.56s
+[hyperframes] snapshot: frame 11/107 at 76.96s
+[hyperframes] snapshot: frame 12/107 at 84.785s
+[hyperframes] snapshot: frame 13/107 at 93.21s
+[hyperframes] snapshot: frame 14/107 at 102.09s
+[hyperframes] snapshot: frame 15/107 at 111.57s
+[hyperframes] snapshot: frame 16/107 at 118.545s
+[hyperframes] snapshot: frame 17/107 at 126.12s
+[hyperframes] snapshot: frame 18/107 at 131.905s
+[hyperframes] snapshot: frame 19/107 at 138.29s
+[hyperframes] snapshot: frame 20/107 at 146.45s
+[hyperframes] snapshot: frame 21/107 at 155.21s
+[hyperframes] snapshot: frame 22/107 at 164.115s
+[hyperframes] snapshot: frame 23/107 at 173.62s
+[hyperframes] snapshot: frame 24/107 at 180.595s
+[hyperframes] snapshot: frame 25/107 at 188.17s
+[hyperframes] snapshot: frame 26/107 at 194.93s
+[hyperframes] snapshot: frame 27/107 at 202.29s
+[hyperframes] snapshot: frame 28/107 at 212.095s
+[hyperframes] snapshot: frame 29/107 at 222.5s
+[hyperframes] snapshot: frame 30/107 at 230.315s
+[hyperframes] snapshot: frame 31/107 at 238.73s
+[hyperframes] snapshot: frame 32/107 at 243.86s
+[hyperframes] snapshot: frame 33/107 at 21s
+[hyperframes] snapshot: frame 34/107 at 21.1s
+[hyperframes] snapshot: frame 35/107 at 21.2s
+[hyperframes] snapshot: frame 36/107 at 21.3s
+[hyperframes] snapshot: frame 37/107 at 21.4s
+[hyperframes] snapshot: frame 38/107 at 35.81s
+[hyperframes] snapshot: frame 39/107 at 35.91s
+[hyperframes] snapshot: frame 40/107 at 36.01s
+[hyperframes] snapshot: frame 41/107 at 36.11s
+[hyperframes] snapshot: frame 42/107 at 36.21s
+[hyperframes] snapshot: frame 43/107 at 47.48s
+[hyperframes] snapshot: frame 44/107 at 47.58s
+[hyperframes] snapshot: frame 45/107 at 47.68s
+[hyperframes] snapshot: frame 46/107 at 47.78s
+[hyperframes] snapshot: frame 47/107 at 47.88s
+[hyperframes] snapshot: frame 48/107 at 58.26s
+[hyperframes] snapshot: frame 49/107 at 58.36s
+[hyperframes] snapshot: frame 50/107 at 58.46s
+[hyperframes] snapshot: frame 51/107 at 58.56s
+[hyperframes] snapshot: frame 52/107 at 58.66s
+[hyperframes] snapshot: frame 53/107 at 76.46s
+[hyperframes] snapshot: frame 54/107 at 76.56s
+[hyperframes] snapshot: frame 55/107 at 76.66s
+[hyperframes] snapshot: frame 56/107 at 76.76s
+[hyperframes] snapshot: frame 57/107 at 76.86s
+[hyperframes] snapshot: frame 58/107 at 92.71s
+[hyperframes] snapshot: frame 59/107 at 92.81s
+[hyperframes] snapshot: frame 60/107 at 92.91s
+[hyperframes] snapshot: frame 61/107 at 93.01s
+[hyperframes] snapshot: frame 62/107 at 93.11s
+[hyperframes] snapshot: frame 63/107 at 111.07s
+[hyperframes] snapshot: frame 64/107 at 111.17s
+[hyperframes] snapshot: frame 65/107 at 111.27s
+[hyperframes] snapshot: frame 66/107 at 111.37s
+[hyperframes] snapshot: frame 67/107 at 111.47s
+[hyperframes] snapshot: frame 68/107 at 125.62s
+[hyperframes] snapshot: frame 69/107 at 125.72s
+[hyperframes] snapshot: frame 70/107 at 125.82s
+[hyperframes] snapshot: frame 71/107 at 125.92s
+[hyperframes] snapshot: frame 72/107 at 126.02s
+[hyperframes] snapshot: frame 73/107 at 137.79s
+[hyperframes] snapshot: frame 74/107 at 137.89s
+[hyperframes] snapshot: frame 75/107 at 137.99s
+[hyperframes] snapshot: frame 76/107 at 138.09s
+[hyperframes] snapshot: frame 77/107 at 138.19s
+[hyperframes] snapshot: frame 78/107 at 154.71s
+[hyperframes] snapshot: frame 79/107 at 154.81s
+[hyperframes] snapshot: frame 80/107 at 154.91s
+[hyperframes] snapshot: frame 81/107 at 155.01s
+[hyperframes] snapshot: frame 82/107 at 155.11s
+[hyperframes] snapshot: frame 83/107 at 173.12s
+[hyperframes] snapshot: frame 84/107 at 173.22s
+[hyperframes] snapshot: frame 85/107 at 173.32s
+[hyperframes] snapshot: frame 86/107 at 173.42s
+[hyperframes] snapshot: frame 87/107 at 173.52s
+[hyperframes] snapshot: frame 88/107 at 187.67s
+[hyperframes] snapshot: frame 89/107 at 187.77s
+[hyperframes] snapshot: frame 90/107 at 187.87s
+[hyperframes] snapshot: frame 91/107 at 187.97s
+[hyperframes] snapshot: frame 92/107 at 188.07s
+[hyperframes] snapshot: frame 93/107 at 201.79s
+[hyperframes] snapshot: frame 94/107 at 201.89s
+[hyperframes] snapshot: frame 95/107 at 201.99s
+[hyperframes] snapshot: frame 96/107 at 202.09s
+[hyperframes] snapshot: frame 97/107 at 202.19s
+[hyperframes] snapshot: frame 98/107 at 222s
+[hyperframes] snapshot: frame 99/107 at 222.1s
+[hyperframes] snapshot: frame 100/107 at 222.2s
+[hyperframes] snapshot: frame 101/107 at 222.3s
+[hyperframes] snapshot: frame 102/107 at 222.4s
+[hyperframes] snapshot: frame 103/107 at 238.23s
+[hyperframes] snapshot: frame 104/107 at 238.33s
+[hyperframes] snapshot: frame 105/107 at 238.43s
+[hyperframes] snapshot: frame 106/107 at 238.53s
+[hyperframes] snapshot: frame 107/107 at 238.63s
+   Revision: none (inputs-changed)
+   State: D:\Deviathon\demo_video\.hyperframes\video-state.json
+
+◇  107 snapshots saved to D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-01-at-0.3s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-02-at-10.6s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-03-at-21.5s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-04-at-28.605s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-05-at-36.31s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-06-at-41.845s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-07-at-47.98s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-08-at-53.07s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-09-at-58.76s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-10-at-67.56s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-11-at-76.96s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-12-at-84.785s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-13-at-93.21s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-14-at-102.09s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-15-at-111.57s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-16-at-118.545s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-17-at-126.12s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-18-at-131.905s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-19-at-138.29s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-20-at-146.45s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-21-at-155.21s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-22-at-164.115s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-23-at-173.62s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-24-at-180.595s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-25-at-188.17s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-26-at-194.93s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-27-at-202.29s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-28-at-212.095s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-29-at-222.5s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-30-at-230.315s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-31-at-238.73s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\beat-32-at-243.86s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-01-1-at-21s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-01-2-at-21.1s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-01-3-at-21.2s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-01-4-at-21.3s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-01-5-at-21.4s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-02-1-at-35.81s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-02-2-at-35.91s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-02-3-at-36.01s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-02-4-at-36.11s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-02-5-at-36.21s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-03-1-at-47.48s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-03-2-at-47.58s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-03-3-at-47.68s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-03-4-at-47.78s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-03-5-at-47.88s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-04-1-at-58.26s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-04-2-at-58.36s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-04-3-at-58.46s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-04-4-at-58.56s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-04-5-at-58.66s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-05-1-at-76.46s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-05-2-at-76.56s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-05-3-at-76.66s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-05-4-at-76.76s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-05-5-at-76.86s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-06-1-at-92.71s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-06-2-at-92.81s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-06-3-at-92.91s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-06-4-at-93.01s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-06-5-at-93.11s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-07-1-at-111.07s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-07-2-at-111.17s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-07-3-at-111.27s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-07-4-at-111.37s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-07-5-at-111.47s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-08-1-at-125.62s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-08-2-at-125.72s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-08-3-at-125.82s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-08-4-at-125.92s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-08-5-at-126.02s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-09-1-at-137.79s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-09-2-at-137.89s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-09-3-at-137.99s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-09-4-at-138.09s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-09-5-at-138.19s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-10-1-at-154.71s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-10-2-at-154.81s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-10-3-at-154.91s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-10-4-at-155.01s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-10-5-at-155.11s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-11-1-at-173.12s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-11-2-at-173.22s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-11-3-at-173.32s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-11-4-at-173.42s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-11-5-at-173.52s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-12-1-at-187.67s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-12-2-at-187.77s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-12-3-at-187.87s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-12-4-at-187.97s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-12-5-at-188.07s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-13-1-at-201.79s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-13-2-at-201.89s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-13-3-at-201.99s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-13-4-at-202.09s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-13-5-at-202.19s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-14-1-at-222s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-14-2-at-222.1s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-14-3-at-222.2s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-14-4-at-222.3s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-14-5-at-222.4s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-15-1-at-238.23s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-15-2-at-238.33s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-15-3-at-238.43s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-15-4-at-238.53s.png
+   D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\seam-15-5-at-238.63s.png
+   Beat sheet (settled frame per scene): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-beats-1.jpg, D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-beats-2.jpg
+     0.3s s01 · 10.6s s01 mid · 21.5s s02 · 28.605s s02 mid · 36.31s s03 · 41.845s s03 mid · 47.98s s04 · 53.07s s04 mid · 58.76s s05 · 67.56s s05 mid · 76.96s s06 · 84.785s s06 mid · 93.21s s07 · 102.09s s07 mid · 111.57s s08 · 118.545s s08 mid · 126.12s s09 · 131.905s s09 mid · 138.29s s10 · 146.45s s10 mid · 155.21s s11 · 164.115s s11 mid · 173.62s s12 · 180.595s s12 mid · 188.17s s13 · 194.93s s13 mid · 202.29s s14 · 212.095s s14 mid · 222.5s s15 · 230.315s s15 mid · 238.73s s16 · 243.86s s16 mid
+   Seam 1 at 21.2s (s01 -> s02): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-01.jpg
+   Seam 2 at 36.01s (s02 -> s03): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-02.jpg
+   Seam 3 at 47.68s (s03 -> s04): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-03.jpg
+   Seam 4 at 58.46s (s04 -> s05): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-04.jpg
+   Seam 5 at 76.66s (s05 -> s06): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-05.jpg
+   Seam 6 at 92.91s (s06 -> s07): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-06.jpg
+   Seam 7 at 111.27s (s07 -> s08): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-07.jpg
+   Seam 8 at 125.82s (s08 -> s09): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-08.jpg
+   Seam 9 at 137.99s (s09 -> s10): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-09.jpg
+   Seam 10 at 154.91s (s10 -> s11): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-10.jpg
+   Seam 11 at 173.32s (s11 -> s12): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-11.jpg
+   Seam 12 at 187.87s (s12 -> s13): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-12.jpg
+   Seam 13 at 201.99s (s13 -> s14): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-13.jpg
+   Seam 14 at 222.2s (s14 -> s15): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-14.jpg
+   Seam 15 at 238.43s (s15 -> s16): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-seam-15.jpg
+   Phone sheet (beats at 360 px wide): D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-phone-1.jpg, D:\Deviathon\demo_video\.hyperframes\artifacts\snapshots\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\review-phone-2.jpg
+{
+  "ok": true,
+  "outputDir": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3",
+  "frames": [
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-01-at-0.3s.png",
+      "time": 0.3,
+      "role": "beat",
+      "label": "s01"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-02-at-10.6s.png",
+      "time": 10.6,
+      "role": "beat",
+      "label": "s01 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-03-at-21.5s.png",
+      "time": 21.5,
+      "role": "beat",
+      "label": "s02"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-04-at-28.605s.png",
+      "time": 28.605,
+      "role": "beat",
+      "label": "s02 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-05-at-36.31s.png",
+      "time": 36.31,
+      "role": "beat",
+      "label": "s03"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-06-at-41.845s.png",
+      "time": 41.845,
+      "role": "beat",
+      "label": "s03 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-07-at-47.98s.png",
+      "time": 47.98,
+      "role": "beat",
+      "label": "s04"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-08-at-53.07s.png",
+      "time": 53.07,
+      "role": "beat",
+      "label": "s04 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-09-at-58.76s.png",
+      "time": 58.76,
+      "role": "beat",
+      "label": "s05"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-10-at-67.56s.png",
+      "time": 67.56,
+      "role": "beat",
+      "label": "s05 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-11-at-76.96s.png",
+      "time": 76.96,
+      "role": "beat",
+      "label": "s06"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-12-at-84.785s.png",
+      "time": 84.785,
+      "role": "beat",
+      "label": "s06 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-13-at-93.21s.png",
+      "time": 93.21,
+      "role": "beat",
+      "label": "s07"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-14-at-102.09s.png",
+      "time": 102.09,
+      "role": "beat",
+      "label": "s07 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-15-at-111.57s.png",
+      "time": 111.57,
+      "role": "beat",
+      "label": "s08"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-16-at-118.545s.png",
+      "time": 118.545,
+      "role": "beat",
+      "label": "s08 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-17-at-126.12s.png",
+      "time": 126.12,
+      "role": "beat",
+      "label": "s09"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-18-at-131.905s.png",
+      "time": 131.905,
+      "role": "beat",
+      "label": "s09 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-19-at-138.29s.png",
+      "time": 138.29,
+      "role": "beat",
+      "label": "s10"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-20-at-146.45s.png",
+      "time": 146.45,
+      "role": "beat",
+      "label": "s10 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-21-at-155.21s.png",
+      "time": 155.21,
+      "role": "beat",
+      "label": "s11"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-22-at-164.115s.png",
+      "time": 164.115,
+      "role": "beat",
+      "label": "s11 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-23-at-173.62s.png",
+      "time": 173.62,
+      "role": "beat",
+      "label": "s12"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-24-at-180.595s.png",
+      "time": 180.595,
+      "role": "beat",
+      "label": "s12 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-25-at-188.17s.png",
+      "time": 188.17,
+      "role": "beat",
+      "label": "s13"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-26-at-194.93s.png",
+      "time": 194.93,
+      "role": "beat",
+      "label": "s13 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-27-at-202.29s.png",
+      "time": 202.29,
+      "role": "beat",
+      "label": "s14"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-28-at-212.095s.png",
+      "time": 212.095,
+      "role": "beat",
+      "label": "s14 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-29-at-222.5s.png",
+      "time": 222.5,
+      "role": "beat",
+      "label": "s15"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-30-at-230.315s.png",
+      "time": 230.315,
+      "role": "beat",
+      "label": "s15 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-31-at-238.73s.png",
+      "time": 238.73,
+      "role": "beat",
+      "label": "s16"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-32-at-243.86s.png",
+      "time": 243.86,
+      "role": "beat",
+      "label": "s16 mid"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-01-1-at-21s.png",
+      "time": 21,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-01-2-at-21.1s.png",
+      "time": 21.1,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-01-3-at-21.2s.png",
+      "time": 21.2,
+      "role": "seam",
+      "label": "cut s01 -> s02"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-01-4-at-21.3s.png",
+      "time": 21.3,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-01-5-at-21.4s.png",
+      "time": 21.4,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-02-1-at-35.81s.png",
+      "time": 35.81,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-02-2-at-35.91s.png",
+      "time": 35.91,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-02-3-at-36.01s.png",
+      "time": 36.01,
+      "role": "seam",
+      "label": "cut s02 -> s03"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-02-4-at-36.11s.png",
+      "time": 36.11,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-02-5-at-36.21s.png",
+      "time": 36.21,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-03-1-at-47.48s.png",
+      "time": 47.48,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-03-2-at-47.58s.png",
+      "time": 47.58,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-03-3-at-47.68s.png",
+      "time": 47.68,
+      "role": "seam",
+      "label": "cut s03 -> s04"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-03-4-at-47.78s.png",
+      "time": 47.78,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-03-5-at-47.88s.png",
+      "time": 47.88,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-04-1-at-58.26s.png",
+      "time": 58.26,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-04-2-at-58.36s.png",
+      "time": 58.36,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-04-3-at-58.46s.png",
+      "time": 58.46,
+      "role": "seam",
+      "label": "cut s04 -> s05"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-04-4-at-58.56s.png",
+      "time": 58.56,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-04-5-at-58.66s.png",
+      "time": 58.66,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-05-1-at-76.46s.png",
+      "time": 76.46,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-05-2-at-76.56s.png",
+      "time": 76.56,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-05-3-at-76.66s.png",
+      "time": 76.66,
+      "role": "seam",
+      "label": "cut s05 -> s06"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-05-4-at-76.76s.png",
+      "time": 76.76,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-05-5-at-76.86s.png",
+      "time": 76.86,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-06-1-at-92.71s.png",
+      "time": 92.71,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-06-2-at-92.81s.png",
+      "time": 92.81,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-06-3-at-92.91s.png",
+      "time": 92.91,
+      "role": "seam",
+      "label": "cut s06 -> s07"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-06-4-at-93.01s.png",
+      "time": 93.01,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-06-5-at-93.11s.png",
+      "time": 93.11,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-07-1-at-111.07s.png",
+      "time": 111.07,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-07-2-at-111.17s.png",
+      "time": 111.17,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-07-3-at-111.27s.png",
+      "time": 111.27,
+      "role": "seam",
+      "label": "cut s07 -> s08"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-07-4-at-111.37s.png",
+      "time": 111.37,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-07-5-at-111.47s.png",
+      "time": 111.47,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-08-1-at-125.62s.png",
+      "time": 125.62,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-08-2-at-125.72s.png",
+      "time": 125.72,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-08-3-at-125.82s.png",
+      "time": 125.82,
+      "role": "seam",
+      "label": "cut s08 -> s09"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-08-4-at-125.92s.png",
+      "time": 125.92,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-08-5-at-126.02s.png",
+      "time": 126.02,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-09-1-at-137.79s.png",
+      "time": 137.79,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-09-2-at-137.89s.png",
+      "time": 137.89,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-09-3-at-137.99s.png",
+      "time": 137.99,
+      "role": "seam",
+      "label": "cut s09 -> s10"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-09-4-at-138.09s.png",
+      "time": 138.09,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-09-5-at-138.19s.png",
+      "time": 138.19,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-10-1-at-154.71s.png",
+      "time": 154.71,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-10-2-at-154.81s.png",
+      "time": 154.81,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-10-3-at-154.91s.png",
+      "time": 154.91,
+      "role": "seam",
+      "label": "cut s10 -> s11"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-10-4-at-155.01s.png",
+      "time": 155.01,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-10-5-at-155.11s.png",
+      "time": 155.11,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-11-1-at-173.12s.png",
+      "time": 173.12,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-11-2-at-173.22s.png",
+      "time": 173.22,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-11-3-at-173.32s.png",
+      "time": 173.32,
+      "role": "seam",
+      "label": "cut s11 -> s12"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-11-4-at-173.42s.png",
+      "time": 173.42,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-11-5-at-173.52s.png",
+      "time": 173.52,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-12-1-at-187.67s.png",
+      "time": 187.67,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-12-2-at-187.77s.png",
+      "time": 187.77,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-12-3-at-187.87s.png",
+      "time": 187.87,
+      "role": "seam",
+      "label": "cut s12 -> s13"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-12-4-at-187.97s.png",
+      "time": 187.97,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-12-5-at-188.07s.png",
+      "time": 188.07,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-13-1-at-201.79s.png",
+      "time": 201.79,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-13-2-at-201.89s.png",
+      "time": 201.89,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-13-3-at-201.99s.png",
+      "time": 201.99,
+      "role": "seam",
+      "label": "cut s13 -> s14"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-13-4-at-202.09s.png",
+      "time": 202.09,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-13-5-at-202.19s.png",
+      "time": 202.19,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-14-1-at-222s.png",
+      "time": 222,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-14-2-at-222.1s.png",
+      "time": 222.1,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-14-3-at-222.2s.png",
+      "time": 222.2,
+      "role": "seam",
+      "label": "cut s14 -> s15"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-14-4-at-222.3s.png",
+      "time": 222.3,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-14-5-at-222.4s.png",
+      "time": 222.4,
+      "role": "seam",
+      "label": "+0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-15-1-at-238.23s.png",
+      "time": 238.23,
+      "role": "seam",
+      "label": "cut -0.2"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-15-2-at-238.33s.png",
+      "time": 238.33,
+      "role": "seam",
+      "label": "-0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-15-3-at-238.43s.png",
+      "time": 238.43,
+      "role": "seam",
+      "label": "cut s15 -> s16"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-15-4-at-238.53s.png",
+      "time": 238.53,
+      "role": "seam",
+      "label": "+0.1"
+    },
+    {
+      "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-15-5-at-238.63s.png",
+      "time": 238.63,
+      "role": "seam",
+      "label": "+0.2"
+    }
+  ],
+  "contactSheets": [
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-beats-1.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-beats-2.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-01.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-02.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-03.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-04.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-05.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-06.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-07.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-08.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-09.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-10.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-11.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-12.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-13.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-14.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-15.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-phone-1.jpg",
+    "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-phone-2.jpg"
+  ],
+  "review": {
+    "window": [
+      0,
+      249.29
+    ],
+    "scenes": [
+      {
+        "id": "s01",
+        "start": 0,
+        "end": 21.2
+      },
+      {
+        "id": "s02",
+        "start": 21.2,
+        "end": 36.01
+      },
+      {
+        "id": "s03",
+        "start": 36.01,
+        "end": 47.68
+      },
+      {
+        "id": "s04",
+        "start": 47.68,
+        "end": 58.46
+      },
+      {
+        "id": "s05",
+        "start": 58.46,
+        "end": 76.66
+      },
+      {
+        "id": "s06",
+        "start": 76.66,
+        "end": 92.91
+      },
+      {
+        "id": "s07",
+        "start": 92.91,
+        "end": 111.27
+      },
+      {
+        "id": "s08",
+        "start": 111.27,
+        "end": 125.82
+      },
+      {
+        "id": "s09",
+        "start": 125.82,
+        "end": 137.99
+      },
+      {
+        "id": "s10",
+        "start": 137.99,
+        "end": 154.91
+      },
+      {
+        "id": "s11",
+        "start": 154.91,
+        "end": 173.32
+      },
+      {
+        "id": "s12",
+        "start": 173.32,
+        "end": 187.87
+      },
+      {
+        "id": "s13",
+        "start": 187.87,
+        "end": 201.99
+      },
+      {
+        "id": "s14",
+        "start": 201.99,
+        "end": 222.2
+      },
+      {
+        "id": "s15",
+        "start": 222.2,
+        "end": 238.43
+      },
+      {
+        "id": "s16",
+        "start": 238.43,
+        "end": 249.29
+      }
+    ],
+    "beats": [
+      {
+        "time": 0.3,
+        "label": "s01",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-01-at-0.3s.png"
+      },
+      {
+        "time": 10.6,
+        "label": "s01 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-02-at-10.6s.png"
+      },
+      {
+        "time": 21.5,
+        "label": "s02",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-03-at-21.5s.png"
+      },
+      {
+        "time": 28.605,
+        "label": "s02 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-04-at-28.605s.png"
+      },
+      {
+        "time": 36.31,
+        "label": "s03",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-05-at-36.31s.png"
+      },
+      {
+        "time": 41.845,
+        "label": "s03 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-06-at-41.845s.png"
+      },
+      {
+        "time": 47.98,
+        "label": "s04",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-07-at-47.98s.png"
+      },
+      {
+        "time": 53.07,
+        "label": "s04 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-08-at-53.07s.png"
+      },
+      {
+        "time": 58.76,
+        "label": "s05",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-09-at-58.76s.png"
+      },
+      {
+        "time": 67.56,
+        "label": "s05 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-10-at-67.56s.png"
+      },
+      {
+        "time": 76.96,
+        "label": "s06",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-11-at-76.96s.png"
+      },
+      {
+        "time": 84.785,
+        "label": "s06 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-12-at-84.785s.png"
+      },
+      {
+        "time": 93.21,
+        "label": "s07",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-13-at-93.21s.png"
+      },
+      {
+        "time": 102.09,
+        "label": "s07 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-14-at-102.09s.png"
+      },
+      {
+        "time": 111.57,
+        "label": "s08",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-15-at-111.57s.png"
+      },
+      {
+        "time": 118.545,
+        "label": "s08 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-16-at-118.545s.png"
+      },
+      {
+        "time": 126.12,
+        "label": "s09",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-17-at-126.12s.png"
+      },
+      {
+        "time": 131.905,
+        "label": "s09 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-18-at-131.905s.png"
+      },
+      {
+        "time": 138.29,
+        "label": "s10",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-19-at-138.29s.png"
+      },
+      {
+        "time": 146.45,
+        "label": "s10 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-20-at-146.45s.png"
+      },
+      {
+        "time": 155.21,
+        "label": "s11",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-21-at-155.21s.png"
+      },
+      {
+        "time": 164.115,
+        "label": "s11 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-22-at-164.115s.png"
+      },
+      {
+        "time": 173.62,
+        "label": "s12",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-23-at-173.62s.png"
+      },
+      {
+        "time": 180.595,
+        "label": "s12 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-24-at-180.595s.png"
+      },
+      {
+        "time": 188.17,
+        "label": "s13",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-25-at-188.17s.png"
+      },
+      {
+        "time": 194.93,
+        "label": "s13 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-26-at-194.93s.png"
+      },
+      {
+        "time": 202.29,
+        "label": "s14",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-27-at-202.29s.png"
+      },
+      {
+        "time": 212.095,
+        "label": "s14 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-28-at-212.095s.png"
+      },
+      {
+        "time": 222.5,
+        "label": "s15",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-29-at-222.5s.png"
+      },
+      {
+        "time": 230.315,
+        "label": "s15 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-30-at-230.315s.png"
+      },
+      {
+        "time": 238.73,
+        "label": "s16",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-31-at-238.73s.png"
+      },
+      {
+        "time": 243.86,
+        "label": "s16 mid",
+        "path": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\beat-32-at-243.86s.png"
+      }
+    ],
+    "seams": [
+      {
+        "time": 21.2,
+        "from": "s01",
+        "to": "s02",
+        "times": [
+          21,
+          21.1,
+          21.2,
+          21.3,
+          21.4
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-01-1-at-21s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-01-2-at-21.1s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-01-3-at-21.2s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-01-4-at-21.3s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-01-5-at-21.4s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-01.jpg"
+      },
+      {
+        "time": 36.01,
+        "from": "s02",
+        "to": "s03",
+        "times": [
+          35.81,
+          35.91,
+          36.01,
+          36.11,
+          36.21
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-02-1-at-35.81s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-02-2-at-35.91s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-02-3-at-36.01s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-02-4-at-36.11s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-02-5-at-36.21s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-02.jpg"
+      },
+      {
+        "time": 47.68,
+        "from": "s03",
+        "to": "s04",
+        "times": [
+          47.48,
+          47.58,
+          47.68,
+          47.78,
+          47.88
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-03-1-at-47.48s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-03-2-at-47.58s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-03-3-at-47.68s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-03-4-at-47.78s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-03-5-at-47.88s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-03.jpg"
+      },
+      {
+        "time": 58.46,
+        "from": "s04",
+        "to": "s05",
+        "times": [
+          58.26,
+          58.36,
+          58.46,
+          58.56,
+          58.66
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-04-1-at-58.26s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-04-2-at-58.36s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-04-3-at-58.46s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-04-4-at-58.56s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-04-5-at-58.66s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-04.jpg"
+      },
+      {
+        "time": 76.66,
+        "from": "s05",
+        "to": "s06",
+        "times": [
+          76.46,
+          76.56,
+          76.66,
+          76.76,
+          76.86
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-05-1-at-76.46s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-05-2-at-76.56s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-05-3-at-76.66s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-05-4-at-76.76s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-05-5-at-76.86s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-05.jpg"
+      },
+      {
+        "time": 92.91,
+        "from": "s06",
+        "to": "s07",
+        "times": [
+          92.71,
+          92.81,
+          92.91,
+          93.01,
+          93.11
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-06-1-at-92.71s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-06-2-at-92.81s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-06-3-at-92.91s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-06-4-at-93.01s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-06-5-at-93.11s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-06.jpg"
+      },
+      {
+        "time": 111.27,
+        "from": "s07",
+        "to": "s08",
+        "times": [
+          111.07,
+          111.17,
+          111.27,
+          111.37,
+          111.47
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-07-1-at-111.07s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-07-2-at-111.17s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-07-3-at-111.27s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-07-4-at-111.37s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-07-5-at-111.47s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-07.jpg"
+      },
+      {
+        "time": 125.82,
+        "from": "s08",
+        "to": "s09",
+        "times": [
+          125.62,
+          125.72,
+          125.82,
+          125.92,
+          126.02
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-08-1-at-125.62s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-08-2-at-125.72s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-08-3-at-125.82s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-08-4-at-125.92s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-08-5-at-126.02s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-08.jpg"
+      },
+      {
+        "time": 137.99,
+        "from": "s09",
+        "to": "s10",
+        "times": [
+          137.79,
+          137.89,
+          137.99,
+          138.09,
+          138.19
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-09-1-at-137.79s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-09-2-at-137.89s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-09-3-at-137.99s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-09-4-at-138.09s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-09-5-at-138.19s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-09.jpg"
+      },
+      {
+        "time": 154.91,
+        "from": "s10",
+        "to": "s11",
+        "times": [
+          154.71,
+          154.81,
+          154.91,
+          155.01,
+          155.11
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-10-1-at-154.71s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-10-2-at-154.81s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-10-3-at-154.91s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-10-4-at-155.01s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-10-5-at-155.11s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-10.jpg"
+      },
+      {
+        "time": 173.32,
+        "from": "s11",
+        "to": "s12",
+        "times": [
+          173.12,
+          173.22,
+          173.32,
+          173.42,
+          173.52
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-11-1-at-173.12s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-11-2-at-173.22s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-11-3-at-173.32s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-11-4-at-173.42s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-11-5-at-173.52s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-11.jpg"
+      },
+      {
+        "time": 187.87,
+        "from": "s12",
+        "to": "s13",
+        "times": [
+          187.67,
+          187.77,
+          187.87,
+          187.97,
+          188.07
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-12-1-at-187.67s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-12-2-at-187.77s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-12-3-at-187.87s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-12-4-at-187.97s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-12-5-at-188.07s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-12.jpg"
+      },
+      {
+        "time": 201.99,
+        "from": "s13",
+        "to": "s14",
+        "times": [
+          201.79,
+          201.89,
+          201.99,
+          202.09,
+          202.19
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-13-1-at-201.79s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-13-2-at-201.89s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-13-3-at-201.99s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-13-4-at-202.09s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-13-5-at-202.19s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-13.jpg"
+      },
+      {
+        "time": 222.2,
+        "from": "s14",
+        "to": "s15",
+        "times": [
+          222,
+          222.1,
+          222.2,
+          222.3,
+          222.4
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-14-1-at-222s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-14-2-at-222.1s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-14-3-at-222.2s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-14-4-at-222.3s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-14-5-at-222.4s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-14.jpg"
+      },
+      {
+        "time": 238.43,
+        "from": "s15",
+        "to": "s16",
+        "times": [
+          238.23,
+          238.33,
+          238.43,
+          238.53,
+          238.63
+        ],
+        "paths": [
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-15-1-at-238.23s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-15-2-at-238.33s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-15-3-at-238.43s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-15-4-at-238.53s.png",
+          "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\seam-15-5-at-238.63s.png"
+        ],
+        "sheet": "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-15.jpg"
+      }
+    ],
+    "sheets": {
+      "beats": [
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-beats-1.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-beats-2.jpg"
+      ],
+      "seams": [
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-01.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-02.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-03.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-04.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-05.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-06.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-07.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-08.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-09.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-10.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-11.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-12.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-13.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-14.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-seam-15.jpg"
+      ],
+      "phone": [
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-phone-1.jpg",
+        "D:\\Deviathon\\demo_video\\.hyperframes\\artifacts\\snapshots\\f5bf6f78-959c-44d8-a2e2-1e115e3291b3\\review-phone-2.jpg"
+      ]
+    },
+    "notes": []
+  },
+  "_meta": {
+    "version": "0.8.214",
+    "updateAvailable": false
+  }
+}

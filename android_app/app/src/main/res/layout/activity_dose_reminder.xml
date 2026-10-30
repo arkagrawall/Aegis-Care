@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Full-screen dose reminder: opens over the lock screen like a call, one big Taken button -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="24dp">
+
+    <TextView
+        android:id="@+id/tvDoseClock"
+        style="@style/T.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_dark" />
+
+    <FrameLayout
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_circle_primary_soft">
+
+        <ImageView
+            android:id="@+id/ivDosePill"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/ic_pill"
+            app:tint="@color/primary" />
+    </FrameLayout>
+
+    <TextView
+        style="@style/T.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/dose_time_for" />
+
+    <TextView
+        android:id="@+id/tvDoseMedName"
+        style="@style/T.Display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:accessibilityLiveRegion="polite"
+        android:gravity="center"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/tvDoseMedText"
+        style="@style/T.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:textColor="@color/ink"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/btnDoseSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:minHeight="52dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bg_btn_soft"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="18dp">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/ic_speaker"
+            app:tint="@color/primary_dark" />
+
+        <TextView
+            style="@style/T.ButtonDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/read_aloud"
+            android:textColor="@color/primary_dark"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/btnReminderTaken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:minHeight="84dp"
+        android:background="@drawable/bg_btn_good"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/ic_check"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            style="@style/T.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/dose_taken_big"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnReminderLater"
+            style="@style/T.ButtonDark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="68dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_outline"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/dose_later_15"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/btnReminderSkip"
+            style="@style/T.ButtonDark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="68dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_outline"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/meds_skipped"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300">
+  <!-- Empty state: watch not connected - a smartwatch sending Bluetooth waves. -->
+  <path class="blob" id="blob" d="M52,108 C60,52 118,24 178,26 C240,28 302,46 318,104 C334,160 328,226 276,254 C226,280 136,284 88,258 C40,232 44,160 52,108Z" fill="#E3F3EE"/>
+  <rect x="152" y="40" width="56" height="70" rx="12" fill="#2F3A45"/>
+  <rect x="152" y="190" width="56" height="70" rx="12" fill="#2F3A45"/>
+  <rect x="136" y="96" width="88" height="108" rx="24" fill="#3B4754"/>
+  <rect x="146" y="106" width="68" height="88" rx="16" fill="#0E7C6B"/>
+  <path d="M170,134 L192,154 L181,164 L181,124 L192,134 L170,154" fill="none" stroke="#FFFFFF" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M246,120 q14,30 0,60 M262,106 q24,44 0,88 M114,120 q-14,30 0,60 M98,106 q-24,44 0,88" fill="none" stroke="#3FB59F" stroke-width="5" stroke-linecap="round"/>
+  <rect x="224" y="138" width="8" height="22" rx="3" fill="#3B4754"/>
+</svg>

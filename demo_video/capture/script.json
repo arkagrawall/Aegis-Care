@@ -1,0 +1,18 @@
+[
+  {"id": "s01", "text": "Across India, millions of older people live on their own at home. When their health starts to slip, the warning signs often appear days before an emergency: fewer steps, poorer sleep, a missed medicine. But no one is watching closely enough to notice."},
+  {"id": "s02", "text": "Aegis Saathi is an early-warning system for seniors living at home. It connects the senior's phone, their care coordinator, and their family, so the right person knows who needs care today."},
+  {"id": "s03", "text": "It starts with a simple phone app for the senior. Big buttons, plain words, and the whole app switches between Hindi and English with one tap."},
+  {"id": "s04", "text": "Each day they tell Saathi how they feel and whether they took their medicine. One tap, and their care manager is told right away."},
+  {"id": "s05", "text": "Saathi also calls them. The check-in call asks about their health, medicine, sleep and appetite, and understands everyday answers. Here, Kamla says she feels dizzy and weak, and slept only four hours."},
+  {"id": "s06", "text": "Now the care coordinator's view. The Today list puts everyone in order of urgency: urgent, needs attention, watch, and stable. Each person comes with the one reason they are on the list."},
+  {"id": "s07", "text": "Open a record, and Saathi explains itself. Sita's steps are eighty-five percent below her own normal, her activity has fallen for five days, and in a call she mentioned pain. Each reason says where it came from."},
+  {"id": "s08", "text": "Readings are compared with each person's own fourteen-day average, not a one-size-fits-all rule, with trends for steps, heart rate, oxygen, blood pressure, sugar, weight and sleep."},
+  {"id": "s09", "text": "Every check-in call lands in the record. The coordinator sees what Saathi heard, the full conversation, and a flag when it thinks they should follow up."},
+  {"id": "s10", "text": "Emergencies come first. When a senior holds the SOS button, the alert reaches the coordinator in seconds, and stays at the top of every page until someone confirms it, or marks it as a false alarm."},
+  {"id": "s11", "text": "The phone can also notice a fall. After a hard impact followed by stillness, it asks the senior if they are okay. If they ask for help, or don't answer within thirty seconds, an emergency alert is raised automatically."},
+  {"id": "s12", "text": "After acting, the coordinator logs a quick follow-up and says whether the alert was useful. Saathi learns from these ratings, so reasons that rarely matter count for less over time."},
+  {"id": "s13", "text": "Operations teams see the whole programme at a glance: people monitored, who needs attention today, open emergencies, response times, and the workload of every coordinator and city."},
+  {"id": "s14", "text": "Accuracy is measured, not claimed. On a simulated validation group, Saathi caught all thirty decline cases, a median of nine days early, with fewer than one false alert per coordinator each week. The limits are listed right on the page."},
+  {"id": "s15", "text": "Families get a calm, simple view, shared only with the senior's consent: how they are today, their steps and medicines this week, and who their care manager is. No scores, and no medical detail."},
+  {"id": "s16", "text": "Aegis Saathi. See who needs care today, before it becomes an emergency."}
+]

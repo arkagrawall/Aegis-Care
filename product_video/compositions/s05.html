@@ -1,0 +1,46 @@
+<template>
+  <style>
+    @font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_semibold.ttf") format("truetype"); font-weight: 600; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_bold.ttf") format("truetype"); font-weight: 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Mukta", sans-serif; color: #fff; }
+    #root * { box-sizing: border-box; }
+    #s05-wrap { position: absolute; inset: 0; }
+    .bg { position: absolute; inset: 0; background: radial-gradient(120% 90% at 15% 0%, #8a2a69 0%, #4a1137 45%, #2a0a1f 100%); }
+    .frame { position: absolute; overflow: hidden; border-radius: 18px; background: #fff; box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.1); }
+    .bar { position: absolute; left: 0; right: 0; top: 0; height: 34px; background: #efe6eb; display: flex; align-items: center; gap: 8px; padding-left: 16px; z-index: 3; }
+    .bar i { width: 11px; height: 11px; border-radius: 50%; background: #d9c8d2; }
+    .bar b { margin-left: 18px; font: 600 15px "Mukta"; color: #6b5562; }
+    .view { position: absolute; left: 0; right: 0; bottom: 0; overflow: hidden; }
+    .cam { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    .cam img { display: block; }
+    .spot { position: absolute; border-radius: 14px; border: 4px solid #f7941e; box-shadow: 0 0 0 4000px rgba(42,10,31,.40), 0 0 26px rgba(247,148,30,.6); opacity: 0; }
+    .kicker { font: 700 30px "Mukta"; letter-spacing: .16em; text-transform: uppercase; color: #f7941e; }
+    .title { font: 700 62px/1.08 "Mukta"; color: #fff; }
+    .phone { position: absolute; border-radius: 54px; background: #0b0a0b; padding: 13px; box-shadow: 0 30px 70px rgba(0,0,0,.55), 0 0 0 2px rgba(255,255,255,.1); }
+    .phone .scr { position: relative; width: 100%; height: 100%; border-radius: 42px; overflow: hidden; background: #fff; }
+    .phone .scr img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .pt { display: flex; align-items: flex-start; gap: 20px; font: 600 40px/1.22 "Mukta"; color: #fff; }
+    .pt .ic { flex: none; width: 60px; height: 60px; border-radius: 18px; display: grid; place-items: center; background: rgba(247,148,30,.16); color: #f7941e; }
+    .pt small { display: block; font: 400 28px/1.35 "Mukta"; color: #e9cfdf; margin-top: 4px; }
+    .num { background: #f7941e !important; color: #4a1137 !important; font: 700 30px "Mukta"; }
+    
+  </style>
+  <div data-hf-id="hf-fvbf" id="root" data-composition-id="s05" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-ce1m" id="s05-wrap"><div data-hf-id="hf-m7dd" class="bg"></div><div data-hf-id="hf-4ulr" class="phone" id="s05-ph" style="left:330px;top:70px;width:426px;height:915px"><div data-hf-id="hf-zn7g" class="scr"><img data-hf-id="hf-2yh0" id="s05-ph-i0" src="assets/app/slide1.png" style="opacity:1"><img data-hf-id="hf-yg7r" id="s05-ph-i1" src="assets/app/slide2.png" style="opacity:0"><img data-hf-id="hf-qee5" id="s05-ph-i2" src="assets/app/slide3.png" style="opacity:0"><img data-hf-id="hf-k8ft" id="s05-ph-i3" src="assets/app/slide6.png" style="opacity:0"></div></div><div data-hf-id="hf-kcz2" id="s05-k" class="kicker" style="position:absolute;left:860px;top:120px;opacity:0">On your parent's phone</div><div data-hf-id="hf-1ak8" id="s05-t" class="title" style="position:absolute;left:860px;top:164px;width:920px;opacity:0">Saathi says hello.</div><div data-hf-id="hf-oozs" class="pt" id="s05-p1" style="position:absolute;left:860px;top:430px;width:820px;opacity:0"><span data-hf-id="hf-8dw9" class="ic"><svg data-hf-id="hf-mcjy" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path data-hf-id="hf-7p77" d="M12,19.6C5.5,14.3 3.2,11.5 3.2,8.5A4.6,4.6 0 0 1 12,6.7A4.6,4.6 0 0 1 20.8,8.5C20.8,11.5 18.5,14.3 12,19.6z"/></svg></span><span data-hf-id="hf-d8yx">A warm, short welcome<small data-hf-id="hf-n8w4">Six simple slides</small></span></div><div data-hf-id="hf-6vo2" class="pt" id="s05-p2" style="position:absolute;left:860px;top:600px;width:820px;opacity:0"><span data-hf-id="hf-hovh" class="ic"><svg data-hf-id="hf-p0ya" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path data-hf-id="hf-a8yf" d="M4,9.5h3.5L12,5.5v13l-4.5,-4H4z"/><path data-hf-id="hf-hutb" d="M15.5,9a4,4 0 0 1 0,6"/><path data-hf-id="hf-ewiv" d="M18,6.5a7.5,7.5 0 0 1 0,11"/></svg></span><span data-hf-id="hf-j9vb">Every screen read aloud<small data-hf-id="hf-dk84">In Hindi or English</small></span></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s05-wrap", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, 0);
+    tl.fromTo("#s05-ph", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 0.10);
+    tl.fromTo("#s05-ph-i1", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.inOut" }, 2.60);
+    tl.fromTo("#s05-ph-i2", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.inOut" }, 4.40);
+    tl.fromTo("#s05-ph-i3", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.inOut" }, 6.20);
+    tl.fromTo("#s05-k", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.30);
+    tl.fromTo("#s05-t", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.42);
+    tl.fromTo("#s05-p1", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 3.43);
+    tl.fromTo("#s05-p2", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 5.72);
+    tl.to("#s05-wrap", { opacity: 0, duration: 0.35, ease: "power2.in" }, 8.56);
+    window.__timelines["s05"] = tl;
+  </script>
+</template>

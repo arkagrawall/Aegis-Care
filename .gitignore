@@ -1,0 +1,45 @@
+# secrets and runtime data (PINs, signing key, saved seniors) - never commit
+coordinator_hub/data/
+coordinator_hub/models/
+__pycache__/
+*.pyc
+.court/
+.claude/
+
+# Android build output and local config
+android_app/**/build/
+android_app/.gradle/
+android_app/local.properties
+*.apk
+*.iml
+.idea/
+
+# local tooling
+tools/
+tunnel_url.txt
+*.exe
+*.zip
+
+# demo film: local credentials from the capture run, renders and tool caches
+demo_video/capture/kamla.json
+demo_video/capture/sam102.json
+demo_video/capture/call*.json
+demo_video/capture/prefs_*.xml
+demo_video/capture/*.png
+demo_video/renders/
+demo_video/.hyperframes/
+demo_video/node_modules/
+tools/ffmpeg.exe
+tools/ffprobe.exe
+tools/musicgen-venv/
+
+# secrets
+.env
+**/.env
+
+# product film: capture credentials, phone prefs backups, renders and tool caches
+product_video/capture/*.json
+product_video/capture/prefs_*.xml
+product_video/renders/
+product_video/.hyperframes/
+product_video/node_modules/

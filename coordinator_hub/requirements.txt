@@ -1,0 +1,10 @@
+fastapi>=0.100.0
+uvicorn>=0.22.0
+numpy>=1.24.0
+scikit-learn>=1.2.0
+vosk>=0.3.45
+edge-tts>=6.1.9
+# Optional: more accurate but ~10 s/answer on a 4-core CPU. Set AEGIS_STT_ENGINE=whisper to use it.
+# faster-whisper>=1.0.0
+groq>=1.0.0
+sarvam-conv-ai-sdk>=1.1.1      # optional: Sarvam Voice Agents for the in-app call (SARVAM_* in .env)

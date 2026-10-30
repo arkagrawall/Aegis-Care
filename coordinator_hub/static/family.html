@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d7a69">
+<title>Family · Aegis Saathi</title>
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%230d7a69" d="M12 2.5l8 3.1v6.1c0 5-3.4 8.6-8 10.4-4.6-1.8-8-5.4-8-10.4v-6.1z"/><path fill="none" stroke="%23ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7.8 12.4h2.2l1.3-2.6 2 5 1.3-2.4h1.6"/></svg>'>
+<link rel="stylesheet" href="/static/portal.css">
+</head>
+<body>
+<main class="fam" id="app"></main>
+<script src="/static/charts.js"></script>
+<script>
+(() => {
+"use strict";
+const T = {
+  en: { brand: "Aegis Saathi", forFamily: "For family",
+        title: "See how your family member is doing", sub: "Enter the family code your care manager shared with you.",
+        code: "Family code", codeHelp: "It looks like FAM-ABC123. You can paste it.", paste: "Paste", go: "Continue", checking: "Checking…",
+        empty: "Enter the family code.", bad: "That code didn't work. Check it, or ask the care manager to share it again. Sharing may also have been switched off.",
+        hello: "How they're doing today", lastCheck: "Last check-in", adh: "Medicine taken this week", avg: "Average steps a day", care: "Care manager",
+        steps: "Steps this week", meds: "Medicine this week", taken: "Taken", missed: "Missed", today: "Today", summary: "This week",
+        serious: "The care team is responding to an alert right now. They will contact you if they need you.",
+        note: "Shared with you with their consent. They can stop sharing at any time. Scores and medical details stay with the care team.",
+        out: "Sign out", lang: "Language", error: "Couldn't load the latest update. We'll try again shortly.",
+        glance: "This week at a glance", medRing: "of medicine doses taken", stepsAvg: "steps a day on average", usual: "their week's average",
+        noneDue: "No medicine due", saathi: "Check-in calls with Saathi", noCalls: "No check-in calls this week yet.",
+        m_good: "In good spirits", m_okay: "Okay", m_low: "Feeling low", m_distressed: "Upset. The care team is following up", m_none: "Call completed", m_missed: "Didn't pick up",
+        callCm: "Call the care manager",
+        vmTitle: "Send a voice message", vmSub: "Saathi plays it to them, in your own voice, at the start of their next check-in call.",
+        vmName: "Your name", vmRel: "You are their", vmRelPh: "son, daughter, grandson…", vmRec: "Record", vmStop: "Stop and send", vmCancel: "Cancel",
+        vmSending: "Sending…", vmSent: "Sent. Saathi will play it in the next call.", vmNoMic: "Allow the microphone to record a message.",
+        vmWait: "Waiting for the next call", vmPlayed: "Played in their call", vmRead: "Read out by Saathi on the phone call", vmPlay: "Play",
+        vmNone: "No messages yet.", listen: "Listen to this week's update", listening: "Playing…" },
+  hi: { brand: "एजिस साथी", forFamily: "परिवार के लिए",
+        title: "देखें आपके अपने कैसे हैं", sub: "केयर मैनेजर से मिला परिवार का कोड डालें।",
+        code: "परिवार का कोड", codeHelp: "यह FAM-ABC123 जैसा दिखता है। आप इसे पेस्ट कर सकते हैं।", paste: "पेस्ट", go: "आगे बढ़ें", checking: "जाँच रहे हैं…",
+        empty: "परिवार का कोड डालें।", bad: "यह कोड नहीं चला। इसे जाँचें, या केयर मैनेजर से दोबारा भेजने को कहें। हो सकता है साझा करना बंद कर दिया गया हो।",
+        hello: "आज का हाल", lastCheck: "आख़िरी चेक-इन", adh: "इस हफ़्ते दवा ली", avg: "रोज़ के औसत कदम", care: "केयर मैनेजर",
+        steps: "इस हफ़्ते के कदम", meds: "इस हफ़्ते दवा", taken: "ली", missed: "छूटी", today: "आज", summary: "इस हफ़्ते",
+        serious: "केयर टीम अभी एक अलर्ट पर काम कर रही है। ज़रूरत होने पर वे आपसे संपर्क करेंगे।",
+        note: "उनकी सहमति से आपके साथ साझा। वे कभी भी साझा करना रोक सकते हैं। स्कोर और चिकित्सकीय विवरण केयर टीम के पास रहते हैं।",
+        out: "साइन आउट", lang: "भाषा", error: "ताज़ा जानकारी लोड नहीं हुई। हम थोड़ी देर में फिर कोशिश करेंगे।",
+        glance: "इस हफ़्ते एक नज़र में", medRing: "दवा की ख़ुराक ली गईं", stepsAvg: "औसत कदम रोज़", usual: "हफ़्ते का औसत",
+        noneDue: "कोई दवा नहीं थी", saathi: "साथी के साथ चेक-इन कॉल", noCalls: "इस हफ़्ते अभी कोई चेक-इन कॉल नहीं।",
+        m_good: "अच्छे मूड में", m_okay: "ठीक", m_low: "थोड़े उदास", m_distressed: "परेशान। केयर टीम संपर्क में है", m_none: "कॉल पूरी हुई", m_missed: "फ़ोन नहीं उठाया",
+        callCm: "केयर मैनेजर को कॉल करें",
+        vmTitle: "आवाज़ में संदेश भेजें", vmSub: "अगली चेक-इन कॉल की शुरुआत में साथी आपकी अपनी आवाज़ में यह संदेश उन्हें सुनाएगा।",
+        vmName: "आपका नाम", vmRel: "आप उनके हैं", vmRelPh: "बेटा, बेटी, पोता…", vmRec: "रिकॉर्ड करें", vmStop: "रोकें और भेजें", vmCancel: "रद्द करें",
+        vmSending: "भेज रहे हैं…", vmSent: "भेज दिया। साथी अगली कॉल में सुनाएगा।", vmNoMic: "संदेश रिकॉर्ड करने के लिए माइक्रोफ़ोन की अनुमति दें।",
+        vmWait: "अगली कॉल का इंतज़ार", vmPlayed: "कॉल में सुनाया गया", vmRead: "फ़ोन कॉल पर साथी ने पढ़कर सुनाया", vmPlay: "सुनें",
+        vmNone: "अभी कोई संदेश नहीं।", listen: "इस हफ़्ते का हाल सुनें", listening: "चल रहा है…" },
+};
+let lang = localStorage.getItem("aegis_lang") || "en", token = sessionStorage.getItem("fam_token"), data = null, poll = null, firstShow = true;
+let msgs = [], recorder = null, chunks = [], recTimer = null, recSecs = 0;
+const player = new Audio();
+const MIC = '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5,11a6.5,6.5 0 0 0 13,0"/><path d="M12,17.5V21"/>', PLAY = '<path d="M8,5.5v13l10.5-6.5z"/>', STOP = '<rect x="6.5" y="6.5" width="11" height="11" rx="2"/>';
+const lsGet = (k) => { try { return localStorage.getItem(k) || ""; } catch (e) { return ""; } };
+const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+const t = (k) => T[lang][k] || T.en[k];
+const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "\u0026amp;", "<": "\u0026lt;", ">": "\u0026gt;", '"': "\u0026quot;", "'": "\u0026#39;" }[c]));
+const ico = (p, cls = "") => `<svg class="ico ${cls}" viewBox="0 0 24 24" aria-hidden="true">${p}</svg>`;
+const LOGO = '<path d="M12,2.8l8,3.1v6c0,4.9 -3.4,8.5 -8,10.3C7.4,20.4 4,16.8 4,11.9v-6z"/><path d="M7.8,12.4h2.2l1.3,-2.6 2,5 1.3,-2.4h1.6"/>';
+const CHECK = '<path d="M5.2,12.6l4.4,4.4L18.8,7.6"/>', X = '<path d="M7,7l10,10"/><path d="M17,7L7,17"/>', ALERT = '<circle cx="12" cy="12" r="9"/><path d="M12,7.5v5"/><path d="M12,16h.01"/>';
+const PHONE = '<path d="M6.6,3.5h2.8l1.4,3.8-1.9,1.4a11,11 0 0 0 5.4,5.4l1.4-1.9 3.8,1.4v2.8a2,2 0 0 1-2.2,2A15.6,15.6 0 0 1 4.6,5.7a2,2 0 0 1 2-2.2z"/>';
+const INFO = '<circle cx="12" cy="12" r="9"/><path d="M12,11v5.5"/><path d="M12,7.8h.01"/>', OUT = '<path d="M14,4.5H18.5V19.5H14"/><path d="M10,8l-4,4 4,4"/><path d="M6,12h9"/>';
+const app = document.getElementById("app");
+const loc = () => (lang === "hi" ? "hi-IN" : "en-IN");
+const seg = () => `<div class="seg" role="group" aria-label="${t("lang")}" id="seg"><button type="button" data-l="hi" aria-pressed="${lang === "hi"}" lang="hi">हिंदी</button><button type="button" data-l="en" aria-pressed="${lang === "en"}" lang="en">English</button></div>`;
+const bind = () => { const s = document.getElementById("seg"); if (s) s.onclick = (e) => { const b = e.target.closest("button"); if (b && b.dataset.l !== lang) { lang = b.dataset.l; localStorage.setItem("aegis_lang", lang); document.documentElement.lang = lang; data ? show() : login(); } }; };
+const top = (right) => `<div class="bar-top"><div class="brand" style="padding:0"><div class="mark">${ico(LOGO)}</div><span>${t("brand")}<small>${t("forFamily")}</small></span></div>${right}</div>`;
+// last 7 days, oldest first, ending today
+const days = () => Array.from({ length: 7 }, (_, i) => { const d = new Date(); d.setDate(d.getDate() - (6 - i)); return d.toLocaleDateString(loc(), { weekday: "short" }); });
+
+function login(errKey) {
+  document.title = `${t("forFamily")} · ${t("brand")}`;
+  firstShow = true; app.classList.remove("enter");
+  const canPaste = !!(navigator.clipboard && navigator.clipboard.readText);
+  app.innerHTML = `${top(seg())}
+    <div class="card pad" style="margin-top:8px"><img class="fam-ill" src="/static/illustrations/family_phone.svg" alt="" width="360" height="300" decoding="async"><h1 style="font-size:26px">${t("title")}</h1><p class="muted" style="margin:6px 0 20px">${t("sub")}</p>
+    <form id="ff" novalidate>
+      <label class="field"><span class="label">${t("code")}</span><span class="input-wrap">
+        <input class="input" id="fc" placeholder="FAM-ABC123" type="text" inputmode="text" autocomplete="one-time-code" autocapitalize="characters" autocorrect="off" spellcheck="false" enterkeyhint="go" aria-describedby="fch ferr" ${errKey ? 'aria-invalid="true"' : ""}>
+        ${canPaste ? `<button type="button" class="btn quiet" id="fp" style="position:absolute;right:2px;top:2px;min-height:44px">${t("paste")}</button>` : ""}</span>
+        <span class="help" id="fch">${t("codeHelp")}</span>
+        <span class="error ${errKey ? "" : "hidden"}" id="ferr" role="alert">${ico(ALERT, "s")}<span>${errKey ? t(errKey) : ""}</span></span></label>
+      <button class="btn primary lg block" id="fg" type="submit" style="margin-top:20px">${t("go")}</button>
+    </form></div>
+    <p class="notice">${ico(INFO, "s")}<span>${t("note")}</span></p>`;
+  bind();
+  const fp = document.getElementById("fp");
+  if (fp) fp.onclick = async () => { try { document.getElementById("fc").value = (await navigator.clipboard.readText()).trim().toUpperCase(); } catch (e) {} document.getElementById("fc").focus(); };
+  document.getElementById("ff").onsubmit = async (ev) => {
+    ev.preventDefault();
+    const code = document.getElementById("fc").value.trim();
+    if (!code) return login("empty");
+    const b = document.getElementById("fg"); b.setAttribute("aria-busy", "true"); b.innerHTML = `<span class="spin"></span>${t("checking")}`;
+    try {
+      const r = await fetch("/api/auth/login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ role: "family", id: code }) });
+      if (!r.ok) return login("bad");
+      token = (await r.json()).token; sessionStorage.setItem("fam_token", token); load();
+    } catch (e) { login("bad"); }
+  };
+}
+async function load(silent) {
+  try {
+    const r = await fetch("/api/family/overview", { headers: { Authorization: "Bearer " + token } });
+    if (r.status === 401 || r.status === 403) { signOut(); return login("bad"); }
+    if (!r.ok) throw new Error(r.status);
+    data = await r.json(); show();
+    if (!poll) poll = setInterval(() => { if (!document.hidden && !recorder) load(true); }, 60000);
+  } catch (e) { if (!silent || !data) app.innerHTML = `${top("")}<div class="card pad"><p>${t("error")}</p></div>`; }
+}
+function signOut() { sessionStorage.removeItem("fam_token"); token = null; data = null; clearInterval(poll); poll = null; }
+function show() {
+  const d = data, steps = d.steps_7d || [], labels = days();
+  const avg = steps.length ? steps.reduce((a, b) => a + b, 0) / steps.length : 0, mx = Math.max(...steps, avg, 1);
+  const adh = /^\d+/.test(String(d.adherence_rate || "")) ? parseInt(d.adherence_rate, 10) : null;
+  const calls = (d.calls_7d || []).slice().sort((a, b) => (a.date < b.date ? 1 : -1));
+  document.title = `${d.name} · ${t("brand")}`;
+  app.innerHTML = `${top(`<div class="row">${seg()}<button class="btn quiet icon" id="so" aria-label="${t("out")}" title="${t("out")}">${ico(OUT)}</button></div>`)}
+    ${d.serious_alert ? `<div class="alert" role="alert">${ico(ALERT)}<span>${t("serious")}</span></div>` : ""}
+    <section class="hello"><img class="hello-ill" src="/static/illustrations/family.svg" alt="" width="360" height="300" decoding="async"><p>${t("hello")}</p><h1>${esc(d.name)}</h1><span class="mood">${ico(CHECK, "s")}${t("today")}: ${esc(d.today_mood)}</span></section>
+    <section class="card pad"><div class="overline">${t("summary")}</div><p style="margin-top:8px">${esc(lang === "hi" ? d.summary_hi : d.summary_en)}</p>
+      <button class="btn secondary block" id="listen" style="margin-top:12px">${ico(PLAY, "s")}<span>${t("listen")}</span></button></section>
+    <section class="card pad" id="vm"></section>
+    <section class="card pad"><div class="overline">${t("glance")}</div>
+      <div class="glance">
+        <div class="g-ring">${Charts.donut({ segments: [{ label: t("taken"), value: adh ?? 0, color: "var(--viz-ok)" }, { label: t("missed"), value: adh === null ? 0 : 100 - adh, color: "var(--viz-track)" }],
+          size: 108, thick: 14, center: adh === null ? "–" : adh + "%", label: `${adh ?? "–"}% ${t("medRing")}` })}<span>${t("medRing")}</span></div>
+        <div class="g-num"><b class="num">${Number(d.avg_daily_steps || 0).toLocaleString(loc())}</b><span>${t("stepsAvg")}</span></div>
+      </div>
+      <div class="stat"><span>${t("lastCheck")}</span><b>${esc(d.last_checkin_time || "–")}</b></div>
+      <div class="stat"><span>${t("care")}</span><b>${esc(d.coordinator_contact)}</b></div>
+      ${d.coordinator_phone ? `<a class="btn secondary block" style="margin-top:12px" href="tel:${esc(String(d.coordinator_phone).replace(/\s/g, ""))}">${ico(PHONE, "s")}${t("callCm")}</a>` : ""}</section>
+    <section class="card pad"><div class="overline">${t("steps")}</div>
+      <div class="week ${firstShow ? "anim" : ""}" role="img" aria-label="${t("steps")}: ${steps.map((s, i) => `${labels[i]} ${s}`).join(", ")}">
+        ${steps.map((s, i) => `<div class="col ${i === steps.length - 1 ? "today" : ""}"><b>${Number(s).toLocaleString(loc(), { notation: "compact" })}</b><i style="height:${Math.max(4, (s / mx) * 100)}%"></i><span>${i === steps.length - 1 ? t("today") : labels[i]}</span></div>`).join("")}</div></section>
+    <section class="card pad"><div class="overline">${t("meds")}</div>
+      <div class="meds ${firstShow ? "anim" : ""}">${(d.meds_7d || []).map((m, i) => { const st = m === null || m === undefined ? "none" : m ? "" : "miss", w = st === "none" ? t("noneDue") : m ? t("taken") : t("missed");
+        return `<div class="d ${st}"><i title="${w}">${st === "none" ? "" : ico(m ? CHECK : X, "s")}</i><span>${i === 6 ? t("today") : labels[i]}</span><span class="sr-only">${w}</span></div>`; }).join("")}</div></section>
+    <section class="card pad"><div class="overline">${t("saathi")}</div>
+      ${calls.length ? `<ul class="fcalls">${calls.map((c) => { const k = c.mood ? "m_" + c.mood : c.done ? "m_none" : "m_missed";
+        return `<li><span class="dot ${c.mood === "good" ? "ok" : c.mood === "low" ? "watch" : c.mood === "distressed" ? "crit" : c.done ? "" : "subtle"}"></span><b>${esc(new Date(c.date + "T12:00:00").toLocaleDateString(loc(), { weekday: "long", day: "numeric", month: "short" }))}</b><span>${t(k)}</span></li>`; }).join("")}</ul>`
+        : `<div class="fam-empty"><img class="empty-ill" src="/static/illustrations/calls.svg" alt="" width="360" height="300" decoding="async"><p class="muted">${t("noCalls")}</p></div>`}</section>
+    <p class="notice">${ico(INFO, "s")}<span>${t("note")}</span></p>`;
+  app.classList.toggle("enter", firstShow);
+  firstShow = false;
+  bind(); window.Charts && Charts.bind(app); document.getElementById("so").onclick = () => { signOut(); login(); };
+  document.getElementById("listen").onclick = listen;
+  drawVoice(); loadMessages();
+}
+async function listen() {
+  const b = document.getElementById("listen"), span = b.querySelector("span");
+  const done = () => { b.removeAttribute("aria-busy"); span.textContent = t("listen"); };
+  b.setAttribute("aria-busy", "true"); span.textContent = t("listening");
+  try {
+    const r = await (await fetch(`/api/family/voice-summary?lang=${lang}`, { headers: { Authorization: "Bearer " + token } })).json();
+    player.onended = done; player.src = r.audio_url + "&token=" + encodeURIComponent(token); await player.play();
+  } catch (e) { done(); }
+}
+// ---------------------------------------------------------------- family voice messages
+async function loadMessages() {
+  try { const r = await fetch("/api/family/voice-messages", { headers: { Authorization: "Bearer " + token } }); if (r.ok) { msgs = await r.json(); if (!recorder) drawVoice(); } } catch (e) {}
+}
+function drawVoice(note) {
+  const box = document.getElementById("vm"); if (!box) return;
+  const when = (ts) => new Date(ts * 1000).toLocaleString(loc(), { weekday: "short", hour: "numeric", minute: "2-digit" });
+  const list = msgs.slice(0, 5).map((m) => `<li><button class="btn quiet icon" data-play="${esc(m.id)}" aria-label="${t("vmPlay")}">${ico(PLAY, "s")}</button>
+      <span class="grow"><b>${esc(when(m.ts))}</b>${m.text ? `<span class="sm muted" style="display:block">“${esc(m.text)}”</span>` : ""}</span>
+      <span class="sm ${m.played_at ? "" : "muted"}">${m.played_at ? ico(CHECK, "s") + " " + (m.played_how === "read_on_phone_call" ? t("vmRead") : t("vmPlayed")) : t("vmWait")}</span></li>`).join("");
+  box.innerHTML = `<div class="overline">${t("vmTitle")}</div><p class="sm muted" style="margin:6px 0 12px">${t("vmSub")}</p>
+    ${recorder ? `<div class="row" role="status" style="gap:10px"><span class="dot crit"></span><b class="num" id="vmSecs">0:${String(recSecs).padStart(2, "0")}</b></div>
+      <div class="row" style="gap:8px;margin-top:10px"><button class="btn primary grow" id="vmStop">${ico(STOP, "s")}${t("vmStop")}</button><button class="btn secondary" id="vmCancel">${t("vmCancel")}</button></div>`
+    : `<div class="row wrap" style="gap:8px"><label class="field grow"><span class="label">${t("vmName")}</span><input class="input" id="vmName" value="${esc(lsGet("vm_name"))}" autocomplete="name"></label>
+        <label class="field grow"><span class="label">${t("vmRel")}</span><input class="input" id="vmRel" placeholder="${t("vmRelPh")}" value="${esc(lsGet("vm_rel"))}"></label></div>
+      <button class="btn primary lg block" id="vmRec" style="margin-top:12px">${ico(MIC, "s")}${t("vmRec")}</button>`}
+    ${note ? `<p class="sm" role="status" style="margin-top:10px">${esc(note)}</p>` : ""}
+    <ul class="fcalls" style="margin-top:12px">${list || `<li><span class="muted sm">${t("vmNone")}</span></li>`}</ul>`;
+  const rb = document.getElementById("vmRec"); if (rb) rb.onclick = startRec;
+  const sb = document.getElementById("vmStop"); if (sb) sb.onclick = () => stopRec(true);
+  const cb = document.getElementById("vmCancel"); if (cb) cb.onclick = () => stopRec(false);
+  box.querySelectorAll("[data-play]").forEach((b) => (b.onclick = () => { player.onended = null; player.src = `/api/voice-messages/${b.dataset.play}.mp3?token=${encodeURIComponent(token)}`; player.play(); }));
+}
+async function startRec() {
+  lsSet("vm_name", document.getElementById("vmName").value.trim()); lsSet("vm_rel", document.getElementById("vmRel").value.trim());
+  let stream;
+  try { stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } }); }
+  catch (e) { return drawVoice(t("vmNoMic")); }
+  const type = ["audio/webm;codecs=opus", "audio/ogg;codecs=opus", "audio/mp4"].find((x) => window.MediaRecorder && MediaRecorder.isTypeSupported(x)) || "";
+  recorder = new MediaRecorder(stream, type ? { mimeType: type } : undefined); chunks = []; recSecs = 0;
+  recorder.ondataavailable = (e) => { if (e.data.size) chunks.push(e.data); };
+  recorder.start(250); drawVoice();
+  recTimer = setInterval(() => { recSecs++; const el = document.getElementById("vmSecs"); if (el) el.textContent = `0:${String(recSecs).padStart(2, "0")}`; if (recSecs >= 45) stopRec(true); }, 1000);
+}
+function stopRec(send) {
+  if (!recorder) return;
+  const r = recorder; clearInterval(recTimer);
+  r.onstop = async () => {
+    r.stream.getTracks().forEach((x) => x.stop()); recorder = null;
+    if (!send) return drawVoice();
+    drawVoice(t("vmSending"));
+    const blob = new Blob(chunks, { type: r.mimeType || "audio/webm" });
+    try {
+      const q = `from_name=${encodeURIComponent(lsGet("vm_name"))}&relation=${encodeURIComponent(lsGet("vm_rel"))}`;
+      const res = await fetch(`/api/family/voice-message?${q}`, { method: "POST", headers: { Authorization: "Bearer " + token, "Content-Type": blob.type }, body: blob });
+      const j = await res.json(); if (!res.ok) throw new Error(j.detail || res.status);
+      msgs.unshift(j); drawVoice(t("vmSent"));
+    } catch (e) { drawVoice(String(e.message || e)); }
+  };
+  r.stop();
+}
+document.documentElement.lang = lang;
+token ? load() : login();
+})();
+</script>
+</body>
+</html>

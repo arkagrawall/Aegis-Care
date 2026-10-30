@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="22dp">
+
+    <TextView
+        style="@style/T.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/readings_title" />
+
+    <TextView
+        style="@style/T.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/readings_bp"
+        android:labelFor="@id/etBpSys"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etBpSys"
+            style="@style/T"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input"
+            android:hint="@string/readings_bp_sys_hint"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingHorizontal="14dp"
+            android:textColor="@color/ink"
+            android:textColorHint="@color/ink_faint"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/etBpDia"
+            style="@style/T"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input"
+            android:hint="@string/readings_bp_dia_hint"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingHorizontal="14dp"
+            android:textColor="@color/ink"
+            android:textColorHint="@color/ink_faint"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/T.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/readings_sugar"
+        android:labelFor="@id/etSugar"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/etSugar"
+        style="@style/T"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:minHeight="56dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_input"
+        android:hint="@string/readings_sugar_hint"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="3"
+        android:paddingHorizontal="14dp"
+        android:textColor="@color/ink"
+        android:textColorHint="@color/ink_faint"
+        android:textSize="19sp" />
+
+    <TextView
+        style="@style/T.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/readings_weight"
+        android:labelFor="@id/etWeight"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/etWeight"
+        style="@style/T"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:minHeight="56dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_input"
+        android:hint="@string/readings_weight_hint"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:paddingHorizontal="14dp"
+        android:textColor="@color/ink"
+        android:textColorHint="@color/ink_faint"
+        android:textSize="19sp" />
+</LinearLayout>

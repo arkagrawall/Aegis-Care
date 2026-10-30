@@ -1,0 +1,44 @@
+<template>
+  <style>
+    @font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_semibold.ttf") format("truetype"); font-weight: 600; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_bold.ttf") format("truetype"); font-weight: 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Mukta", sans-serif; color: #fff; }
+    #root * { box-sizing: border-box; }
+    #s15-wrap { position: absolute; inset: 0; }
+    .bg { position: absolute; inset: 0; background: radial-gradient(120% 90% at 20% 0%, #10594f 0%, #0a2a26 55%, #061b18 100%); }
+    .frame { position: absolute; overflow: hidden; border-radius: 18px; background: #f4f6f5; box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.08); }
+    .bar { position: absolute; left: 0; right: 0; top: 0; height: 34px; background: #e9eeec; display: flex; align-items: center; gap: 8px; padding-left: 16px; z-index: 3; }
+    .bar i { width: 11px; height: 11px; border-radius: 50%; background: #c9d2ce; }
+    .bar b { margin-left: 18px; font: 600 15px "Mukta"; color: #5f6e69; }
+    .view { position: absolute; left: 0; right: 0; bottom: 0; overflow: hidden; }
+    .cam { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    .cam img { display: block; }
+    .spot { position: absolute; border-radius: 12px; border: 3px solid #f5b03c; box-shadow: 0 0 0 4000px rgba(4,22,19,.42), 0 0 24px rgba(245,176,60,.55); opacity: 0; }
+    .chip { position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 10px 22px 10px 16px; border-radius: 999px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); font: 600 26px "Mukta"; color: #fff; }
+    .kicker { font: 700 28px "Mukta"; letter-spacing: .14em; text-transform: uppercase; color: #8fd9c9; }
+    .phone { position: absolute; border-radius: 52px; background: #0b0f0e; padding: 13px; box-shadow: 0 30px 70px rgba(0,0,0,.5), 0 0 0 2px rgba(255,255,255,.08); }
+    .phone .scr { position: relative; width: 100%; height: 100%; border-radius: 40px; overflow: hidden; background: #fff; }
+    .phone .scr img { position: absolute; left: 0; top: 0; width: 100%; }
+    .pt { display: flex; align-items: flex-start; gap: 18px; font: 600 38px/1.25 "Mukta"; color: #fff; }
+    .pt .ic { flex: none; width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center; background: rgba(143,217,201,.14); color: #8fd9c9; }
+    .pt small { display: block; font: 400 28px/1.35 "Mukta"; color: #b9d6cf; margin-top: 4px; }
+    
+  </style>
+  <div id="root" data-composition-id="s15" data-width="1920" data-height="1080">
+    <div id="s15-wrap"><div class="bg"></div><div class="kicker" id="s15-kick" style="position:absolute;left:210px;top:70px">Family view · shared with consent</div><div class="phone" id="s15-p" style="left:330px;top:150px;width:431px;height:746px"><div class="scr"><img id="s15-p-i0" src="assets/shots/family.png" style="opacity:1"></div></div><div class="pt" id="s15-a" style="position:absolute;left:1000px;top:260px;width:760px;opacity:0"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12,19.6C5.5,14.3 3.2,11.5 3.2,8.5A4.6,4.6 0 0 1 12,6.7A4.6,4.6 0 0 1 20.8,8.5C20.8,11.5 18.5,14.3 12,19.6z"/></svg></span><span>How they are today<small>In plain words</small></span></div><div class="pt" id="s15-b" style="position:absolute;left:1000px;top:430px;width:760px;opacity:0"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.2,3.5C9.9,3.5 10.8,5.3 10.5,7.4 10.2,9.5 9.2,10.5 8,10.5 6.8,10.5 6,9.4 6,7.6 6,5.2 6.8,3.5 8.2,3.5z"/><path d="M16.2,9.5C17.9,9.5 18.8,11.3 18.5,13.4 18.2,15.5 17.2,16.5 16,16.5 14.8,16.5 14,15.4 14,13.6 14,11.2 14.8,9.5 16.2,9.5z"/></svg></span><span>Steps and medicines this week<small>Day by day</small></span></div><div class="pt" id="s15-c" style="position:absolute;left:1000px;top:600px;width:760px;opacity:0"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7.5" r="3.8"/><path d="M4.6,20.4C5.2,16.8 8.2,14.8 12,14.8S18.8,16.8 19.4,20.4"/></svg></span><span>Who their care manager is</span></div><div class="pt" id="s15-d" style="position:absolute;left:1000px;top:740px;width:760px;opacity:0"><span class="ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12,3l7.2,2.8v5.6c0,4.6 -3.1,8 -7.2,9.6C7.9,19.4 4.8,16 4.8,11.4V5.8z"/><path d="M8.8,12l2.4,2.4L15.6,9.6"/></svg></span><span>No scores. No medical detail.<small>The senior can stop sharing at any time</small></span></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s15-wrap", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, 0);
+    tl.fromTo("#s15-kick", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.20);
+    tl.fromTo("#s15-p", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0.05);
+    tl.fromTo("#s15-a", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 5.90);
+    tl.fromTo("#s15-b", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 7.06);
+    tl.to("#s15-p-i0", { y: -150, duration: 2.2, ease: "power1.inOut" }, 6.86);
+    tl.fromTo("#s15-c", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 9.60);
+    tl.fromTo("#s15-d", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 12.08);
+    tl.to("#s15-wrap", { opacity: 0, duration: 0.35, ease: "power2.in" }, 15.81);
+    window.__timelines["s15"] = tl;
+  </script>
+</template>

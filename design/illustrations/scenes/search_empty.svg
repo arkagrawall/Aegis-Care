@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300">
+  <!-- Portal: nobody matches - a magnifier over three person cards. -->
+  <path class="blob" id="blob" d="M46,118 C50,58 112,26 176,24 C244,22 306,54 318,114 C330,174 318,232 268,258 C218,284 132,286 86,260 C40,234 42,172 46,118Z" fill="#E3F3EE"/>
+  <rect x="96" y="84" width="150" height="38" rx="10" fill="#FFFFFF"/>
+  <circle cx="117" cy="103" r="11" fill="#9AD8C9"/>
+  <rect x="136" y="95" width="70" height="6" rx="3" fill="#C9CED0"/><rect x="136" y="106" width="46" height="6" rx="3" fill="#E1E8E5"/>
+  <rect x="96" y="132" width="150" height="38" rx="10" fill="#FFFFFF"/>
+  <circle cx="117" cy="151" r="11" fill="#F9D5D2"/>
+  <rect x="136" y="143" width="70" height="6" rx="3" fill="#C9CED0"/><rect x="136" y="154" width="46" height="6" rx="3" fill="#E1E8E5"/>
+  <rect x="96" y="180" width="150" height="38" rx="10" fill="#FFFFFF"/>
+  <circle cx="117" cy="199" r="11" fill="#FBF0D9"/>
+  <rect x="136" y="191" width="70" height="6" rx="3" fill="#C9CED0"/><rect x="136" y="202" width="46" height="6" rx="3" fill="#E1E8E5"/>
+  <circle cx="238" cy="156" r="36" fill="#FFFFFF" opacity="0.6"/>
+  <circle cx="238" cy="156" r="36" fill="none" stroke="#0E7C6B" stroke-width="10"/>
+  <path d="M264,182 L292,210" fill="none" stroke="#0E7C6B" stroke-width="14" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Me tab: language, accessibility choices, safety, watch and connection -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pageMe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingBottom="124dp"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/T.Display"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:accessibilityHeading="true"
+                android:text="@string/me_title" />
+
+            <com.aegis.saathi.ui.LanguageToggle
+                android:id="@+id/langToggleMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMeName"
+            style="@style/T.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            style="@style/T.Section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:accessibilityHeading="true"
+            android:text="@string/me_easier" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="14dp">
+
+            <TextView
+                style="@style/T.Section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/me_text_size" />
+
+            <LinearLayout
+                android:id="@+id/sizeGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sizeNormal"
+                    style="@style/T.ButtonDark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+            android:minHeight="64dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_outline"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/me_size_normal"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/sizeLarge"
+                    style="@style/T.ButtonDark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+            android:minHeight="64dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_btn_outline"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/me_size_large"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/sizeXLarge"
+                    style="@style/T.ButtonDark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+            android:minHeight="64dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_btn_outline"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/me_size_xlarge"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swContrast"
+                style="@style/T.Section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:paddingVertical="8dp"
+                android:text="@string/me_contrast"
+                app:thumbTint="@color/switch_thumb"
+                app:trackTint="@color/switch_track" />
+
+            <TextView
+                style="@style/T.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-6dp"
+                android:paddingBottom="10dp"
+                android:text="@string/me_contrast_sub"
+                android:textColor="@color/ink_soft" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swReadAloud"
+                style="@style/T.Section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:paddingVertical="8dp"
+                android:text="@string/me_read_aloud"
+                app:thumbTint="@color/switch_thumb"
+                app:trackTint="@color/switch_track" />
+
+            <TextView
+                style="@style/T.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-6dp"
+                android:paddingBottom="10dp"
+                android:text="@string/me_read_aloud_sub"
+                android:textColor="@color/ink_soft" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swHaptics"
+                style="@style/T.Section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:paddingVertical="8dp"
+                android:text="@string/me_haptics"
+                app:thumbTint="@color/switch_thumb"
+                app:trackTint="@color/switch_track" />
+
+            <TextView
+                style="@style/T.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-6dp"
+                android:paddingBottom="10dp"
+                android:text="@string/me_haptics_sub"
+                android:textColor="@color/ink_soft" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/T.Section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:accessibilityHeading="true"
+            android:text="@string/me_safety" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="14dp">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swFall"
+                style="@style/T.Section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="64dp"
+                android:paddingVertical="8dp"
+                android:text="@string/me_fall"
+                app:thumbTint="@color/switch_thumb"
+                app:trackTint="@color/switch_track" />
+
+            <TextView
+                style="@style/T.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-6dp"
+                android:paddingBottom="10dp"
+                android:text="@string/me_fall_sub"
+                android:textColor="@color/ink_soft" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowMissedCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="72dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_circle_primary_soft"
+                android:importantForAccessibility="no"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_phone"
+                app:tint="@color/primary" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/T.Section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/me_missed_call" />
+
+                <TextView
+                    android:id="@+id/tvMissedCallSub"
+                    style="@style/T.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_arrow_right"
+                app:tint="@color/ink_soft" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowWatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="72dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_circle_primary_soft"
+                android:importantForAccessibility="no"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_watch"
+                app:tint="@color/primary" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/T.Section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/me_watch" />
+
+                <TextView
+                    android:id="@+id/tvMeWatch"
+                    style="@style/T.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_arrow_right"
+                app:tint="@color/ink_soft" />
+        </LinearLayout>
+
+        <!-- Can Saathi's call ring on a locked phone? (full-screen calls + battery) -->
+        <LinearLayout
+            android:id="@+id/rowCallReady"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="72dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/ivCallReady"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_circle_good_soft"
+                android:importantForAccessibility="no"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_shield_check"
+                app:tint="@color/good" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCallReady"
+                    style="@style/T.Section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/me_calls_lock_ok" />
+
+                <TextView
+                    android:id="@+id/tvCallReadySub"
+                    style="@style/T.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivCallReadyArrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_arrow_right"
+                app:tint="@color/ink_soft" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowServer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="72dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_circle_primary_soft"
+                android:importantForAccessibility="no"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_settings"
+                app:tint="@color/primary" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/T.Section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu_server" />
+
+                <TextView
+                    android:id="@+id/tvMeServer"
+                    style="@style/T.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_arrow_right"
+                app:tint="@color/ink_soft" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowReadings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="72dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_circle_primary_soft"
+                android:importantForAccessibility="no"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_heart"
+                app:tint="@color/primary" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/T.Section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/me_readings" />
+
+                <TextView
+                    android:id="@+id/tvMeReadings"
+                    style="@style/T.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_arrow_right"
+                app:tint="@color/ink_soft" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowIntro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:minHeight="72dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_circle_primary_soft"
+                android:importantForAccessibility="no"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_logo"
+                app:tint="@color/primary" />
+
+            <TextView
+                style="@style/T.Section"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:text="@string/me_how_it_works" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_arrow_right"
+                app:tint="@color/ink_soft" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvVersion"
+            style="@style/T.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center" />
+    </LinearLayout>
+</ScrollView>

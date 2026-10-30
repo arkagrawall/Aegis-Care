@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Type scale (Mukta). Big enough for older eyes; weight, not colour alone, carries hierarchy. -->
+    <style name="T">
+        <item name="android:fontFamily">@font/mukta</item>
+    </style>
+
+    <style name="T.Display" parent="T">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="T.Title" parent="T">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="T.Section" parent="T">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="T.Body" parent="T">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/ink_soft</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+    </style>
+
+    <style name="T.Caption" parent="T">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ink_faint</item>
+    </style>
+
+    <style name="T.Button" parent="T">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="T.ButtonDark" parent="T.Button">
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <style name="T.Metric" parent="T">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Bottom navigation: always-visible labels, large enough to read -->
+    <style name="NavLabel" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">@font/mukta</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="NavLabel.Active">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NavIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/primary_soft</item>
+        <item name="android:width">72dp</item>
+        <item name="android:height">36dp</item>
+    </style>
+
+    <!-- Call screen controls: a 72dp round button with an 18sp label underneath -->
+    <style name="CallControl">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:paddingVertical">4dp</item>
+        <item name="android:minHeight">104dp</item>
+    </style>
+
+    <style name="CallControlCircle">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:background">@drawable/bg_call_round</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+
+    <style name="CallControlIcon">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="tint">@color/call_ink</item>
+    </style>
+
+    <style name="CallControlLabel" parent="T">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/call_ink</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

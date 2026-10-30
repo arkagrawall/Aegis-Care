@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300">
+  <!-- Empty state: all done today - dadi relaxes with a cup of chai; a big tick. -->
+  <path class="blob" id="blob" d="M46,118 C50,58 112,26 176,24 C244,22 306,54 318,114 C330,174 318,232 268,258 C218,284 132,286 86,260 C40,234 42,172 46,118Z" fill="#E3F3EE"/>
+  <g clip="blob"><rect x="0" y="226" width="360" height="80" fill="#9AD8C9"/></g>
+  <circle cx="262" cy="86" r="30" fill="#2D8A4E"/>
+  <path d="M249.4,86.6 L259.0,95.6 L275.5,77.0" fill="none" stroke="#FFFFFF" stroke-width="6.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(86 228) scale(0.85)">
+    <path d="M-14,0 L14,0 L10,26 L-10,26Z" fill="#E08A5A"/><path d="M-14,0 L14,0 L13,6 L-13,6Z" fill="#C97447"/>
+    <ellipse cx="-8" cy="-26" rx="7" ry="20" fill="#2E9C88" transform="rotate(-22 -8 -26)"/>
+    <ellipse cx="8" cy="-28" rx="7" ry="22" fill="#0E7C6B" transform="rotate(18 8 -28)"/>
+    <ellipse cx="0" cy="-34" rx="6.5" ry="24" fill="#3FB59F"/>
+  </g>
+  <path transform="translate(282 150) scale(0.7)" d="M0,-4 c-4,-6 -14,-3 -12,5 c1.5,5 12,12 12,12 c0,0 10.5,-7 12,-12 c2,-8 -8,-11 -12,-5z" fill="#F07862"/>
+  <use-part name="dadi_tea" transform="translate(124 22)"/>
+</svg>

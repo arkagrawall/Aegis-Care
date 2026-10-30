@@ -1,0 +1,44 @@
+<template>
+  <style>
+    @font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_semibold.ttf") format("truetype"); font-weight: 600; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_bold.ttf") format("truetype"); font-weight: 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Mukta", sans-serif; color: #fff; }
+    #root * { box-sizing: border-box; }
+    #s10-wrap { position: absolute; inset: 0; }
+    .bg { position: absolute; inset: 0; background: radial-gradient(120% 90% at 15% 0%, #8a2a69 0%, #4a1137 45%, #2a0a1f 100%); }
+    .frame { position: absolute; overflow: hidden; border-radius: 18px; background: #fff; box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.1); }
+    .bar { position: absolute; left: 0; right: 0; top: 0; height: 34px; background: #efe6eb; display: flex; align-items: center; gap: 8px; padding-left: 16px; z-index: 3; }
+    .bar i { width: 11px; height: 11px; border-radius: 50%; background: #d9c8d2; }
+    .bar b { margin-left: 18px; font: 600 15px "Mukta"; color: #6b5562; }
+    .view { position: absolute; left: 0; right: 0; bottom: 0; overflow: hidden; }
+    .cam { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    .cam img { display: block; }
+    .spot { position: absolute; border-radius: 14px; border: 4px solid #f7941e; box-shadow: 0 0 0 4000px rgba(42,10,31,.40), 0 0 26px rgba(247,148,30,.6); opacity: 0; }
+    .kicker { font: 700 30px "Mukta"; letter-spacing: .16em; text-transform: uppercase; color: #f7941e; }
+    .title { font: 700 62px/1.08 "Mukta"; color: #fff; }
+    .phone { position: absolute; border-radius: 54px; background: #0b0a0b; padding: 13px; box-shadow: 0 30px 70px rgba(0,0,0,.55), 0 0 0 2px rgba(255,255,255,.1); }
+    .phone .scr { position: relative; width: 100%; height: 100%; border-radius: 42px; overflow: hidden; background: #fff; }
+    .phone .scr img { position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .pt { display: flex; align-items: flex-start; gap: 20px; font: 600 40px/1.22 "Mukta"; color: #fff; }
+    .pt .ic { flex: none; width: 60px; height: 60px; border-radius: 18px; display: grid; place-items: center; background: rgba(247,148,30,.16); color: #f7941e; }
+    .pt small { display: block; font: 400 28px/1.35 "Mukta"; color: #e9cfdf; margin-top: 4px; }
+    .num { background: #f7941e !important; color: #4a1137 !important; font: 700 30px "Mukta"; }
+    
+  </style>
+  <div data-hf-id="hf-8k65" id="root" data-composition-id="s10" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-61gc" id="s10-wrap"><div data-hf-id="hf-m7dd" class="bg"></div><div data-hf-id="hf-6bjq" class="phone" id="s10-ph" style="left:330px;top:150px;width:426px;height:737px"><div data-hf-id="hf-zn7g" class="scr"><img data-hf-id="hf-30b8" id="s10-ph-i0" src="assets/app/app_sos_sent.png" style="opacity:1"></div></div><div data-hf-id="hf-ozv7" id="s10-k" class="kicker" style="position:absolute;left:860px;top:120px;opacity:0">Emergency</div><div data-hf-id="hf-bjyn" id="s10-t" class="title" style="position:absolute;left:860px;top:164px;width:920px;opacity:0">Help in one press.</div><div data-hf-id="hf-4jei" class="pt" id="s10-p1" style="position:absolute;left:860px;top:360px;width:820px;opacity:0"><span data-hf-id="hf-8dw9" class="ic"><svg data-hf-id="hf-mcjy" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path data-hf-id="hf-cbnn" d="M12,3.6L21,19.4H3z"/><path data-hf-id="hf-phdt" d="M12,9.8v4.4"/><path data-hf-id="hf-n2ut" d="M12,17h.01"/></svg></span><span data-hf-id="hf-1egg">Hold SOS for 3 seconds</span></div><div data-hf-id="hf-6xfh" class="pt" id="s10-p2" style="position:absolute;left:860px;top:480px;width:900px;opacity:0"><span data-hf-id="hf-hovh" class="ic"><svg data-hf-id="hf-p0ya" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path data-hf-id="hf-6fp7" d="M12,21s-6.5-5.6-6.5-11a6.5,6.5 0 0 1 13,0c0,5.4-6.5,11-6.5,11z"/><circle data-hf-id="hf-g72k" cx="12" cy="10" r="2.4"/></svg></span><span data-hf-id="hf-exqb">Care Manager alerted, with location</span></div><img data-hf-id="hf-j8m2" id="s10-art" src="assets/ill/sos.svg" style="position:absolute;left:1160px;top:560px;width:540px;opacity:0"></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s10-wrap", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, 0);
+    tl.fromTo("#s10-ph", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 0.10);
+    tl.fromTo("#s10-k", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.30);
+    tl.fromTo("#s10-t", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.42);
+    tl.fromTo("#s10-p1", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 2.04);
+    tl.fromTo("#s10-p2", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 6.32);
+    tl.fromTo("#s10-art", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 6.62);
+    tl.to("#s10-wrap", { opacity: 0, duration: 0.35, ease: "power2.in" }, 10.17);
+    window.__timelines["s10"] = tl;
+  </script>
+</template>

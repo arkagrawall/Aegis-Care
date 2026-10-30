@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 250">
+  <!-- Daughter: coral kurti, cream dupatta, indigo leggings, black hair in a long braid, gold earrings.
+       Her right arm (our right) reaches out to hold the arm of whoever walks beside her. Feet at y=244. -->
+  <!-- braid behind -->
+  <path d="M72,44 C82,62 82,98 77,124" fill="none" stroke="#2B2B33" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="77" cy="128" r="4" fill="#F07862"/>
+  <!-- neck -->
+  <rect x="53" y="56" width="13" height="16" rx="4" fill="#AD7350"/>
+  <!-- leggings and feet -->
+  <path d="M44,166 L58,166 L56,236 L46,236Z" fill="#3F5BA9"/>
+  <path d="M62,166 L77,166 L74,236 L64,236Z" fill="#344C8F"/>
+  <ellipse cx="50" cy="240" rx="8.5" ry="4" fill="#B1423D"/>
+  <ellipse cx="70" cy="240" rx="8.5" ry="4" fill="#963630"/>
+  <!-- kurti -->
+  <path d="M41,74 C47,68 73,68 79,74 C81,96 81,116 80,128 C84,142 87,156 89,172 L31,172 C33,156 36,142 40,128 C39,116 39,96 41,74Z" fill="#F07862"/>
+  <path d="M72,71 C76,72 79,74 79,74 C81,96 81,116 80,128 C84,142 87,156 89,172 L77,172 C76,150 76,120 72,71Z" fill="#D9614E"/>
+  <path d="M33,164 L87,164 L89,172 L31,172Z" fill="#F29B4B"/>
+  <!-- dupatta -->
+  <path d="M41,74 C50,86 64,88 79,74 C79,80 78,84 76,88 C64,96 50,94 42,84Z" fill="#F4EBDD"/>
+  <path d="M42,82 C40,104 39,124 40,146 L46,146 C45,124 45,104 46,86Z" fill="#F4EBDD"/>
+  <!-- left arm down -->
+  <path d="M41,76 C36,84 33,102 33,124 L42,124 C42,104 44,92 47,84Z" fill="#F07862"/>
+  <ellipse cx="37.5" cy="128" rx="5.2" ry="5.4" fill="#C98B62"/>
+  <!-- right arm reaching across -->
+  <path d="M76,78 C84,86 89,98 91,108 L84,112 C82,102 78,94 72,88Z" fill="#D9614E"/>
+  <path d="M84,107 C96,109 108,110 118,108 L119,116 C107,119 95,119 85,116Z" fill="#C98B62"/>
+  <ellipse cx="119" cy="112" rx="5.4" ry="5.2" fill="#C98B62"/>
+  <!-- head -->
+  <ellipse cx="41.5" cy="43" rx="3.1" ry="4.4" fill="#AD7350"/>
+  <circle cx="41.5" cy="49" r="2" fill="#E8B04B"/>
+  <ellipse cx="60" cy="40" rx="17.5" ry="19.5" fill="#C98B62"/>
+  <path d="M68,22 C75,26 77.5,33 77.5,40 C77.5,51 71.5,58 63.5,60 C69.5,53 71.5,45 70.5,37 C70,31 69.5,26 68,22Z" fill="#B67A54"/>
+  <!-- hair -->
+  <path d="M41.5,44 C39.5,25 51,17.5 60.5,17.5 C71.5,17.5 80,25 78.5,43 C76,33 70.5,28.5 64,27.5 C59.5,31.5 51.5,33.5 45,35.5 C43,38 42,41 41.5,44Z" fill="#2B2B33"/>
+  <path d="M60.5,17.5 C71.5,17.5 80,25 78.5,43 C77,37 74.5,32.5 70.5,30 C70,24.5 66.5,20 60.5,17.5Z" fill="#1F1F26"/>
+  <!-- face -->
+  <path d="M49.5,39.5 q3,-1.8 6,0" fill="none" stroke="#2B2B33" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M63.5,39.5 q3,-1.8 6,0" fill="none" stroke="#2B2B33" stroke-width="1.4" stroke-linecap="round"/>
+  <circle cx="52.8" cy="44" r="1.8" fill="#2B2B33"/>
+  <circle cx="66" cy="44" r="1.8" fill="#2B2B33"/>
+  <circle cx="59.4" cy="34.6" r="1.2" fill="#B1423D"/>
+  <ellipse cx="49" cy="50" rx="3.2" ry="2" fill="#F07862" opacity="0.35"/>
+  <ellipse cx="69.5" cy="50" rx="3.2" ry="2" fill="#F07862" opacity="0.35"/>
+  <path d="M54.5,53 q4.8,3.6 9.6,0" fill="none" stroke="#7A3E2E" stroke-width="1.7" stroke-linecap="round"/>
+</svg>

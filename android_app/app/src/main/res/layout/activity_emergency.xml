@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- "Help is coming": opens over everything when the senior is in danger. Calls the family (or says who Saathi is calling) and offers 112 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="24dp">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/ill_sos" />
+
+    <TextView
+        style="@style/T.Display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/emg_title"
+        android:textColor="@color/sos"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/tvEmgWho"
+        style="@style/T.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:accessibilityLiveRegion="assertive"
+        android:gravity="center"
+        android:textColor="@color/ink"
+        android:textSize="22sp" />
+
+    <TextView
+        style="@style/T.Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/emg_cm_knows"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/btnEmgCallFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:minHeight="84dp"
+        android:background="@drawable/bg_btn_good"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/ic_phone"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvEmgCallFamily"
+            style="@style/T.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnEmg112"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:minHeight="84dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_btn_sos"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/ic_sos"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            style="@style/T.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/emg_call_112"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnEmgSafe"
+        style="@style/T.ButtonDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:minHeight="64dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_btn_outline"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/emg_safe"
+        android:textSize="18sp" />
+</LinearLayout>

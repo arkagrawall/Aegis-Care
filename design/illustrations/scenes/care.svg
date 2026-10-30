@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300">
+  <!-- Setup step: your care manager - she holds her clipboard; a call bubble beside her. -->
+  <path class="blob" id="blob" d="M46,118 C50,58 112,26 176,24 C244,22 306,54 318,114 C330,174 318,232 268,258 C218,284 132,286 86,260 C40,234 42,172 46,118Z" fill="#E3F3EE"/>
+  <g clip="blob"><rect x="0" y="226" width="360" height="80" fill="#9AD8C9"/></g>
+  <path d="M218,60 L290,60 C299,60 304,65 304,74 L304,108 C304,117 299,122 290,122 L246,122 L232,138 L233,122 L218,122 C209,122 204,117 204,108 L204,74 C204,65 209,60 218,60Z" fill="#FFFFFF"/>
+  <path d="M240,78 c-3,0 -6,3 -6,6 c0,12 10,22 22,22 c3,0 6,-3 6,-6 l0,-5 l-8,-3 l-3,4 c-5,-2 -9,-6 -11,-11 l4,-3 l-3,-8z" fill="#0E7C6B"/>
+  <path d="M266,80 q8,4 8,14 M266,72 q14,6 14,22" fill="none" stroke="#3FB59F" stroke-width="3" stroke-linecap="round"/>
+  <g transform="translate(282 232) scale(0.8)">
+    <path d="M-14,0 L14,0 L10,26 L-10,26Z" fill="#E08A5A"/><path d="M-14,0 L14,0 L13,6 L-13,6Z" fill="#C97447"/>
+    <ellipse cx="-8" cy="-26" rx="7" ry="20" fill="#2E9C88" transform="rotate(-22 -8 -26)"/>
+    <ellipse cx="8" cy="-28" rx="7" ry="22" fill="#0E7C6B" transform="rotate(18 8 -28)"/>
+    <ellipse cx="0" cy="-34" rx="6.5" ry="24" fill="#3FB59F"/>
+  </g>
+  <use-part name="care_manager" transform="translate(96 22)"/>
+</svg>

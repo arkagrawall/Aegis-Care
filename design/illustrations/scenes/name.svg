@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300">
+  <!-- Setup step: your name and age - dadaji shows his ID card. -->
+  <path class="blob" id="blob" d="M60,96 C76,44 136,22 196,28 C258,34 312,64 316,124 C320,184 304,236 256,256 C204,278 126,280 86,252 C46,224 46,150 60,96Z" fill="#E3F3EE"/>
+  <g clip="blob"><rect x="0" y="226" width="360" height="80" fill="#9AD8C9"/></g>
+  <g transform="translate(84 226) scale(0.9)">
+    <path d="M-14,0 L14,0 L10,26 L-10,26Z" fill="#E08A5A"/><path d="M-14,0 L14,0 L13,6 L-13,6Z" fill="#C97447"/>
+    <ellipse cx="-8" cy="-26" rx="7" ry="20" fill="#2E9C88" transform="rotate(-22 -8 -26)"/>
+    <ellipse cx="8" cy="-28" rx="7" ry="22" fill="#0E7C6B" transform="rotate(18 8 -28)"/>
+    <ellipse cx="0" cy="-34" rx="6.5" ry="24" fill="#3FB59F"/>
+  </g>
+  <path transform="translate(268 74) scale(0.8)" d="M0,-11 l3,8 l8,3 l-8,3 l-3,8 l-3,-8 l-8,-3 l8,-3z" fill="#F29B4B"/>
+  <use-part name="dadaji_card" transform="translate(126 20)"/>
+</svg>

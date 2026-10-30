@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300">
+  <!-- Family page: the daughter reads a weekly update on her phone; a heart floats up. -->
+  <path class="blob" id="blob" d="M52,108 C60,52 118,24 178,26 C240,28 302,46 318,104 C334,160 328,226 276,254 C226,280 136,284 88,258 C40,232 44,160 52,108Z" fill="#E3F3EE"/>
+  <g clip="blob"><rect x="0" y="226" width="360" height="80" fill="#9AD8C9"/></g>
+  <path d="M208,58 L284,58 C293,58 298,63 298,72 L298,112 C298,121 293,126 284,126 L232,126 L218,142 L220,126 L208,126 C199,126 194,121 194,112 L194,72 C194,63 199,58 208,58Z" fill="#FFFFFF"/>
+  <path transform="translate(246 90) scale(1.2)" d="M0,-4 c-4,-6 -14,-3 -12,5 c1.5,5 12,12 12,12 c0,0 10.5,-7 12,-12 c2,-8 -8,-11 -12,-5z" fill="#F07862"/>
+  <rect x="212" y="110" width="40" height="5" rx="2.5" fill="#C9CED0"/>
+  <g transform="translate(272 230) scale(0.85)">
+    <path d="M-14,0 L14,0 L10,26 L-10,26Z" fill="#E08A5A"/><path d="M-14,0 L14,0 L13,6 L-13,6Z" fill="#C97447"/>
+    <ellipse cx="-8" cy="-26" rx="7" ry="20" fill="#2E9C88" transform="rotate(-22 -8 -26)"/>
+    <ellipse cx="8" cy="-28" rx="7" ry="22" fill="#0E7C6B" transform="rotate(18 8 -28)"/>
+    <ellipse cx="0" cy="-34" rx="6.5" ry="24" fill="#3FB59F"/>
+  </g>
+  <path transform="translate(96 70) scale(0.8)" d="M0,-11 l3,8 l8,3 l-8,3 l-3,8 l-3,-8 l-8,-3 l8,-3z" fill="#F29B4B"/>
+  <use-part name="daughter_phone" transform="translate(96 22)"/>
+</svg>

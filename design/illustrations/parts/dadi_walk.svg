@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 250">
+  <!-- Dadi: maroon sari with gold border, saffron blouse, white hair in a bun, round glasses, bindi.
+       Walking arm in arm: her right arm hangs down, her left arm is held by the person beside her (drawn by that part). Feet at y=244. -->
+  <!-- bun and hair behind the head -->
+  <ellipse cx="45" cy="33" rx="8.5" ry="8" fill="#DCE0E1"/>
+  <!-- neck -->
+  <rect x="52" y="60" width="13" height="14" rx="4" fill="#AD7350"/>
+  <!-- sari -->
+  <path d="M40,76 C45,70 72,70 78,76 C80,96 80,112 79,124 C86,160 91,200 92,236 L28,236 C29,200 34,160 39,124 C38,110 38,94 40,76Z" fill="#B1423D"/>
+  <path d="M72,74 C75,74 78,76 78,76 C80,96 80,112 79,124 C86,160 91,200 92,236 L78,236 C78,200 77,160 73,122 Z" fill="#963630"/>
+  <path d="M51,150 L47,227 M57,150 L56,227 M63,150 L65,227" fill="none" stroke="#8E312C" stroke-width="1.6" opacity="0.55"/>
+  <path d="M28.5,227 L91.5,227 L92,236 L28,236Z" fill="#E8B04B"/>
+  <path d="M78,227 L91.5,227 L92,236 L78,236Z" fill="#CC9637"/>
+  <!-- pallu over the shoulder, gold edge -->
+  <path d="M74,73 C67,95 53,112 36,133 L41,147 C57,125 71,104 81,81 Z" fill="#C9524C"/>
+  <path d="M39,141 C55,119 69,99 80,79" fill="none" stroke="#E8B04B" stroke-width="3" stroke-linecap="round"/>
+  <!-- blouse sleeves -->
+  <path d="M41,76 C35,79 33,87 33,95 L43,96 L46,80Z" fill="#F29B4B"/>
+  <path d="M77,76 C83,79 86,86 87,93 L77,95 L73,80Z" fill="#DE8638"/>
+  <!-- left arm tucked in at the elbow (the other person's hand rests on it) -->
+  <path d="M34,94 L43,95 C43,103 42,110 40,116 L32,114 C33,108 34,101 34,94Z" fill="#C98B62"/>
+  <!-- right arm down -->
+  <path d="M78,92 L86,91 C87,104 87,116 86,126 L78,126 C78,116 78,104 78,92Z" fill="#AD7350"/>
+  <ellipse cx="82" cy="129" rx="5.2" ry="5.2" fill="#C98B62"/>
+  <!-- feet -->
+  <ellipse cx="47" cy="240" rx="8.5" ry="4" fill="#6B4F3A"/>
+  <ellipse cx="72" cy="240" rx="8.5" ry="4" fill="#5A4130"/>
+  <!-- head -->
+  <ellipse cx="39.5" cy="48" rx="3.2" ry="4.6" fill="#AD7350"/>
+  <ellipse cx="58" cy="45" rx="18" ry="20" fill="#C98B62"/>
+  <path d="M66,26.5 C73,30 76,38 76,45 C76,56 70,63 62,65 C68,58 70,50 69,42 C68.5,36 67.5,31 66,26.5Z" fill="#B67A54"/>
+  <!-- hair -->
+  <path d="M39.5,47 C38,27 51,22 59,22.5 C70,23 78,31 76.5,45 C73,36 67,32 59,32.5 C50,33 43.5,38 39.5,47Z" fill="#EEF0F0"/>
+  <path d="M59,22.5 C70,23 78,31 76.5,45 C74.5,39 71.5,35 67.5,33 C68,29 64.5,25 59,22.5Z" fill="#D8DDDE"/>
+  <!-- face -->
+  <circle cx="58.5" cy="40.5" r="1.5" fill="#B1423D"/>
+  <path d="M48.5,43.5 q3,-1.8 6,0" fill="none" stroke="#B9BEC0" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M62,43.5 q3,-1.8 6,0" fill="none" stroke="#B9BEC0" stroke-width="1.3" stroke-linecap="round"/>
+  <circle cx="51.8" cy="48" r="1.8" fill="#2B2B33"/>
+  <circle cx="65" cy="48" r="1.8" fill="#2B2B33"/>
+  <circle cx="51.8" cy="48" r="4.8" fill="none" stroke="#7A5A44" stroke-width="1.2"/>
+  <circle cx="65" cy="48" r="4.8" fill="none" stroke="#7A5A44" stroke-width="1.2"/>
+  <path d="M56.6,47.6 q1.8,-1 3.6,0" fill="none" stroke="#7A5A44" stroke-width="1.2"/>
+  <path d="M58.6,50.5 q1.6,3.2 -0.8,4.4" fill="none" stroke="#9C6544" stroke-width="1.2" stroke-linecap="round"/>
+  <ellipse cx="48" cy="54.5" rx="3.3" ry="2" fill="#F07862" opacity="0.35"/>
+  <ellipse cx="68.5" cy="54.5" rx="3.3" ry="2" fill="#F07862" opacity="0.35"/>
+  <path d="M53.5,57.5 q4.8,3.6 9.6,0" fill="none" stroke="#7A3E2E" stroke-width="1.7" stroke-linecap="round"/>
+</svg>

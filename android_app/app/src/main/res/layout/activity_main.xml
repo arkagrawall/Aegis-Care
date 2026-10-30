@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- The four tabs share this space; the SOS button stays on top of every tab -->
+    <FrameLayout
+        android:id="@+id/pageHost"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <ScrollView
+        android:id="@+id/scrollMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="12dp">
+
+            <!-- Header: greeting + date, and the read-aloud speaker -->
+            <LinearLayout
+                android:id="@+id/headerRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSeniorGreeting"
+                        style="@style/T.Display"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:accessibilityHeading="true"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/tvSubGreeting"
+                        style="@style/T.Body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+
+                <com.aegis.saathi.ui.LanguageToggle
+                    android:id="@+id/langToggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/btnMore"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_circle_primary_soft"
+                    android:contentDescription="@string/read_aloud"
+                    android:padding="14dp"
+                    app:srcCompat="@drawable/ic_speaker"
+                    app:tint="@color/primary_dark" />
+            </LinearLayout>
+
+            <!-- 1. How are you today? -->
+            <LinearLayout
+                android:id="@+id/cardCheckin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <ImageView
+                    android:id="@+id/ivCheckinArt"
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:layout_marginBottom="6dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ill_checkin" />
+
+                <TextView
+                    android:id="@+id/tvCheckinTitle"
+                    style="@style/T.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkin_title" />
+
+                <LinearLayout
+                    android:id="@+id/checkinOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/optFine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+            android:minHeight="124dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tile_good"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="46dp"
+                            android:layout_height="46dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/ic_face_happy"
+                            app:tint="@color/good" />
+
+                        <TextView
+                            style="@style/T.Section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:text="@string/opt_fine"
+                            android:textColor="@color/good" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/optWeak"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+            android:minHeight="124dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tile_warn"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="46dp"
+                            android:layout_height="46dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/ic_face_neutral"
+                            app:tint="@color/warn" />
+
+                        <TextView
+                            style="@style/T.Section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:text="@string/opt_weak"
+                            android:textColor="@color/warn" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/optBad"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+            android:minHeight="124dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_tile_bad"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="46dp"
+                            android:layout_height="46dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/ic_face_sad"
+                            app:tint="@color/bad" />
+
+                        <TextView
+                            style="@style/T.Section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:text="@string/opt_bad"
+                            android:textColor="@color/bad" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/checkinDone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/bg_done"
+                    android:gravity="center_vertical"
+                    android:minHeight="76dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivCheckinDone"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@drawable/ic_face_happy"
+                        app:tint="@color/good" />
+
+                    <TextView
+                        android:id="@+id/tvCheckinDoneText"
+                        style="@style/T.Section"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/good" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 2. Medicine -->
+            <LinearLayout
+                android:id="@+id/cardMeds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <ImageView
+                    android:id="@+id/ivMedsArt"
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:layout_marginBottom="6dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ill_medicines" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/bg_circle_primary_soft"
+                        android:importantForAccessibility="no"
+                        android:padding="11dp"
+                        app:srcCompat="@drawable/ic_pill"
+                        app:tint="@color/primary" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvMedsTitle"
+                            style="@style/T.Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/meds_title" />
+
+                        <TextView
+                            android:id="@+id/tvMedsSub"
+                            style="@style/T.Body"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/meds_name" />
+
+                        <TextView
+                            android:id="@+id/tvMedsWhen"
+                            style="@style/T.Section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textColor="@color/primary_dark"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/medsActions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/btnMedTaken"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+            android:minHeight="68dp"
+                        android:background="@drawable/bg_btn_good"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/ic_check"
+                            app:tint="#FFFFFF" />
+
+                        <TextView
+                            style="@style/T.Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:id="@+id/tvMedTakenLabel"
+                            android:text="@string/meds_taken"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/medsMoreRow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/btnMedLater"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+            android:minHeight="58dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_btn_outline"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:importantForAccessibility="no"
+                                app:srcCompat="@drawable/ic_clock"
+                                app:tint="@color/ink_soft" />
+
+                            <TextView
+                                style="@style/T.ButtonDark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="@string/meds_later"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnMedSkipped"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+            android:minHeight="58dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_btn_outline"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:importantForAccessibility="no"
+                                app:srcCompat="@drawable/ic_close"
+                                app:tint="@color/ink_soft" />
+
+                            <TextView
+                                style="@style/T.ButtonDark"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:text="@string/meds_skipped"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/medsDone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/bg_done"
+                    android:gravity="center_vertical"
+                    android:minHeight="68dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivMedsDone"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@drawable/ic_check"
+                        app:tint="@color/good" />
+
+                    <TextView
+                        android:id="@+id/tvMedsDoneText"
+                        style="@style/T.Section"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/good" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- All done for today (shown once the check-in and all of today's doses are done) -->
+            <include
+                android:id="@+id/allDone"
+                layout="@layout/view_empty_state"
+                android:visibility="gone" />
+
+            <!-- What comes next after the card above; tap to see all of today's medicines -->
+            <TextView
+                android:id="@+id/tvComingUp"
+                style="@style/T.Section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/primary"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:paddingHorizontal="6dp"
+                android:textColor="@color/ink_soft"
+                android:visibility="gone"
+                app:drawableStartCompat="@drawable/ic_clock" />
+
+            <!-- 3. Tell us by voice -->
+            <LinearLayout
+                android:id="@+id/btnVoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:minHeight="76dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_btn_primary"
+                android:clickable="true"
+                android:contentDescription="@string/voice_title"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="18dp">
+
+                <ImageView
+                    android:id="@+id/ivVoiceIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_circle_white"
+                    android:importantForAccessibility="no"
+                    android:padding="11dp"
+                    app:srcCompat="@drawable/ic_mic"
+                    app:tint="@color/primary" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvVoiceLabel"
+                        style="@style/T.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="@string/voice_title"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:id="@+id/tvVoiceHint"
+                        style="@style/T.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/voice_hint"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Today at a glance: check-in, medicines, steps (each with an icon and words) -->
+            <LinearLayout
+                android:id="@+id/todayStrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/chipCheckin"
+                    style="@style/T.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/primary"
+                    android:gravity="center"
+                    android:minHeight="76dp"
+                    android:paddingHorizontal="6dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/ink"
+                    android:textSize="18sp"
+                    app:drawableTopCompat="@drawable/ic_face_happy" />
+
+                <Space android:layout_width="10dp" android:layout_height="1dp" />
+
+                <TextView
+                    android:id="@+id/chipDoses"
+                    style="@style/T.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/primary"
+                    android:gravity="center"
+                    android:minHeight="76dp"
+                    android:paddingHorizontal="6dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/ink"
+                    android:textSize="18sp"
+                    app:drawableTopCompat="@drawable/ic_pill" />
+
+                <Space android:layout_width="10dp" android:layout_height="1dp" />
+
+                <TextView
+                    android:id="@+id/chipSteps"
+                    style="@style/T.Body"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_card"
+                    android:drawablePadding="6dp"
+                    android:drawableTint="@color/primary"
+                    android:gravity="center"
+                    android:minHeight="76dp"
+                    android:paddingHorizontal="6dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/ink"
+                    android:textSize="18sp"
+                    app:drawableTopCompat="@drawable/ic_steps" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="96dp" />
+
+            <!-- Watch (details live on the watch screen; kept for the live numbers, hidden on Today) -->
+            <LinearLayout
+                android:id="@+id/cardWatch"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_card"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_circle_primary_soft"
+                        android:importantForAccessibility="no"
+                        android:padding="9dp"
+                        app:srcCompat="@drawable/ic_watch"
+                        app:tint="@color/primary" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/T.Section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/watch_card_title" />
+
+                        <TextView
+                            android:id="@+id/tvWatchStatus"
+                            style="@style/T.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/btnWatch"
+                        style="@style/T.ButtonDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+            android:minHeight="56dp"
+                        android:background="@drawable/bg_btn_soft"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:minWidth="88dp"
+                        android:paddingHorizontal="16dp"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/watchMetrics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/ic_steps"
+                            app:tint="@color/ink_soft" />
+
+                        <TextView
+                            android:id="@+id/tvLiveSteps"
+                            style="@style/T.Metric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            style="@style/T.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/metric_steps" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/ic_heart"
+                            app:tint="@color/bad" />
+
+                        <TextView
+                            android:id="@+id/tvLiveHr"
+                            style="@style/T.Metric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            style="@style/T.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/metric_heart" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/ic_drop"
+                            app:tint="@color/primary" />
+
+                        <TextView
+                            android:id="@+id/tvLiveSpo2"
+                            style="@style/T.Metric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            style="@style/T.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/metric_oxygen" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:importantForAccessibility="no"
+                            app:srcCompat="@drawable/ic_battery"
+                            app:tint="@color/good" />
+
+                        <TextView
+                            android:id="@+id/tvWatchBattery"
+                            style="@style/T.Metric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            style="@style/T.Caption"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/metric_battery" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Readings: BP, sugar, weight -->
+            <LinearLayout
+                android:id="@+id/cardReadings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="18dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_circle_primary_soft"
+                    android:importantForAccessibility="no"
+                    android:padding="9dp"
+                    app:srcCompat="@drawable/ic_heart"
+                    app:tint="@color/primary" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/T.Section"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/readings_title" />
+
+                    <TextView
+                        android:id="@+id/tvReadingsLast"
+                        style="@style/T.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/readings_sub" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btnAddReadings"
+                    style="@style/T.ButtonDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            android:minHeight="56dp"
+                    android:background="@drawable/bg_btn_soft"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:minWidth="88dp"
+                    android:paddingHorizontal="16dp"
+                    android:text="@string/readings_add"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Care manager (shown on the Family tab instead) -->
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:importantForAccessibility="no"
+                    app:srcCompat="@drawable/ic_shield_check"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:id="@+id/tvCoordinatorAssigned"
+                    style="@style/T.Caption"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/ink_soft" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/pageMeds"
+        layout="@layout/page_meds" />
+
+    <include
+        android:id="@+id/pageFamily"
+        layout="@layout/page_family" />
+
+    <include
+        android:id="@+id/pageMe"
+        layout="@layout/page_me" />
+
+    <!-- Emergency: a small round button that needs a 3-second hold, kept out of the way of scrolling -->
+    <LinearLayout
+        android:id="@+id/sosDock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.aegis.saathi.ui.SosButton
+            android:id="@+id/sosButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvSosHint"
+            style="@style/T.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sos_hold_hint"
+            android:textColor="@color/ink_soft"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        android:elevation="12dp"
+        android:minHeight="72dp"
+        app:itemActiveIndicatorStyle="@style/NavIndicator"
+        app:itemIconSize="26dp"
+        app:itemIconTint="@color/nav_item"
+        app:itemPaddingBottom="10dp"
+        app:itemPaddingTop="10dp"
+        app:itemTextAppearanceActive="@style/NavLabel.Active"
+        app:itemTextAppearanceInactive="@style/NavLabel"
+        app:itemTextColor="@color/nav_item"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav" />
+    </LinearLayout>
+
+    <!-- Countdown overlay: the alert is only sent when this reaches zero without a tap on Cancel -->
+    <FrameLayout
+        android:id="@+id/sosOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/sos_overlay"
+        android:clickable="true"
+        android:elevation="30dp"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingHorizontal="28dp">
+
+            <ImageView
+                android:id="@+id/ivSosIcon"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_sos"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvSosTitle"
+                style="@style/T.Display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/sos_count_title"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvSosSub"
+                style="@style/T.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/sos_count_sub"
+                android:textColor="@color/sos_overlay_ink" />
+
+            <FrameLayout
+                android:id="@+id/sosCountWrap"
+                android:layout_width="150dp"
+                android:layout_height="112dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/bg_circle_overlay">
+
+                <TextView
+                    android:id="@+id/tvSosCount"
+                    style="@style/T"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="#FFFFFF"
+                    android:textSize="78sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/btnSosCancel"
+                style="@style/T.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:minHeight="72dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_btn_white"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/sos_cancel"
+                android:textColor="@color/sos"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/btnSosUndo"
+                style="@style/T.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:minHeight="60dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_btn_white_outline"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/sos_undo"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btnSosClose"
+                style="@style/T.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:minHeight="60dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_btn_white_outline"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/sos_done"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

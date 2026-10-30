@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Medicines tab: today's doses in time order, each with a big Taken button, then the full list -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pageMeds"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingBottom="124dp"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            style="@style/T.Display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:accessibilityHeading="true"
+            android:text="@string/meds_page_title" />
+
+        <TextView
+            android:id="@+id/tvMedsPageSub"
+            style="@style/T.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/meds_page_sub" />
+
+        <!-- 7 days: one dot per day -->
+        <LinearLayout
+            android:id="@+id/medsWeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_card"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="14dp" />
+
+        <TextView
+            style="@style/T.Section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:accessibilityHeading="true"
+            android:text="@string/meds_today_doses" />
+
+        <LinearLayout
+            android:id="@+id/dosesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <include
+            android:id="@+id/medsEmpty"
+            layout="@layout/view_empty_state"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvMedsAllTitle"
+            style="@style/T.Section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:accessibilityHeading="true"
+            android:text="@string/meds_all" />
+
+        <LinearLayout
+            android:id="@+id/medsAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_shield_check"
+                app:tint="@color/primary" />
+
+            <TextView
+                style="@style/T.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/meds_set_by"
+                android:textColor="@color/ink_soft" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

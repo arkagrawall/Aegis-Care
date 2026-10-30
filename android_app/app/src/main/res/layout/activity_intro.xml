@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Welcome slides shown once before setup: picture, two lines, dots, Back / Next / Get started -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/introRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface"
+    android:orientation="vertical">
+
+    <!-- Top: skip and language -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/btnSkip"
+            style="@style/T.ButtonDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:background="?attr/selectableItemBackground"
+            android:paddingHorizontal="14dp"
+            android:text="@string/intro_skip"
+            android:textColor="@color/ink_soft"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <com.aegis.saathi.ui.LanguageToggle
+            android:id="@+id/langToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp" />
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/introDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:importantForAccessibility="no"
+        android:orientation="horizontal"
+        android:paddingVertical="14dp" />
+
+    <!-- Bottom: Back and Next / Get started -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/btnPrev"
+            style="@style/T.ButtonDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="64dp"
+            android:background="?attr/selectableItemBackground"
+            android:minWidth="96dp"
+            android:paddingHorizontal="16dp"
+            android:text="@string/intro_back"
+            android:textColor="@color/primary_dark"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/btnNextSlide"
+            style="@style/T.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="64dp"
+            android:background="?attr/selectableItemBackground"
+            android:minWidth="112dp"
+            android:paddingHorizontal="22dp"
+            android:text="@string/intro_next"
+            android:textColor="@color/primary_dark"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Surface & ink -->
+    <color name="bg">#F5F7F4</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="ink">#12201E</color>
+    <color name="ink_soft">#4A5B58</color>
+    <color name="ink_faint">#5B6B67</color>   <!-- 5.4:1 on bg (was 2.8:1) -->
+    <color name="line">#E3E8E5</color>
+    <color name="line_strong">#E6ECE9</color>
+
+    <!-- Brand -->
+    <color name="primary">#0E7C6B</color>
+    <color name="primary_dark">#0A5C50</color>
+    <color name="primary_soft">#DDF2EC</color>
+    <color name="accent">#E8A33D</color>
+
+    <!-- Status -->
+    <color name="good">#17723D</color>        <!-- 5.0:1 on good_soft -->
+    <color name="good_soft">#E2F4E8</color>
+    <color name="warn">#8F5C0F</color>        <!-- 5.0:1 on warn_soft -->
+    <color name="warn_soft">#FBF0D9</color>
+    <color name="bad">#B0302A</color>         <!-- 5.0:1 on bad_soft -->
+    <color name="bad_soft">#FBE4E1</color>
+    <color name="sos">#D93025</color>
+
+    <!-- Call screens -->
+    <color name="call_top">#0A1514</color>
+    <color name="call_bottom">#0F3B36</color>
+    <color name="call_ink">#FFFFFF</color>
+    <color name="call_ink_soft">#D2E6E1</color>      <!-- 11:1 on call_top -->
+    <color name="call_accent">#7FE3CF</color>
+    <color name="call_card">#16332F</color>
+    <color name="call_btn">#254A45</color>
+    <color name="call_btn_on">#EAF7F3</color>
+    <color name="call_btn_on_ink">#0A3B34</color>
+    <color name="call_answer">#15803D</color>       <!-- white text 5:1 -->
+    <color name="call_hangup">#C62828</color>       <!-- white text 5.6:1 -->
+    <color name="call_listen">#F2C46D</color>
+
+    <!-- "Did you fall?" screen (warm, all pairs above 7:1) -->
+    <color name="fall_bg">#FFF7ED</color>
+    <color name="fall_title">#7C2D12</color>
+    <color name="fall_body">#431407</color>
+    <color name="fall_alert">#B91C1C</color>
+    <color name="fall_mid">#FDE68A</color>
+    <color name="fall_mid_ink">#422006</color>
+
+    <!-- SOS countdown overlay -->
+    <color name="sos_overlay">#F2B42318</color>
+    <color name="sos_overlay_ink">#FFE3E0</color>
+
+    <!-- Legacy names still referenced by older layouts -->
+    <color name="primary_emerald">#0E7C6B</color>
+    <color name="accent_teal">#0E7C6B</color>
+    <color name="bg_slate">#F5F7F4</color>
+    <color name="text_slate_dark">#12201E</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="btn_green_theek">#1F8A4C</color>
+    <color name="btn_yellow_kamzor">#8F5C0F</color>
+    <color name="btn_red_kharab">#C2392F</color>
+    <color name="sos_crimson">#D93025</color>
+    <color name="coord_indigo">#0E7C6B</color>
+</resources>

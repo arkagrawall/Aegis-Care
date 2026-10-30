@@ -1,0 +1,55 @@
+<template>
+  <style>
+    @font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_semibold.ttf") format("truetype"); font-weight: 600; }
+@font-face { font-family: "Mukta"; src: url("assets/fonts/mukta_bold.ttf") format("truetype"); font-weight: 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Mukta", sans-serif; color: #fff; }
+    #root * { box-sizing: border-box; }
+    #s11-wrap { position: absolute; inset: 0; }
+    .bg { position: absolute; inset: 0; background: radial-gradient(120% 90% at 20% 0%, #10594f 0%, #0a2a26 55%, #061b18 100%); }
+    .frame { position: absolute; overflow: hidden; border-radius: 18px; background: #f4f6f5; box-shadow: 0 30px 80px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.08); }
+    .bar { position: absolute; left: 0; right: 0; top: 0; height: 34px; background: #e9eeec; display: flex; align-items: center; gap: 8px; padding-left: 16px; z-index: 3; }
+    .bar i { width: 11px; height: 11px; border-radius: 50%; background: #c9d2ce; }
+    .bar b { margin-left: 18px; font: 600 15px "Mukta"; color: #5f6e69; }
+    .view { position: absolute; left: 0; right: 0; bottom: 0; overflow: hidden; }
+    .cam { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    .cam img { display: block; }
+    .spot { position: absolute; border-radius: 12px; border: 3px solid #f5b03c; box-shadow: 0 0 0 4000px rgba(4,22,19,.42), 0 0 24px rgba(245,176,60,.55); opacity: 0; }
+    .chip { position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 10px 22px 10px 16px; border-radius: 999px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); font: 600 26px "Mukta"; color: #fff; }
+    .kicker { font: 700 28px "Mukta"; letter-spacing: .14em; text-transform: uppercase; color: #8fd9c9; }
+    .phone { position: absolute; border-radius: 52px; background: #0b0f0e; padding: 13px; box-shadow: 0 30px 70px rgba(0,0,0,.5), 0 0 0 2px rgba(255,255,255,.08); }
+    .phone .scr { position: relative; width: 100%; height: 100%; border-radius: 40px; overflow: hidden; background: #fff; }
+    .phone .scr img { position: absolute; left: 0; top: 0; width: 100%; }
+    .pt { display: flex; align-items: flex-start; gap: 18px; font: 600 38px/1.25 "Mukta"; color: #fff; }
+    .pt .ic { flex: none; width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center; background: rgba(143,217,201,.14); color: #8fd9c9; }
+    .pt small { display: block; font: 400 28px/1.35 "Mukta"; color: #b9d6cf; margin-top: 4px; }
+    .st { position:absolute; top:300px; width:330px; text-align:center; opacity:0; }
+    .st .ring { width:150px; height:150px; margin:0 auto 22px; border-radius:50%; display:grid; place-items:center; background: rgba(143,217,201,.12); border:2px solid rgba(143,217,201,.35); color:#8fd9c9; }
+    .st.alert .ring { background: rgba(240,106,94,.16); border-color: rgba(240,106,94,.6); color:#ff9d93; }
+    .st h3 { font: 700 38px "Mukta"; margin:0; } .st p { font: 400 28px/1.35 "Mukta"; color:#b9d6cf; margin:6px 0 0; }
+    .ln { position:absolute; top:375px; height:3px; background: rgba(143,217,201,.5); transform-origin: 0 50%; }
+    .out { position:absolute; top:690px; left:0; right:0; display:flex; justify-content:center; gap:22px; }
+    .out .o { padding:14px 26px; border-radius:16px; font: 600 28px "Mukta"; background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.16); opacity:0; }
+    .out .o.r { background: rgba(240,106,94,.16); border-color: rgba(240,106,94,.5); }
+  </style>
+  <div id="root" data-composition-id="s11" data-width="1920" data-height="1080">
+    <div id="s11-wrap"><div class="bg"></div><div class="kicker" id="s11-kick" style="position:absolute;left:210px;top:70px">Fall detection on the phone</div><div class="st" id="s11-st0" style="left:150px"><div class="ring"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="15" cy="5.5" r="2"/><path d="M13.5,9L9,12.5l3,3-1.5,5"/><path d="M9,12.5L5,11"/><path d="M15,10.5l3,3"/><path d="M4,20.5h16"/></svg></div><h3>Hard impact</h3><p>The phone feels a fall</p></div><div class="st" id="s11-st1" style="left:580px"><div class="ring"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10,9v6"/><path d="M14,9v6"/></svg></div><h3>Then stillness</h3><p>No movement after it</p></div><div class="ln" id="s11-ln1" style="left:400px;width:260px"></div><div class="st" id="s11-st2" style="left:1010px"><div class="ring"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.2,3.8h3l1.5,3.9-1.9,1.4a11,11 0 0 0 4.1,4.1l1.4,-1.9 3.9,1.5v3A2.2,2.2 0 0 1 15.9,19.9C9.2,19.3 4.7,14.8 4.1,8.1A2.2,2.2 0 0 1 6.2,3.8z"/></svg></div><h3>Are you okay?</h3><p>A 30-second check on screen</p></div><div class="ln" id="s11-ln2" style="left:830px;width:260px"></div><div class="st alert" id="s11-st3" style="left:1440px"><div class="ring"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12,3.6L21,19.4H3z"/><path d="M12,9.8v4.4"/><path d="M12,17h.01"/></svg></div><h3>Alert raised</h3><p>Coordinator alerted at once</p></div><div class="ln" id="s11-ln3" style="left:1260px;width:260px"></div><div class="out"><div class="o" id="s11-o1">"I'm okay" → logged</div><div class="o r" id="s11-o2">"I need help" → emergency</div><div class="o r" id="s11-o3">No answer in 30 s → emergency</div></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#s11-wrap", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, 0);
+    tl.fromTo("#s11-kick", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.20);
+    tl.fromTo("#s11-st0", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 4.44);
+    tl.fromTo("#s11-st1", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 5.64);
+    tl.fromTo("#s11-ln1", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, 5.44);
+    tl.fromTo("#s11-st2", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 6.58);
+    tl.fromTo("#s11-ln2", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, 6.38);
+    tl.fromTo("#s11-st3", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 15.35);
+    tl.fromTo("#s11-ln3", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power2.out" }, 15.15);
+    tl.fromTo("#s11-o1", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 8.34);
+    tl.fromTo("#s11-o2", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 10.62);
+    tl.fromTo("#s11-o3", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 12.65);
+    tl.to("#s11-wrap", { opacity: 0, duration: 0.35, ease: "power2.in" }, 17.99);
+    window.__timelines["s11"] = tl;
+  </script>
+</template>

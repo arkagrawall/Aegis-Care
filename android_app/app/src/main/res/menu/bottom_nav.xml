@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/tabToday" android:icon="@drawable/ic_home" android:title="@string/tab_today" />
+    <item android:id="@+id/tabMeds" android:icon="@drawable/ic_pill" android:title="@string/tab_meds" />
+    <item android:id="@+id/tabFamily" android:icon="@drawable/ic_people" android:title="@string/tab_family" />
+    <item android:id="@+id/tabMe" android:icon="@drawable/ic_user" android:title="@string/tab_me" />
+</menu>

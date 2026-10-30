@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/onbRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:paddingHorizontal="22dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="18dp">
+
+    <!-- Top: progress dots, language, menu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:minHeight="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/dotsRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/dot0"
+                android:layout_width="28dp"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_dot" />
+
+            <View
+                android:id="@+id/dot1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_dot" />
+
+            <View
+                android:id="@+id/dot2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_dot" />
+
+            <View
+                android:id="@+id/dot3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_dot" />
+        </LinearLayout>
+
+        <com.aegis.saathi.ui.LanguageToggle
+            android:id="@+id/langToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/btnMore"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/menu_more"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_more"
+            app:tint="@color/ink" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <FrameLayout
+            android:id="@+id/stepContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Step 0: welcome + language -->
+            <LinearLayout
+                android:id="@+id/step0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ill_language" />
+
+                <TextView
+                    style="@style/T.Display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.1"
+                    android:text="@string/onb_welcome_title" />
+
+                <TextView
+                    style="@style/T.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/onb_welcome_body"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/T.Section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="@string/onb_lang_label" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/tileHi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+            android:minHeight="76dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_btn_outline"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/checkHi"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginEnd="8dp"
+                            android:importantForAccessibility="no"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_check"
+                            app:tint="@color/primary" />
+
+                        <TextView
+                            style="@style/T.Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/onb_lang_hi" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tileEn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+            android:minHeight="76dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_btn_outline"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/checkEn"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginEnd="8dp"
+                            android:importantForAccessibility="no"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_check"
+                            app:tint="@color/primary" />
+
+                        <TextView
+                            style="@style/T.Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/onb_lang_en" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/T.Caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/onb_lang_hint" />
+            </LinearLayout>
+
+            <!-- Step 1: name + age -->
+            <LinearLayout
+                android:id="@+id/step1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ill_name" />
+
+                <TextView
+                    style="@style/T.Display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/onb_name_title" />
+
+                <TextView
+                    style="@style/T.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/label_name" />
+
+                <EditText
+                    android:id="@+id/etSeniorName"
+                    style="@style/T"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            android:minHeight="64dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_input"
+                    android:hint="@string/hint_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textCapWords"
+                    android:maxLines="1"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/ink"
+                    android:textColorHint="@color/ink_faint"
+                    android:textSize="22sp" />
+
+                <TextView
+                    style="@style/T.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/label_age" />
+
+                <EditText
+                    android:id="@+id/etSeniorAge"
+                    style="@style/T"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            android:minHeight="64dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_input"
+                    android:hint="@string/hint_age"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/ink"
+                    android:textColorHint="@color/ink_faint"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <!-- Step 2: care manager, city, family phone -->
+            <LinearLayout
+                android:id="@+id/step2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ill_care" />
+
+                <TextView
+                    style="@style/T.Display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/onb_cm_title" />
+
+                <TextView
+                    style="@style/T.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/label_code" />
+
+                <EditText
+                    android:id="@+id/etCoordCode"
+                    style="@style/T"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            android:minHeight="64dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_input"
+                    android:hint="@string/hint_code"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/ink"
+                    android:textColorHint="@color/ink_faint"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tvCoordError"
+                    style="@style/T.Caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/bad"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/T.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/label_city" />
+
+                <EditText
+                    android:id="@+id/etSeniorCity"
+                    style="@style/T"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            android:minHeight="64dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_input"
+                    android:hint="@string/hint_city"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/ink"
+                    android:textColorHint="@color/ink_faint"
+                    android:textSize="22sp" />
+
+                <TextView
+                    style="@style/T.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/label_myphone" />
+
+                <EditText
+                    android:id="@+id/etMyPhone"
+                    style="@style/T"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            android:minHeight="64dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_input"
+                    android:hint="@string/hint_myphone"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/ink"
+                    android:textColorHint="@color/ink_faint"
+                    android:textSize="22sp" />
+
+                <TextView
+                    style="@style/T.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/label_phone" />
+
+                <EditText
+                    android:id="@+id/etEmergencyPhone"
+                    style="@style/T"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            android:minHeight="64dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_input"
+                    android:hint="@string/hint_phone"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/ink"
+                    android:textColorHint="@color/ink_faint"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <!-- Step 3: permissions -->
+            <LinearLayout
+                android:id="@+id/step3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="8dp"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ill_permissions" />
+
+                <TextView
+                    style="@style/T.Display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/onb_perm_title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/bg_card"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bg_circle_primary_soft"
+                        android:importantForAccessibility="no"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_mic"
+                        app:tint="@color/primary" />
+
+                    <TextView
+                        style="@style/T.Body"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/perm_mic"
+                        android:textColor="@color/ink" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_card"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/bg_circle_primary_soft"
+                        android:importantForAccessibility="no"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_bell"
+                        app:tint="@color/primary" />
+
+                    <TextView
+                        style="@style/T.Body"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_weight="1"
+                        android:text="@string/perm_notif"
+                        android:textColor="@color/ink" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btnGrantPerms"
+                    style="@style/T.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            android:minHeight="64dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/bg_btn_primary"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="@string/perm_grant" />
+
+                <TextView
+                    android:id="@+id/tvPermStatus"
+                    style="@style/T.Body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center" />
+
+                <CheckBox
+                    android:id="@+id/cbConsent"
+                    style="@style/T"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:buttonTint="@color/primary"
+                    android:paddingStart="8dp"
+                    android:text="@string/consent_text"
+                    android:textColor="@color/ink"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@drawable/ic_shield_check"
+                        app:tint="@color/primary" />
+
+                    <TextView
+                        style="@style/T.Caption"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="@string/perm_privacy" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+    <!-- Bottom buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="64dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_outline"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_arrow_left"
+                app:tint="@color/ink" />
+
+            <TextView
+                style="@style/T.ButtonDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/common_back"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="64dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/bg_btn_primary"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNext"
+                style="@style/T.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/ivNext"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="10dp"
+                android:importantForAccessibility="no"
+                app:srcCompat="@drawable/ic_arrow_right"
+                app:tint="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

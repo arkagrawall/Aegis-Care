@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 250">
+  <!-- Dadaji: indigo kurta, cream pyjama, white hair at the sides and a white moustache, glasses.
+       Showing an ID card with his photo in his left hand (our right), walking stick in the other. Feet at y=244. -->
+  <!-- walking stick (behind) -->
+  <path d="M33,124 L27,240" fill="none" stroke="#6B4F3A" stroke-width="3.6" stroke-linecap="round"/>
+  <path d="M33,124 C33,117 25,116 23,121" fill="none" stroke="#6B4F3A" stroke-width="3.6" stroke-linecap="round"/>
+  <!-- neck -->
+  <rect x="53" y="60" width="14" height="14" rx="4" fill="#C98B62"/>
+  <!-- pyjama legs -->
+  <path d="M41,164 L59,164 L57,236 L45,236Z" fill="#F4EBDD"/>
+  <path d="M61,164 L80,164 L76,236 L64,236Z" fill="#E3D6C2"/>
+  <!-- feet -->
+  <ellipse cx="50" cy="240" rx="9" ry="4" fill="#6B4F3A"/>
+  <ellipse cx="72" cy="240" rx="9" ry="4" fill="#5A4130"/>
+  <!-- kurta -->
+  <path d="M40,77 C46,70 74,70 80,77 C83,104 85,136 87,170 L33,170 C35,136 37,104 40,77Z" fill="#3F5BA9"/>
+  <path d="M73,73 C77,74 80,77 80,77 C83,104 85,136 87,170 L76,170 C76,140 75,108 73,73Z" fill="#344C8F"/>
+  <path d="M59,74 L61,74 L61,104 L59,104Z" fill="#F4EBDD"/>
+  <circle cx="60" cy="82" r="1.4" fill="#E8B04B"/>
+  <circle cx="60" cy="90" r="1.4" fill="#E8B04B"/>
+  <circle cx="60" cy="98" r="1.4" fill="#E8B04B"/>
+  <!-- left arm (our left) down to the stick -->
+  <path d="M41,78 C35,84 32,100 31,118 L40,119 C41,104 43,92 46,84Z" fill="#3F5BA9"/>
+  <ellipse cx="34.5" cy="124" rx="5.6" ry="5.4" fill="#E2A57E"/>
+  <!-- right arm bent, holding the ID card in front -->
+  <path d="M77,79 C84,86 88,98 89,108 L81,110 L74,88Z" fill="#344C8F"/>
+  <g transform="rotate(-6 80 104)">
+    <rect x="61" y="90" width="38" height="26" rx="3.5" fill="#FFFFFF"/>
+    <rect x="61" y="90" width="38" height="6" rx="3" fill="#0E7C6B"/>
+    <rect x="65" y="99" width="10" height="13" rx="2" fill="#CFEDE5"/>
+    <circle cx="70" cy="104" r="2.6" fill="#E2A57E"/>
+    <path d="M66,112 c1,-3 7,-3 8,0z" fill="#3F5BA9"/>
+    <rect x="78" y="101" width="16" height="2.4" rx="1.2" fill="#C9CED0"/>
+    <rect x="78" y="106" width="12" height="2.4" rx="1.2" fill="#C9CED0"/>
+  </g>
+  <path d="M89,104 C84,110 79,114 73,117 L70,111 C75,108 80,104 82,99Z" fill="#E2A57E"/>
+  <ellipse cx="71" cy="115" rx="5.4" ry="5" fill="#E2A57E"/>
+  <!-- head -->
+  <ellipse cx="41.5" cy="47" rx="3.2" ry="4.6" fill="#C98B62"/>
+  <ellipse cx="60" cy="44" rx="18" ry="20" fill="#E2A57E"/>
+  <path d="M68,25.5 C75,29 78,37 78,44 C78,55 72,62 64,64 C70,57 72,49 71,41 C70.5,35 69.5,30 68,25.5Z" fill="#CD906A"/>
+  <!-- white hair at the sides, bald on top -->
+  <path d="M42.5,46 C40,35 43.5,29 49,26.5 C47,32 46.5,39 47.5,46Z" fill="#EEF0F0"/>
+  <path d="M77,40 C78,33 75,28 70.5,26 C72.5,31 73,36 73,41Z" fill="#D8DDDE"/>
+  <!-- face -->
+  <path d="M49,40.5 q3.5,-2.6 7,-0.6" fill="none" stroke="#E4E7E8" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M63.5,39.9 q3.5,-2 7,0.6" fill="none" stroke="#E4E7E8" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="52.8" cy="46" r="1.8" fill="#2B2B33"/>
+  <circle cx="66.2" cy="46" r="1.8" fill="#2B2B33"/>
+  <circle cx="52.8" cy="46" r="5" fill="none" stroke="#5A4130" stroke-width="1.3"/>
+  <circle cx="66.2" cy="46" r="5" fill="none" stroke="#5A4130" stroke-width="1.3"/>
+  <path d="M57.8,45.6 q1.7,-1 3.4,0" fill="none" stroke="#5A4130" stroke-width="1.3"/>
+  <ellipse cx="49" cy="53" rx="3.2" ry="2" fill="#F07862" opacity="0.3"/>
+  <ellipse cx="70" cy="53" rx="3.2" ry="2" fill="#F07862" opacity="0.3"/>
+  <path d="M51.5,54.8 C55,51.6 65,51.6 68.5,54.8 C65.5,57.6 62.4,56.6 60,55.4 C57.6,56.6 54.5,57.6 51.5,54.8Z" fill="#F2F3F3"/>
+  <path d="M55.5,59.4 q4.5,3 9,0" fill="none" stroke="#7A3E2E" stroke-width="1.7" stroke-linecap="round"/>
+</svg>
